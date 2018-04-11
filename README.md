@@ -1,2 +1,2 @@
-# enterprise.java.oop
+# jee.oop
 Enterprise Java OOP
