@@ -3,18 +3,16 @@
   
   <parent>
     <groupId>com.ihub</groupId>
-    <artifactId>jee.oop</artifactId>
+    <artifactId>com.ihub.jee.oop.dp</artifactId>
     <version>1.0.0</version>
   </parent>
   
-  <artifactId>com.ihub.jee.oop.dp</artifactId>
-  <name>Design Patterns</name>
+  <artifactId>com.ihub.jee.oop.dp.creational</artifactId>
   <packaging>pom</packaging>
   
+  <name>Creational Design Pattern</name>
+  
   <modules>
-  	<module>com.ihub.jee.oop.dp.singleton</module>
-  	<module>com.ihub.jee.oop.dp.creational</module>
-  	<module>com.ihub.jee.oop.dp.structural</module>
-  	<module>com.ihub.jee.oop.dp.behavioral</module>
+  	<module>com.ihub.jee.oop.dp.creational.singleton</module>
   </modules>
 </project>

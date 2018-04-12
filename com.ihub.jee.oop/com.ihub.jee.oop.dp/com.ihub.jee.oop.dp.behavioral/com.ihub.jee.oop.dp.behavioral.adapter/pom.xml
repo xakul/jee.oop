@@ -4,10 +4,10 @@
 
 	<parent>
 		<groupId>com.ihub</groupId>
-		<artifactId>com.ihub.jee.oop.dp</artifactId>
+		<artifactId>com.ihub.jee.oop.dp.behavioral</artifactId>
 		<version>1.0.0</version>
 	</parent>
-
-	<artifactId>com.ihub.jee.oop.dp.singleton</artifactId>
-	<name>Singleton Design Pattern</name>
+	
+	<artifactId>com.ihub.jee.oop.dp.behavioral.adapter</artifactId>
+	<name>Adapter Pattern</name>
 </project>
