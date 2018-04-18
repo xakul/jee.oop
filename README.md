@@ -15,13 +15,13 @@ You need to add GSON to the Maven dependencies part of your "pom.xml" file in yo
 
 ```
 <dependencies>
-        ...
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>2.8.2</version>
-		</dependency>
-        ...
+    ...
+    <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+    </dependency>
+    ...
 </dependencies>
 ```
 
@@ -40,8 +40,8 @@ In our example, we read two JSON files from the hard drive and generated objects
 Example.json
 ```
 {
-  "firstVariable" : "Hello ",
-  "secondVariable" : "World!"
+    "firstVariable" : "Hello ",
+    "secondVariable" : "World!"
 }
 
 ```
@@ -63,9 +63,19 @@ After this, as a backwards operation, we generated JSON files from these objects
 To do these, we use "toJson()" and "fromJson()" functions that GSON provides us.
 
 Initialize.java
+```
+...
+ExampleClass example = gson.fromJson(getStringFromJsonFile("Example.json"), ExampleClass.class);
+		System.out.println(example.firstVariable + example.secondVariable);
 
+String exampleToJson = gson.toJson(example);
+		System.out.println(exampleToJson);
+...
 
-### ODATA Example.
+```
+Details and more explanation can be found in the file itself.
+
+### ODATA Example
 
 Now, lets see the procedure with the ODATA response.
 We need to analyze how the JSON response is, depending on the service.
@@ -75,11 +85,11 @@ Names of the data sets and the attributes are very important, since GSON identif
 ```
 {
     "d": [
-        {
-            "__metadata": {
-                "uri": "http://services.odata.org/V2/OData/OData.svc/Products(0)",
-                "type": "ODataDemo.Product"
-            },
+    {
+        "__metadata": {
+        "uri": "http://services.odata.org/V2/OData/OData.svc/Products(0)",
+        "type": "ODataDemo.Product"
+        },
             "ID": 0,
             "Name": "Bread",
             "Description": "Whole grain bread",
@@ -94,7 +104,7 @@ Notice that the response starts with a "d": identifier. In order to obtain all t
 FirstLayer.java
 ```
 public class FirstLayer {
-	public ArrayList<Product> d;
+    public ArrayList<Product> d;
 }
 ```
 Because we will obtain a lot of Products, we need a list structure. After GSON reaching here, it will try to access the class of the object directly, meaning it will fill the attributes in the Product class, and so on.
@@ -102,11 +112,11 @@ Because we will obtain a lot of Products, we need a list structure. After GSON r
 Product.java
 ```
 public class Product {
-	public String ID;
-	public String Name;
+    public String ID;
+    public String Name;
     ...
-	public Category Category;
-	public Supplier Supplier;
+    public Category Category;
+    public Supplier Supplier;
 }
 ```
 
