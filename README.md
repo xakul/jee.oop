@@ -25,15 +25,9 @@ You need to add GSON to the Maven dependencies part of your "pom.xml" file in yo
 </dependencies>
 ```
 
-## Scenario
-
-We are going to work on a basic ODATA(v2) service;
-    http://services.odata.org/V2/OData/OData.svc/
-that contains Products, Suppliers and Categories as the main entity types.
-
 ## Explanation
 
-### A simple example.
+### A simple example
 Firstly, let us understand how GSON works in java by a very simple example.
 In our example, we read two JSON files from the hard drive and generated objects from it using the GSON library. The files that are used are:
 
