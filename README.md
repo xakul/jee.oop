@@ -37,7 +37,6 @@ Example.json
     "firstVariable" : "Hello ",
     "secondVariable" : "World!"
 }
-
 ```
 
 Nested.json
@@ -50,7 +49,6 @@ Nested.json
         "secondVariable" : "World!"
     }
 }
-
 ```
 
 After this, as a backwards operation, we generated JSON files from these objects.
@@ -65,7 +63,6 @@ ExampleClass example = gson.fromJson(getStringFromJsonFile("Example.json"), Exam
 String exampleToJson = gson.toJson(example);
 		System.out.println(exampleToJson);
 ...
-
 ```
 Details and more explanation can be found in the file itself.
 
@@ -88,7 +85,6 @@ Names of the data sets and the attributes are very important, since GSON identif
             "Name": "Bread",
             "Description": "Whole grain bread",
             ...
-
 ```
 This is the response to a GET operation to:
 http://services.odata.org/V2/OData/OData.svc/Products
