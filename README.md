@@ -2,7 +2,7 @@
 
 One Paragraph of project description goes here
 
-![N|Solid](https://i.ytimg.com/vi/W-PBFMECvTE/maxresdefault.jpg)
+![CuteCat](https://i.ytimg.com/vi/W-PBFMECvTE/maxresdefault.jpg)
 
 ## Prequisites
 
