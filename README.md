@@ -1,2 +1,1 @@
-# com.ittr.rim
-Real-time Inventory Monitoring
+Test JEE OOP.
