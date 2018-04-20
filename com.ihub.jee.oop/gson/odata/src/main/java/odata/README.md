@@ -150,7 +150,9 @@ public class Product {
 
 Yukarıda açıklandığı gibi, burada da Category ve Supplier sınıflandırmalarının içleri de GSON tarafından doldurulacak.
 Bu sebeple, bu sınıflandırmaların verilerinin bulunduğu objeler de dolmuş olacaklar.
+
 JSON dosyasının her veri seti için bulunan her değeri göstermesi için, "GET" operasyonunu "Expand" sorgusu bulunan şu sorguya yapmalıyız:
+
 http://services.odata.org/V2/OData/OData.svc/Products?$expand=Category,Supplier
 Böylece veri setlerinin içerisinde bulunan diğer veri setleri, JSON'da açık bir şekilde görünecekler.
 
