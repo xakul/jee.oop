@@ -12,7 +12,7 @@ import java.util.ArrayList;
 // GSON kutuphanesine ihtiyac var.
 import com.google.gson.Gson;
 
-public class Initialize {
+public class Main {
 	
 	// This function returns JSON Response (as a String) from the ODATA Service
 	// Bu fonksiyon ODATA servisinden JSON geri bildirimini alip, String olarak doner.
@@ -40,7 +40,10 @@ public class Initialize {
 	    
 	    // "Accept" property defines the response format that will be received.
 	    // "Accept" ozelligi, ne tur bir format kabul edilecegini belirler.
-	    // -> JSON
+	    //
+	    // For the service to work with JSON, we use "application/json" in our function.
+	    // Servisimizin JSON ile calismasini belirtmek icin, fonksiyonumuzda "application/json"
+	    // parametresini kullaniriz.
 	    connection.setRequestProperty("Accept", "application/json");
 	    
 	    // Initialize connection.
