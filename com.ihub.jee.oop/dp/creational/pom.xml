@@ -16,5 +16,6 @@
 	<modules>
 		<module>builder</module>
 		<module>singleton</module>
+		<module>factory</module>
 	</modules>
 </project>
