@@ -1,6 +1,6 @@
 package factory;
 
-public class Sales_Order_Details {
+public class SalesOrderDetails {
 
 	private String customerName;
 	private String cutomerAddres;

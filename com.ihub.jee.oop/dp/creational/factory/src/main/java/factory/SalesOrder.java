@@ -8,7 +8,7 @@ public class SalesOrder implements Orders {
 	private String customerID = "1";
 	private int totalPrice;
 
-	public Sales_Order_Details sod;
+	public SalesOrderDetails sod;
 
 	public void getOrderReport() {
 
@@ -39,11 +39,11 @@ public class SalesOrder implements Orders {
 		this.totalPrice = totalPrice;
 	}
 
-	public Sales_Order_Details getSod() {
+	public SalesOrderDetails getSod() {
 		return sod;
 	}
 
-	public void setSod(Sales_Order_Details sod) {
+	public void setSod(SalesOrderDetails sod) {
 		this.sod = sod;
 	}
 

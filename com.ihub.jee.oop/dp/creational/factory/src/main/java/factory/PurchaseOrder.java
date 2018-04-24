@@ -6,7 +6,7 @@ public class PurchaseOrder implements Orders {
 	private int id = 5;
 	private String supplierID = "jj";
 	private int totalPrice = 4;
-	private Purchase_Order_Details pod = new Purchase_Order_Details();
+	private PurchaseOrderDetails pod = new PurchaseOrderDetails();
 	String[] s;
 
 	public PurchaseOrder() {
@@ -20,13 +20,13 @@ public class PurchaseOrder implements Orders {
 
 	}
 
-	public Purchase_Order_Details getPod() {
+	public PurchaseOrderDetails getPod() {
 
 		s = pod.getPodArray();
 		return pod;
 	}
 
-	public void setPod(Purchase_Order_Details pod) {
+	public void setPod(PurchaseOrderDetails pod) {
 		this.pod = pod;
 	}
 

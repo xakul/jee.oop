@@ -22,7 +22,7 @@ public class Connector {
 	}
 
 	// Our method to call our class from the outside.
-	// Thanks to synchronized keyword is prevented from runnig the method at the same time 
+	// Thanks to synchronized keyword is prevented from running the method at the same time 
 	public synchronized static Connector getInstance () {
 		if(uniqueInstance == null) {
 			uniqueInstance = new Connector();

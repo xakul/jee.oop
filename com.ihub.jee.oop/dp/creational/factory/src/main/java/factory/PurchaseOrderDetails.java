@@ -1,6 +1,6 @@
 package factory;
 
-public class Purchase_Order_Details {
+public class PurchaseOrderDetails {
 
 	private String supplierName = "s";
 	private String supplierAddress = "1";
@@ -16,7 +16,7 @@ public class Purchase_Order_Details {
 		this.podArray = podArray;
 	}
 
-	public Purchase_Order_Details() {
+	public PurchaseOrderDetails() {
 		super();
 		//this.podArray = podArray;
 	}
