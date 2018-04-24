@@ -1,4 +1,4 @@
-﻿package builder.carBuilder;
+package builder.carBuilder;
 
 //In the CarAbstract class we have identified the methods you will use in the subclasses.
 //CarAbstract sinifi icinde altsiniflarda kullanacagimiz metotları belirledik.

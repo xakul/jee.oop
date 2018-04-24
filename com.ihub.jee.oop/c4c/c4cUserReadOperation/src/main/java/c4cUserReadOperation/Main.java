@@ -1,14 +1,13 @@
 /**
-  * SAP Cloud Platform Successfactors Odata service connection with java
-    * This code will be on reading data from Successfactors User entity
+  * SAP Cloud Platform Cloud For Customer(C4C) Odata service connection with java
+    * This code will be on reading data from C4C User entity
   * Release version 1.0 at 20.04.2018
-  * @author Gürkan Akpınar || 4RaymonD on @github || gurkanakpinar.35@gmail.com
+  * @author Cem Dincay || cemdincay@live.com
 */
 
-package userReadOperation;
+package c4cUserReadOperation;
 
 import java.io.BufferedReader;
-
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -20,14 +19,14 @@ import javax.xml.bind.DatatypeConverter;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		String baseURL = "https://api012.successfactors.eu";
-		String pathURL = "/odata/v2/";
-		String entityURL = "User";
+		String baseURL = "https://myXXXXXX.crm.ondemand.com";
+		String pathURL = "/sap/c4c/odata/v1/c4codata/";
+		String entityURL = "UserCollection";
 		String serviceURL = baseURL + pathURL + entityURL;
 
-		// Successfactor username@companyid
-		String username = "***@***";
-		// Successfactor password
+		// C4C username
+		String username = "*****";
+		// C4C password
 		String password = "***";
 
 		String basicToken = basicAuthEncode(username, password);
@@ -39,21 +38,21 @@ public class Main {
 		String response;
 
 		// OData expand query
-		queryURL = getExpandEntityQuery("xxxxx");
+		queryURL = getExpandEntityQuery("xxxxxx");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("EXPAND ENTITY QUERY : ",response);
 
 		// OData filter query with string value
-		queryURL = getFilterQueryWithStringValue("xxxxxx", "'xxxxxxxx'");
+		queryURL = getFilterQueryWithStringValue("xxxx", "'xxxxx'");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("String filter : ",response);
 		
 		// OData filter query with date
-		queryURL = getFilterQueryWithDate("xxxxxxxx", "datetime'2017-05-19T23:59:59'");
+		queryURL = getFilterQueryWithDate("xxxxx", "datetimeoffset'2018-01-01T07:03:12.0000000Z'");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
@@ -101,8 +100,8 @@ public class Main {
 
 	public static String getFilterQueryWithDate(String fieldName, String date) {
 
-		// datetime'2017-05-19T23:59:59'
-		String filterDate = "?$filter=" + fieldName + "%20eq%20datetime'" + date + "'";
+		// datetime'2018-01-01T07:03:12.0000000Z'
+		String filterDate = "?$filter=" + fieldName + "%20eq%20datetimeoffset'" + date + "'";
 		return filterDate;
 	}
 

@@ -1,4 +1,4 @@
-﻿package builder.carBuilder;
+package builder.carBuilder;
 
 //Created CarProperties interface to implement common methods in subclasses.
 //Genel olarak kullanilacak metotlari CarProperties interface içinde tanimladik. 

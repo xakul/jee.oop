@@ -1,4 +1,4 @@
-﻿package builder.carBuilder;
+package builder.carBuilder;
 
 //The Car Builder class was created to create a vehicle according to the type of car desired by the client.
 //CarBuilder sinifi client tarafından istenilen arabanin turune gore arac yaratmak icin olusturuldu.
@@ -11,10 +11,10 @@ public class Builder {
 
 	public CarAbstract createASeries() {
 
+		// Here a new Mercedes ASeries car was created from the CarAbstract
+	    // class using polymorphism.
 		// Burada polymorphism kullanarak CarAbstract sinifindan yeni bir
 		// MercedesASeries araba yaratildi.
-		// Here a new Mercedes ASeries car was created from the CarAbstract
-		// class using polymorphism.
 		CarAbstract abstractCar = new MercedesASeries();
 		return abstractCar;
 	}

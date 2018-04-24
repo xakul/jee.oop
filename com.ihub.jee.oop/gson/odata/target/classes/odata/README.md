@@ -5,12 +5,7 @@ Similarly, we can generate JSON files from existing instances of objects.
 
 This tutorial will also explain how ODATA and GSON comes together for development on an enterprise scenario.
 
-Bu alıştırmanın amacı, GSON kütüphanesinin, JSON formatındaki dosyalardan nasıl Java objeleri yarattığını açıklamaktır.
-Benzer şekilde, bu objelerden de bir JSON dosyası yaratmak, bu kütüphane ile mümkündür.
-
-Bu alıştırma, GSON ve ODATA, bir işletme senaryosunda nasıl bir araya geldiğini açıklayacak.
-
-## Prequisites
+## Prerequisites
 
 *   Basic Java/OOP Knowledge.
 *	Maven Structure Basics.
@@ -18,13 +13,6 @@ Bu alıştırma, GSON ve ODATA, bir işletme senaryosunda nasıl bir araya geldi
 *   Understanding of ODATA and it's use.
 
 You need to add GSON to the Maven dependencies part of your "pom.xml" file in your project.
-
-*   Temel Java ve Nesne-Yönelimli Programlama bilgisi.
-*	Maven Yapısı Temelleri.
-*   JSON formatı bilgisi.
-*   ODATA kullanımı bilgisi.
-
-Maven projenizde bulunan "pom.xml" dosyasına, gereksinim olarak GSON kütüphanesini eklemeniz gerekmektedir.
 
 ```
 <dependencies>
@@ -39,15 +27,11 @@ Maven projenizde bulunan "pom.xml" dosyasına, gereksinim olarak GSON kütüphan
 ```
 
 ## Scenario
+
 We have an ODATA service that contains Products, Categories and Suppliers as entity sets.
 These entity sets are in nested groups and we want to work with these values as objects in Java.
 How do we obtain objects on Java that are fed with the data contained from our ODATA JSON response?
 We use GSON for this integration purpose.
-
-Elimizde Ürünler(Products), Kategoriler(Categories) ve Ürün Sağlayıcıları(Suppliers) adı altında üç veri seti var.
-Bu veriler iç içe birbirlerini kapsayabilmektedirler. Biz bu veriler ile Java'da obje bazlı işlem yapmak istiyoruz.
-Bize ODATA servisinde gelen JSON cevabındaki verilerle, Java objelerimizi nasıl besleyebiliriz?
-GSON kütüphanesi, basit ve hızlı bir şekilde bu entegrasyonu yapmamıza olanak sağlıyor.
 
 ## Explanation
 
@@ -108,6 +92,55 @@ Gson gson = new Gson();
 ProductData productData = gson.fromJson(JsonResponse, ProductData.class);
 ```
 
+## Summary
+
+We have seen how we can integrate Java and ODATA services that provide JSON responses with GSON.
+
+## Links
+
+* [GSON](https://github.com/google/gson) - GSON
+* [MAVEN](https://maven.apache.org/) - Maven
+
+---
+---
+
+# Konu
+
+Bu alıştırmanın amacı, GSON kütüphanesinin, JSON formatındaki dosyalardan nasıl Java objeleri yarattığını açıklamaktır.
+Benzer şekilde, bu objelerden de bir JSON dosyası yaratmak, bu kütüphane ile mümkündür.
+
+Bu alıştırma, GSON ve ODATA, bir işletme senaryosunda nasıl bir araya geldiğini açıklayacak.
+
+## Önkoşullar
+
+*   Temel Java ve Nesne-Yönelimli Programlama bilgisi.
+*	Maven Yapısı Temelleri.
+*   JSON formatı bilgisi.
+*   ODATA kullanımı bilgisi.
+
+Maven projenizde bulunan "pom.xml" dosyasına, gereksinim olarak GSON kütüphanesini eklemeniz gerekmektedir.
+
+```
+<dependencies>
+    ...
+    <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+    </dependency>
+    ...
+</dependencies>
+```
+
+## Senaryo
+
+Elimizde Ürünler(Products), Kategoriler(Categories) ve Ürün Sağlayıcıları(Suppliers) adı altında üç veri seti var.
+Bu veriler iç içe birbirlerini kapsayabilmektedirler. Biz bu veriler ile Java'da obje bazlı işlem yapmak istiyoruz.
+Bize ODATA servisinde gelen JSON cevabındaki verilerle, Java objelerimizi nasıl besleyebiliriz?
+GSON kütüphanesi, basit ve hızlı bir şekilde bu entegrasyonu yapmamıza olanak sağlıyor.
+
+## Açıklama
+
 Öncelikle, ODATA servisinden gelen JSON cevabını inceleyelim.
 
 GSON için, veri setlerinin isimleri çok önemli. Çünkü, GSON kütüphanesi, otomatik olarak yaratılan objeleri, sınıflandırmalarında belirtilen isimlere göre besliyor.
@@ -150,8 +183,10 @@ public class Product {
 
 Yukarıda açıklandığı gibi, burada da Category ve Supplier sınıflandırmalarının içleri de GSON tarafından doldurulacak.
 Bu sebeple, bu sınıflandırmaların verilerinin bulunduğu objeler de dolmuş olacaklar.
-JSON dosyasının her veri seti için bulunan her değeri göstermesi için, "GET" operasyonunu "Expand" sorgusu bulunan şu sorguya yapmalıyız:
+
+JSON dosyasının her veri seti için bulunan her değeri göstermesi için, "GET" operasyonunu "Expand" sorgusu bulunan şu URI'a yapmalıyız:
 http://services.odata.org/V2/OData/OData.svc/Products?$expand=Category,Supplier
+
 Böylece veri setlerinin içerisinde bulunan diğer veri setleri, JSON'da açık bir şekilde görünecekler.
 
 GSON Kütüphanesinde bulunan
@@ -164,13 +199,11 @@ Gson gson = new Gson();
 ProductData productData = gson.fromJson(JsonResponse, ProductData.class);
 ```
 
-## Summary
-
-We have seen how we can integrate Java and ODATA services that provide JSON responses with GSON.
+## Özet
 
 JSON dönütlerini GSON aracılığıyla, Java objelerine nasıl çevirebileceğimizi görmüş olduk.
 
-## Links
+## Linkler
 
 * [GSON](https://github.com/google/gson) - GSON
 * [MAVEN](https://maven.apache.org/) - Maven

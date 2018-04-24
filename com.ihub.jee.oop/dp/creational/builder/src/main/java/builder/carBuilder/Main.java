@@ -1,4 +1,4 @@
-﻿package builder.carBuilder;
+package builder.carBuilder;
 
 public class Main {
 
@@ -13,7 +13,7 @@ public class Main {
 
 		// The AMG series created in CarBuilder also synchronized our car to the
 		// carAbstract instance.
-		// carBuilder da olusturulan AMG serisi arabamizi carAbstract örnegine
+		// carBuilder da olusturulan AMG serisi arabamizi carAbstract ornegine
 		// esitledik.
 		carAbstract = carBuilder.createAMGSeries();
 		// We give the carAbstract instance as a parameter to write() method to
@@ -24,7 +24,7 @@ public class Main {
 
 		// The A series created in CarBuilder also synchronized our car to the
 		// carAbstract instance.
-		// carBuilder da olusturulan A serisi arabamizi carAbstract örnegine
+		// carBuilder da olusturulan A serisi arabamizi carAbstract ornegine
 		// esitledik.
 		carAbstract = carBuilder.createASeries();
 		write(carAbstract);

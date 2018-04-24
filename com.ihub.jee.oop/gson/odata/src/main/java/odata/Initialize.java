@@ -1,4 +1,4 @@
-﻿package odata;
+package odata;
 
 import java.io.BufferedReader;
 
