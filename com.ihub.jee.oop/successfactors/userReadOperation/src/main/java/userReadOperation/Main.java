@@ -1,22 +1,19 @@
 /**
   * SAP Cloud Platform Successfactors Odata service connection with java
     * This code will be on reading data from Successfactors User entity
-  * Release version 1.0 at 20.04.2018
-  * @author GÃ¼rkan AkpÄ±nar || 4RaymonD on @github || gurkanakpinar.35@gmail.com
+  * Release version 1.0 at 20.04.2017
+  * @author Gürkan Akpýnar || 4RaymonD on @github || gurkanakpinar.35@gmail.com
 */
 
 package userReadOperation;
 
 import java.io.BufferedReader;
-
-
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-
-import javax.xml.bind.DatatypeConverter;
+import java.util.Base64;
 
 public class Main {
 
@@ -40,21 +37,21 @@ public class Main {
 		String response;
 
 		// OData expand query
-		queryURL = getExpandEntityQuery("xxxxx");
+		queryURL = getExpandEntityQuery("directReports");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("EXPAND ENTITY QUERY : ",response);
 
 		// OData filter query with string value
-		queryURL = getFilterQueryWithStringValue("xxxxxx", "'xxxxxxxx'");
+		queryURL = getFilterQueryWithStringValue("location", "'Rönesans Rusya'");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("String filter : ",response);
 		
 		// OData filter query with date
-		queryURL = getFilterQueryWithDate("xxxxxxxx", "datetime'2017-05-19T23:59:59'");
+		queryURL = getFilterQueryWithDate("formLastModifiedDate", "datetime'2017-05-19T23:59:59'");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
@@ -80,6 +77,13 @@ public class Main {
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("Skip Query : ",response);
+		
+		// Odata select query
+		queryURL = getSelectQuery("***");
+		fullURL = serviceURL + queryURL;
+		url = new URL(fullURL);
+		response = getHTTPRequestResult(url, basicToken);
+		print("Select Query : ",response);
 	}
 
 	public static String getExpandEntityQuery(String entity) {
@@ -174,9 +178,8 @@ public class Main {
 		userPass.append(username);
 		userPass.append(SEPARATOR);
 		userPass.append(password);
-		
-		String encodedPassword = DatatypeConverter
-				.printBase64Binary(userPass.toString().getBytes(StandardCharsets.UTF_8));
+
+		String encodedPassword = Base64.getEncoder().encodeToString(userPass.toString().getBytes(StandardCharsets.UTF_8));
 		
 		return encodedPassword;
 	}
@@ -185,5 +188,4 @@ public class Main {
 		System.out.println(queryType);
 		System.out.println(response);
 	}
-
 }
