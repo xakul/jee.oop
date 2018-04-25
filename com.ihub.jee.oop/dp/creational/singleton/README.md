@@ -101,56 +101,56 @@ as a summary;
 
 # Konu
 
-Tutorialda Creational Design Pattern'lerden biri olan Singleton Desing Pattern'in çalışma mantığı, neden kullanıldığı ve nerelerde kullandığını bir Java projesi üzerinden açıklanacaktır.
+Tutorialda Creational Design Pattern'lerden biri olan Singleton Desing Pattern'in Ã§alÄ±ÅŸma mantÄ±ÄŸÄ±, neden kullanÄ±ldÄ±ÄŸÄ± ve nerelerde kullandÄ±ÄŸÄ±nÄ± bir Java projesi Ã¼zerinden aÃ§Ä±klanacaktÄ±r.
 
 ## Gereksinimler
 
 *   Temel programlama bilgisi.
-*   Başlangıç seviyesinde OOP bilgisi.
+*   BaÅŸlangÄ±Ã§ seviyesinde OOP bilgisi.
 
 ## Senaryo
 
 'Connector' ve 'Main' olan 2 class'imiz var.
-Connector class'i Singleton olacak ve 'Northwind Odata V2' servisine bağlantı kuracak ve Odata bağlantı URL bilgileri, servise erişimi ve bazı entitylerden String olarak veriler alınacaktır. 'Main' classında ise  önce Singleton classimiz çağrılacak ve alınan dataları ekrana yazdırılacak.
+Connector class'i Singleton olacak ve 'Northwind Odata V2' servisine baÄŸlantÄ± kuracak ve Odata baÄŸlantÄ± URL bilgileri, servise eriÅŸimi ve bazÄ± entitylerden String olarak veriler alÄ±nacaktÄ±r. 'Main' classÄ±nda ise  Ã¶nce Singleton classimiz Ã§aÄŸrÄ±lacak ve alÄ±nan datalarÄ± ekrana yazdÄ±rÄ±lacak.
 
-## Açıklama
+## AÃ§Ä±klama
 
-Singleton Design Pattern, bir classın tek bir instance'ni almak için kullanılır.Buradaki amaç instance'i alınan nesneye global erişebilmeyi sağlamaktır.Run-time da ikinci bir instance oluşturulmasına izin verilmez, ve nesnenin tek defa oluştuğu garanti olur.
+Singleton Design Pattern, bir classÄ±n tek bir instance'ni almak iÃ§in kullanÄ±lÄ±r.Buradaki amaÃ§ instance'i alÄ±nan nesneye global eriÅŸebilmeyi saÄŸlamaktÄ±r.Run-time da ikinci bir instance oluÅŸturulmasÄ±na izin verilmez, ve nesnenin tek defa oluÅŸtuÄŸu garanti olur.
 
-Eğer objenin instance'i alınmasının önüne geçilemeyecekse 2 farklı thread ard arda yapacağı istek sonucunda , birinin sonucuna ukaşamadan yeni bir instance yapar ama eğer lock'lama yapılırsa ilkinin bitmesini bekler ve tek bir instance ile işlem tamamlanır.
+EÄŸer objenin instance'i alÄ±nmasÄ±nÄ±n Ã¶nÃ¼ne geÃ§ilemeyecekse 2 farklÄ± thread ard arda yapacaÄŸÄ± istek sonucunda , birinin sonucuna ukaÅŸamadan yeni bir instance yapar ama eÄŸer lock'lama yapÄ±lÄ±rsa ilkinin bitmesini bekler ve tek bir instance ile iÅŸlem tamamlanÄ±r.
 
-##### Ne zaman Singleton Kullanmalıyız ? 
+##### Ne zaman Singleton KullanmalÄ±yÄ±z ? 
 
-Bazı objeler de her bir istek için yeni bir instance almaya gerek yoktur, örneğin connectionlar daki gibi, Her client için ayrı ayrı bu nesneyi oluşturmaya gerek yoktur, eğer oluşturulursa performans kaybına neden olacak  ve yönetmek zor olacaktır. Connection nettir, her client için aynıdır ulaşacağı connector'u. Bizim örneğimizde de Norhtwind servisine connection'u gerçekleştiren bir Connector Singleton classs kullandık.
+BazÄ± objeler de her bir istek iÃ§in yeni bir instance almaya gerek yoktur, Ã¶rneÄŸin connectionlar daki gibi, Her client iÃ§in ayrÄ± ayrÄ± bu nesneyi oluÅŸturmaya gerek yoktur, eÄŸer oluÅŸturulursa performans kaybÄ±na neden olacak  ve yÃ¶netmek zor olacaktÄ±r. Connection nettir, her client iÃ§in aynÄ±dÄ±r ulaÅŸacaÄŸÄ± connector'u. Bizim Ã¶rneÄŸimizde de Norhtwind servisine connection'u gerÃ§ekleÅŸtiren bir Connector Singleton classs kullandÄ±k.
 
-*   ##### Singleton vs Statik Kullanım, hangisini tercih etmeli ?  
+*   ##### Singleton vs Statik KullanÄ±m, hangisini tercih etmeli ?  
 
-    *   Singleton, OOP yapısına uygundur Spring ve Hibarnate gibi frameworkler de statik den uzak dururlar.
+    *   Singleton, OOP yapÄ±sÄ±na uygundur Spring ve Hibarnate gibi frameworkler de statik den uzak dururlar.
 	*   Statik methodlar override edilemezler.
-	*    Singleton nesnesinin oluşturulması geciktiriebilir , lazy loading olarak kullanılabilir ama statikler çağrıldığı an belleğe yükleneceklerdir.
-    *   Statik kullanımın artısı nesne oluşturmana ve o nesneyi yönetmene ihtiyaç kalmadan ilgil methodlara , attributeları erişmini sağlayacaktır ama bu seni tembelliğe yiter ve OOP dan uzaklaşırsın.
+	*    Singleton nesnesinin oluÅŸturulmasÄ± geciktiriebilir , lazy loading olarak kullanÄ±labilir ama statikler Ã§aÄŸrÄ±ldÄ±ÄŸÄ± an belleÄŸe yÃ¼kleneceklerdir.
+    *   Statik kullanÄ±mÄ±n artÄ±sÄ± nesne oluÅŸturmana ve o nesneyi yÃ¶netmene ihtiyaÃ§ kalmadan ilgil methodlara , attributelarÄ± eriÅŸmini saÄŸlayacaktÄ±r ama bu seni tembelliÄŸe yiter ve OOP dan uzaklaÅŸÄ±rsÄ±n.
 
 ##### Connector.java
 
 ```
 public class Connector {
 
-    //ilk class çağrıldığında null olarak uniqueInstance yaratılacaktır. 
+    //ilk class Ã§aÄŸrÄ±ldÄ±ÄŸÄ±nda null olarak uniqueInstance yaratÄ±lacaktÄ±r. 
 	private static Connector uniqueInstance = null;
 	
 	private final String hostURL ;
 	private final String pathURL ;
 	private final String serviceURL;
 		
-	//Constructor private olmalıdır, dışarıdan çağrılamaması için.
+	//Constructor private olmalÄ±dÄ±r, dÄ±ÅŸarÄ±dan Ã§aÄŸrÄ±lamamasÄ± iÃ§in.
 	private Connector () {
 		 hostURL = "http://services.odata.org";
 		 pathURL = "/V2/Northwind/Northwind.svc/";
 		 serviceURL = hostURL + pathURL;
 	}
 
-	// Birden fazla instance'i almayı engellemek için kontrol ediliyor.
-	//synchronized keyword'u ile de run-time da 2 kere aynı anda yaratılmayı engellemiş oluyoruz. 
+	// Birden fazla instance'i almayÄ± engellemek iÃ§in kontrol ediliyor.
+	//synchronized keyword'u ile de run-time da 2 kere aynÄ± anda yaratÄ±lmayÄ± engellemiÅŸ oluyoruz. 
 	public synchronized static Connector getInstance () {
 		if(uniqueInstance == null) {
 			uniqueInstance = new Connector();
@@ -168,10 +168,10 @@ public class Connector {
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		//'Main' Classın da singleton olan 'Connector' classının instance'ni alıyoruz.  
+		//'Main' ClassÄ±n da singleton olan 'Connector' classÄ±nÄ±n instance'ni alÄ±yoruz.  
 		Connector connector = Connector.getInstance();
 
-		//instance'i alınan Connector classının getOrders methodu ile Northwinden Orderları çekiyoruz.
+		//instance'i alÄ±nan Connector classÄ±nÄ±n getOrders methodu ile Northwinden OrderlarÄ± Ã§ekiyoruz.
 		String orders = connector.getOrders();
 		System.out.println(orders);
 		
@@ -181,12 +181,12 @@ public class Main {
 }
 ```
 
-## Özet
+## Ã–zet
 
-Singleton Design Pattern'i niçin,nasıl  kullanmalıyız, sorularına cevap olarak geliştirdik.
-Kısaca özet geçmek gerekirse; 
-*   Singleton Design Pattern tek bir instance'i alınması ihtiyacı yeterli olunan, birden fazla class'ın yeni instance'i çağrılmasını engellemek için kullandığımız bir OOP desing pattern.
-*   Statik kullanımla benzerdir ama statik kullanımı kullanmak yerine OOP zone'nundan çıkmamak için singleton kullanmalıyız :)
+Singleton Design Pattern'i niÃ§in,nasÄ±l  kullanmalÄ±yÄ±z, sorularÄ±na cevap olarak geliÅŸtirdik.
+KÄ±saca Ã¶zet geÃ§mek gerekirse; 
+*   Singleton Design Pattern tek bir instance'i alÄ±nmasÄ± ihtiyacÄ± yeterli olunan, birden fazla class'Ä±n yeni instance'i Ã§aÄŸrÄ±lmasÄ±nÄ± engellemek iÃ§in kullandÄ±ÄŸÄ±mÄ±z bir OOP desing pattern.
+*   Statik kullanÄ±mla benzerdir ama statik kullanÄ±mÄ± kullanmak yerine OOP zone'nundan Ã§Ä±kmamak iÃ§in singleton kullanmalÄ±yÄ±z :)
 
 ## Linkler
 
