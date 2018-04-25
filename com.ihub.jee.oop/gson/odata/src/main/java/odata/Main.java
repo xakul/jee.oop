@@ -1,3 +1,9 @@
+/**
+  * Java GSON Tutorial for ODATA Services and responses.
+  * Release version 1.0 at 20.04.2018
+  * @author Mehmet Gurol || xmgurol on @github || mehmet.gurol@itelligence.com.tr
+  */
+
 package odata;
 
 import java.io.BufferedReader;
