@@ -1,3 +1,8 @@
+/**
+  * Singleton Design Pattern Scenerio with connection Odata 
+  * Release version 1.0 at 20.04.2018
+  * @author Bayram Hakan Kocatepe || xhkocatepe on @github || bayramhakankocatepe@gmail.com
+*/
 package singleton;
 
 import java.io.IOException;
@@ -19,7 +24,7 @@ public class Main {
 		Connector connector = Connector.getInstance();
 
 		/**
-		 * Get orders from Northwind.svc from only one instance
+		 * Get orders from Northwind.svc from only one instance.
 		 * 
 		 * Instance'i alýnan Connector classýnýn getOrders methodu
 		 * ile Northwinden Orderlarý alýyoruz.
