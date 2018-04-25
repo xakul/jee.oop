@@ -31,7 +31,9 @@ You need to add GSON to the Maven dependencies part of your "pom.xml" file in yo
 
 We have an ODATA service that contains Products, Categories and Suppliers as entity sets.
 These entity sets are in nested groups and we want to work with these values as objects in Java.
+
 How do we obtain objects on Java that are fed with the data contained from our ODATA JSON response?
+
 We use GSON for this integration purpose.
 
 ## Explanation
@@ -137,7 +139,9 @@ Maven projenizde bulunan "pom.xml" dosyasına, gereksinim olarak GSON kütüphan
 
 Elimizde Ürünler(Products), Kategoriler(Categories) ve Ürün Sağlayıcıları(Suppliers) adı altında üç veri seti var.
 Bu veriler iç içe birbirlerini kapsayabilmektedirler. Biz bu veriler ile Java'da obje bazlı işlem yapmak istiyoruz.
+
 Bize ODATA servisinde gelen JSON cevabındaki verilerle, Java objelerimizi nasıl besleyebiliriz?
+
 GSON kütüphanesi, basit ve hızlı bir şekilde bu entegrasyonu yapmamıza olanak sağlıyor.
 
 ## Açıklama
