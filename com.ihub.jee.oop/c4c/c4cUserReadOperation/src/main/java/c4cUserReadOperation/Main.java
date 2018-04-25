@@ -106,6 +106,14 @@ public class Main {
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("Skip Query : ", response);
+		
+		/** OData select query */
+		/** OData select Operasyonu */
+		queryURL = getSelectQuery("10");
+		fullURL = serviceURL + queryURL;
+		url = new URL(fullURL);
+		response = getHTTPRequestResult(url, basicToken);
+		print("Select Query : ", response);
 	}
 
 	/**
