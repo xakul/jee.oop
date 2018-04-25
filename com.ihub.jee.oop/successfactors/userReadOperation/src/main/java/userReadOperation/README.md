@@ -22,18 +22,23 @@ We will do expand, filter, count, top, skip, select operations on Successfactors
     /User?$expand=directReports
 
 *   Usage of filter system query option
+
     /User?$filter=username eq 'xgakpinar'
 
 *   Usage of count system query option
+
     /User/$count
 
 *   Usage of top system query option
+
     /User?$top=5
 
 *   Usage of skip system query option
+
     /User?$skip=2
 
 *   Usage of select system query option
+
     /User?$select=userId,empId
 
 ## Summary
@@ -64,21 +69,27 @@ Successfactors OData API'ları içerisindeki User veri setine read operasyonlar�
 Successfactors API'larına expand, filter, count, top, skip, select operasyonları yapacağız. 
 
 *   OData expand sorgusu kullanımı
+
     /User?$expand=directReports
 
 *   OData filter sorgusu kullanımı
+
     /User?$filter=username eq 'xgakpinar'
 
 *   OData count sorgusu kullanımı
+
     /User/$count
 
 *   OData top sorgusu kullanımı
+
     /User?$top=5
 
 *   OData skip sorgusu kullanımı
+
     /User?$skip=2
 
 *   OData select sorgusu kullanımı
+
     /User?$select=userId,empId
 
 ## Özet
