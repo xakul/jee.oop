@@ -72,8 +72,7 @@ public class Connector {
 	 * Odata dan datayı alıp string olarak dönen bir method
 	 * olarak bilmek yeterli.
 	 */
-	private String getData(URL url) throws IOException {
-		
+	private String getData(URL url) throws IOException {		
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 		con.setRequestMethod("GET");
 		con.setRequestProperty("accept", "application/json");
@@ -96,4 +95,5 @@ public class Connector {
 		
 		return result;
 	}
+	
 }
