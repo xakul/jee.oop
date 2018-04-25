@@ -1,4 +1,4 @@
-[EN](#Topic) / [TR](#Topic)
+[EN](#Topic) / [TR](#Konu)
 
 # Topic
 
