@@ -1,16 +1,15 @@
-package builder.carBuilder;
+package builder;
 
 /**
  * In the CarAbstract class we have identified the methods you will use in the subclasses. 
- * CarAbstract sinifi icinde altsiniflarda kullanacagimiz metotları belirledik.
+ * CarAbstract sınıfı içinde altsınıflarda kullanacağımız metotları belirledik.
  * 
  * The methods in the CarProperties interface were implemented. 
- * CarProperties interface icinde yer alan metotlar implement edildi.
+ * CarProperties interface içinde yer alan metotlar implement edildi.
  * 
  * Class property definitions were made and getter setter methods were generated.
- * Sinifa ait attribute tanimlari yapildi ve getter setter metotlari olusturuldu.
+ * Sınıfa ait attribute tanımları yapıldı ve getter, setter metotları oluşturuldu.
  */
-
 public abstract class CarAbstract implements CarProperties {
 
 	private String name;

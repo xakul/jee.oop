@@ -1,14 +1,13 @@
-package builder.carBuilder;
+package builder;
 
 /**
  * Created CarProperties interface to implement common methods in subclasses.
- * Genel olarak kullanilacak metotlari CarProperties interface içinde
- * tanimladik. Bu metotlar altsiniflarda kullanilacak.
+ * Genel olarak kullanılacak metotları CarProperties interface içinde
+ * tanimladik. Bu metotlar altsınıflarda kullanılacak.
  * 
  * We will use these methods by overriding in abstract class which is CarAbstract.
- * Yazilan metotlar CarAbstract sinifinda override edilerek kullanilacak.
+ * Yazılan metotlar CarAbstract sınıfında override edilerek kullanılacak.
  */
-
 public interface CarProperties {
 
 	public String getName();

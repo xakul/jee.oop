@@ -1,18 +1,25 @@
-package builder.carBuilder;
+/**
+ * Release version 1.0 at 18.04.2018
+ * @author Gokhan Guler || @github xgguler
+ */
+
+package builder;
 
 public class Main {
 
 	public static void main(String[] args) {
+		
 		/*
 		 * An instance has been created to access the methods in the CarBuilder class. 
 		 * 
-		 * CarBuilder sinifindaki metotlara erismek icin instance olusturuldu.
+		 * CarBuilder sınıfındaki metotlara erişmek için instance oluşturuldu.
 		 */
 		Builder carBuilder = new Builder();
+		
 		/*
 		 * carAbstract instance was created. 
 		 * 
-		 * carAbstract instance olusturuldu.
+		 * carAbstract instance oluşturuldu.
 		 */
 		CarAbstract carAbstract = null;
 
@@ -20,23 +27,24 @@ public class Main {
 		 * The AMG series created in CarBuilder also synchronized our car to the
 		 * carAbstract instance.
 		 * 
-		 * carBuilder da olusturulan AMG serisi arabamizi
-		 * carAbstract ornegine esitledik.
+		 * carBuilder da oluşturulan AMG serisi arabamızı
+		 * carAbstract örneğine eşitledik.
 		 */
 		carAbstract = carBuilder.createAMGSeries();
+		
 		/*
 		 * We give the carAbstract instance as a parameter to write() method to
 		 * print the feature of AMG Series car.
 		 * 
 		 *  write() metodumuza parametre
-		 * olarak verdigimiz AMG serisi arabamizin ozelliklerini yazdirdik.
+		 * olarak verdiğimiz AMG serisi arabamızın özelliklerini yazdırdık.
 		 */
 		write(carAbstract);
 
 		/*
 		 * The A series created in CarBuilder also synchronized our car to the carAbstract instance. 
 		 * 
-		 * carBuilder da olusturulan A serisi arabamizi carAbstract ornegine esitledik.
+		 * carBuilder da oluşturulan A serisi arabamizi carAbstract örneğine eşitledik.
 		 */
 		carAbstract = carBuilder.createASeries();
 		write(carAbstract);
@@ -44,9 +52,9 @@ public class Main {
 	}
 
 	/*
-	 * The write () method, which holds a CarAbstract type parameter, was written. 
+	 * The write() method, which holds a CarAbstract type parameter, was written. 
 	 * 
-	 * İcinde CarAbstract tipinde bir parametre tutan write() metodu yazildi.
+	 * İçinde CarAbstract tipinde bir parametre tutan write() metodu yazıldı.
 	 */
 	public static void write(CarAbstract abstractCar) {
 		System.out.println("Model of car " + abstractCar.getModel());

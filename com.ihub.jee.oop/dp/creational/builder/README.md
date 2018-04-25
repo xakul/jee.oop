@@ -14,7 +14,8 @@ In the scenario we dealt with a factory that produces cars with different models
 
 ## Explanation
 
-Builder pattern builds a complex object using simple objects and using a step by step approach. This type of design pattern comes under creational pattern as this pattern provides one of the best ways to create an object.
+Builder Pattern allows you to create more complicated object structures than simple object structures. This design pattern is under the creational design pattern structure.
+In the scenario we dealt with, an interface (CarProperties) containing car properties common to all cars was written. The purpose of creating this interface is to implement the unimplemented methods written in the subclasses specifically for the tool to be built. We then implemented the interface in the CarAbstract class, which is an abstract class, and we used the methods there, and in this abstract class subclasses, we extended our subclasses to Mercedes ASeries and MercedesAMGSeries. In our CarBuilder class methods, a new AMG series and A series tools are produced from CarAbstract class using polymorphism which is object oriented programming concept. In the Main class, we also print with the write () method.
 
 ## Summary
 
@@ -41,11 +42,12 @@ Builder Pattern
 
 ## Senaryo
 
-Senaryoda farklı model, renk ve tipte araba üreten bir fabrikayı ele aldık. Daha sonra bu senaryoyu builder pattern ile nasıl ele alacağımıza odaklandık.
+Senaryoda farklı model, renk ve tipte araba üreten bir fabrikayı ele aldık. Daha sonra bu senaryoyu builder pattern uygulayarak çözmeye odaklandık.
 
 ## Açıklama
 
 Builder Pattern basit obje yapılarından daha karmaşık obje yapıları oluşturmamıza olanak sağlamaktadır. Bu design pattern türü creational design pattern yapısının altında yer almaktadır.
+Ele aldığımız senaryoda tüm arabalar için ortak olan araba özelliklerini içeren bir interface (CarProperties) yazıldı. Bu interface'i oluşturmamızdaki amaç içerde yazılan implement edilmemiş metotları altsınıflarda oluşturulacak araç türüne özel bir şekilde implement etmekti. Daha sonra abstract sınıf olan CarAbstract sınıfında interface'i implement ederek oradaki metotları kullandık ve bu abstract sınıfı altsınıflarda yani MercedesASeries ve MercedesAMGSeries extend edip altsınıflarımızı özelleştirdik. CarBuilder sınıfımızdaki metotlarda ise object oriented programming konsepti olan polymorphism kullanarak CarAbstract sınıfından yeni bir AMG serisi ve A serisi araç üretiliyor. Main sınıfında da write() metodumuz ile yazdırma işlemini gerçekleştiriyoruz.
 
 ## Özet
 
