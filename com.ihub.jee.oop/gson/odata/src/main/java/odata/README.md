@@ -1,4 +1,4 @@
-[EN](#topic) / [TR](#konu)
+[English](#topic) / [Türkçe](#konu)
 
 # Topic
 
