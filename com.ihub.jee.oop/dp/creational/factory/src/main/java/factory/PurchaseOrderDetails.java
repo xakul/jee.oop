@@ -2,28 +2,31 @@ package factory;
 
 public class PurchaseOrderDetails {
 
-	private String supplierName = "s";
-	private String supplierAddress = "1";
-	private String unitPrice = "ed";
-	private String[] podArray = { "supplierAddress", "supplierName"," unitPrice" };
+	private String supplierName = "UNO";
+	private String supplierAddress = "ISTANBUL / UMRANIYE";
+	private String unitPrice = "20";
+	/**
+	 * this array hold purchase orders details atributies purchase orderdaki
+	 * degiskenleri tasimak icin tanimlandi
+	 **/
+	private String[] purchaseOrders = { supplierAddress, supplierName, unitPrice };
 
-	
 	public String[] getPodArray() {
-		return podArray;
+
+		return purchaseOrders;
+
 	}
 
-	public void setPodArray(String[] podArray) {
-		this.podArray = podArray;
+	public void setPodArray(String[] purchaseOrders) {
+		this.purchaseOrders = purchaseOrders;
 	}
 
 	public PurchaseOrderDetails() {
-		super();
-		//this.podArray = podArray;
+
 	}
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return supplierName + supplierAddress + unitPrice;
 	}
 
@@ -31,24 +34,12 @@ public class PurchaseOrderDetails {
 		return supplierName;
 	}
 
-	public void setSupplierName(String supplierName) {
-		this.supplierName = supplierName;
-	}
-
 	public String getSupplierAddress() {
 		return supplierAddress;
 	}
 
-	public void setSupplierAddress(String supplierAddress) {
-		this.supplierAddress = supplierAddress;
-	}
-
 	public String getUnitPrice() {
 		return unitPrice;
-	}
-
-	public void setUnitPrice(String unitPrice) {
-		this.unitPrice = unitPrice;
 	}
 
 }
