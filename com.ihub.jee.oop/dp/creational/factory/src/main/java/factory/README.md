@@ -1,3 +1,5 @@
+#### [English](#topic) / [Turkish](#konu)
+
 # Topic
 
 Factory Pattern
@@ -9,30 +11,44 @@ Factory Pattern
 * You will also need JAVA Programming knowledge.
 
 
-* Bu tasarım modelini anlamak için 4 nesne yönelimli programlama kavramını (Inheritence, Polymorphism, Abstraction and Inheritence) anlamalısınız. 
-* Ayrıca JAVA Programlama bilgisine de ihtiyacınız olacak.
+
 
 ## Scenario
 
 In the scenario we dealt with a creating differnt type of order reports, we have two type reports which are sales and purchase.Each of the has different attributes.
 
-Senaryoda farklı tiplerde sipariş raporu çıktısı almayı konu aldık. Daha sonra bu senaryoyu factory pattern ile nasıl ele alacağımıza odaklandık.
 
 ## Explanation
 
 Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
-Bir nesne yaratmak için bir arayüz tanımla, fakat hangi sınıfın nesnesinin oluşturulacağına alt sınıflar karar versin. Factory methodu bir sınıfın nesne oluşturmasını alt sınıflarına ertelemesine izin veren bir patterndir.
+
 
 ## Summary
 
 *Factory Patern abstracts the creation of objects and refers them to the factory method we call the manufacturer method.
 
 
-* Factory Patern, nesnelerin yaratılmalarını soyutlamakta ve üretici metot dediğimiz factory metoduna havale etmektedir.
+
 
 ## Links
 
 * [javaturk](http://www.javaturk.org/tasarim-kaliplari-factory-method-uretici-metot-i/) - Design Patterns tutorial(tr)
-* [Tutorialspoint](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm) - Design Patterns tutorial(en
+* [Tutorialspoint](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm) - Design Patterns tutorial(en)
 
+# Konu
+Factory design
+## Ã–nkoÅŸullar
+* Bu tasarÄ±m modelini anlamak iÃ§in 4 nesne yÃ¶nelimli programlama kavramÄ±nÄ± (Inheritence, Polymorphism, Abstraction and Inheritence) anlamalÄ±yÄ±z. 
+* AyrÄ±ca JAVA Programlama bilgisine de ihtiyacÄ±nÄ±z olacak.
+
+## Senaryo
+
+Senaryoda farklÄ± tiplerde sipariÅŸ raporu Ã§Ä±ktÄ±sÄ± almayÄ± konu aldÄ±k. Daha sonra bu senaryoyu factory pattern ile nasÄ±l ele alacaÄŸÄ±mÄ±za odaklandÄ±k.
+
+## AÃ§Ä±klama
+Bir nesne yaratmak iÃ§in bir arayÃ¼z tanÄ±mla, fakat hangi sÄ±nÄ±fÄ±n nesnesinin oluÅŸturulacaÄŸÄ±na alt sÄ±nÄ±flar karar versin. Factory methodu bir sÄ±nÄ±fÄ±n nesne oluÅŸturmasÄ±nÄ± alt sÄ±nÄ±flarÄ±na ertelemesine izin veren bir patterndir.
+
+
+## Ã–zet
+* Factory Patern, nesnelerin yaratÄ±lmalarÄ±nÄ± soyutlamakta ve Ã¼retici metot dediÄŸimiz factory metoduna havale etmektedir.
