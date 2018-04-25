@@ -68,7 +68,7 @@ public class Connector {
 	 * This method is not related to Singleton Pattern.
 	 * We used this method in order to get data from odata.
 	 * 
-	 * Bu methodu singleton Pattern ile alakalı değildir.
+	 * Bu method singleton Pattern ile alakalı değildir.
 	 * Odata dan datayı alıp string olarak dönen bir method
 	 * olarak bilmek yeterli.
 	 */
