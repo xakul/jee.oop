@@ -1,6 +1,4 @@
 [English](#topic) / [Türkçe](#konu)
-
-<div style="text-align: right"> your-text-here </div>
 # Topic
 
 The purpose of this tutorial is to explain how GSON can be used to generate objects in Java from existing JSON files.
