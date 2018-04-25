@@ -1,3 +1,7 @@
+/**
+   * Factory Design Pattern Scenario 
+   * @author Ali Baran Ozden || @github xabozden
+*/
 package factory;
 
 //	Use the Factory to get object of concrete class by passing an information such as type.
