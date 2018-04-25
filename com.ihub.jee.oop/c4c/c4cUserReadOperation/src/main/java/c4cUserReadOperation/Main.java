@@ -109,7 +109,7 @@ public class Main {
 		
 		/** OData select query */
 		/** OData select Operasyonu */
-		queryURL = getSelectQuery("10");
+		queryURL = getSelectQuery("xx","xxxx");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
