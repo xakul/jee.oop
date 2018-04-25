@@ -74,12 +74,8 @@ public class PurchaseOrder implements Orders {
   
   
   ### Salesorder.java
+  
   package factory;
-
-/**
- * Create concrete classes implementing the same interface. Orders interfaceni
- * implement et.
- **/
 public class SalesOrder implements Orders {
 
 	private int id = 1001;
@@ -107,7 +103,6 @@ The factory method pattern relies on inheritance, as object creation is delegate
 * [javaturk](http://www.javaturk.org/tasarim-kaliplari-factory-method-uretici-metot-i/) - Design Patterns tutorial(tr)
 * [Tutorialspoint](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm) - Design Patterns tutorial(en)
 
-*[ Gang Of four] (http://www.wiki-zero.com/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvR2FuZ19vZl9Gb3Vy) - Gang Of Four
 
 # Konu
 Factory design
