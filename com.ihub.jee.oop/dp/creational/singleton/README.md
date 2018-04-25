@@ -121,7 +121,7 @@ Eğer objenin instance'i alınmasının önüne geçilemeyecekse 2 farklı threa
 
 ##### Ne zaman Singleton Kullanmalıyız ? 
 
-Bazı objeler de her bir istek için yeni bir instance almaya gerek yoktur, örneğin connectionlar daki gibi, Her client için ayrı ayrı bu nesneyi oluşturmaya gerek yoktur, eğer oluşturulursa performans kaybına neden olacak  ve yönetmek zor olacaktır. Connection nettir, her client için aynıdır ulaşacağı connector'u. Bizim örneğimizde de Norhtwind servisine connection'u gerçekleştiren bir Connector Singleton classs kullandık.
+Bazı objeler de her bir istek için yeni bir instance almaya gerek yoktur, örneğin connectionlar daki gibi, Her client için ayrı ayrı bu nesneyi oluşturmaya gerek yoktur, eğer oluşturulursa performans kaybına neden olacak  ve yönetmek zor olacaktır. Connection class'ı bağlantı bilgileri içeren bir class olduğu için her client için aynıdır.Bizim örneğimizde de Norhtwind servisine connection'u gerçekleştiren bir Connector Singleton class'ı kullandık.
 
 *   ##### Singleton vs Statik Kullanım, hangisini tercih etmeli ?  
 
