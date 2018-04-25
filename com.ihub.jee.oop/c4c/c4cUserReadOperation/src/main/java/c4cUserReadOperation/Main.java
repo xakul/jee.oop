@@ -22,7 +22,7 @@ public class Main {
 		 * Create an URL with needed parameters and queries.
 		 */
 		/** 
-		 * Gerekli veri turlerini ve sorgulari iceren bir URL yaratilir.
+		 * Gerekli veri turlerini ve sorgulari iceren bir URL yarat�l�r.
 		 */
 		String baseURL = "https://myXXXXXX.crm.ondemand.com";
 		String pathURL = "/sap/c4c/odata/v1/c4codata/";
@@ -65,7 +65,7 @@ public class Main {
 		 * Created for the return of operation method. 
 		 */
 		/** 
-		 * Kullanacağımız operasyon methodundan dönecek olan sonucu eşitlemek için
+		 * Kullanacağımız operasyon methodundan d�necek olan sonucu eşitlemek için
 		 * yaratıyoruz. 
 		 */
 		String queryURL;

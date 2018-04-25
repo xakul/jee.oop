@@ -7,7 +7,7 @@ Factory Pattern
 
 ## Prequisites
 
-* To understand this design pattern you will need to understand 4 object oriented programming concepts (Inheritence, Polymorphism, Abstraction and Inheritence). 
+* To understand this design pattern you will need to understand 4 object oriented programming concepts (Inheritence, Polymorphism, Abstraction and Inheritance). 
 * You will also need JAVA Programming knowledge.
 
 
@@ -26,7 +26,7 @@ Define an interface for creating an object, but let subclasses decide which clas
 
 ## Summary
 
-*Factory Patern abstracts the creation of objects and refers them to the factory method we call the manufacturer method.
+Factory Patern abstracts the creation of objects and refers them to the factory method we call the manufacturer method.
 
 
 
@@ -39,8 +39,8 @@ Define an interface for creating an object, but let subclasses decide which clas
 # Konu
 Factory design
 ## Önkoşullar
-* Bu tasarım modelini anlamak için 4 nesne yönelimli programlama kavramını (Inheritence, Polymorphism, Abstraction and Inheritence) anlamalıyız. 
-* Ayrıca JAVA Programlama bilgisine de ihtiyacınız olacak.
+ Bu tasarım modelini anlamak için 4 nesne yönelimli programlama kavramını (Inheritence, Polymorphism, Abstraction and Inheritance) anlamalıyız. 
+ Ayrıca JAVA Programlama bilgisine de ihtiyacınız olacak.
 
 ## Senaryo
 
@@ -51,4 +51,4 @@ Bir nesne yaratmak için bir arayüz tanımla, fakat hangi sınıfın nesnesinin
 
 
 ## Özet
-* Factory Patern, nesnelerin yaratılmalarını soyutlamakta ve üretici metot dediğimiz factory metoduna havale etmektedir.
+Factory Patern, nesnelerin yaratılmalarını soyutlamakta ve üretici metot dediğimiz factory metoduna havale etmektedir.
