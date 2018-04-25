@@ -43,8 +43,8 @@ public class Builder {
 		 * Here a new MercedesAMGSeries car
 		 * was created from the CarAbstract class using polymorphism.
 		 * 
-		 * Burada polymorphism kullanarak CarAbstract sinifindan yeni bir
-		 * MercedesAMGSeries araba yaratildi. 
+		 * Burada polymorphism kullanarak CarAbstract sinifindan yeni
+		 * bir MercedesAMGSeries araba yaratildi.
 		 */
 		CarAbstract abstractCar = new MercedesAMGSeries();
 		return abstractCar;
