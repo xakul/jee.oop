@@ -21,7 +21,11 @@ public class Main {
 		/** 
 		 * Create an URL with needed parameters and queries.
 		 *
+<<<<<<< HEAD
 		 * Gerekli veri turlerini ve sorgulari iceren bir URL yaratılır.
+=======
+		 * Gerekli veri türlerini ve sorgulaıi içeren bir URL yaratılır.
+>>>>>>> f7e3727acd84986f579cf9da0e829cdaa2f2259e
 		 */
 		String baseURL = "https://myXXXXXX.crm.ondemand.com";
 		String pathURL = "/sap/c4c/odata/v1/c4codata/";
@@ -31,21 +35,33 @@ public class Main {
 		/** 
 		 * C4C Username
 		 *
+<<<<<<< HEAD
 		 * C4C Kullanici Adi 
+=======
+		 * C4C Kullanıcı Adı 
+>>>>>>> f7e3727acd84986f579cf9da0e829cdaa2f2259e
 		 */
 		String username = "*****";
 
 		/** 
 		 * C4C Password 
 		 *
+<<<<<<< HEAD
 		 * C4C Sifre
+=======
+		 * C4C Şifre
+>>>>>>> f7e3727acd84986f579cf9da0e829cdaa2f2259e
 		 */
 		String password = "***";
 
 		/** 
 		 * Convert Username and password to Basic Auth.
 		 *
+<<<<<<< HEAD
 		 *  Kullanci adı şifreyi Basic Autha çeviriyoruz.
+=======
+		 * Kullanci adı şifreyi Basic Autha çeviriyoruz.
+>>>>>>> f7e3727acd84986f579cf9da0e829cdaa2f2259e
 		 */
 		String basicToken = basicAuthEncode(username, password);
 
