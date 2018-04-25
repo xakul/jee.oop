@@ -2,16 +2,16 @@ package builder;
 
 /**
  * Subclass MercedesAMGSeries is created.
- * Alts�n�f MercedesAMGSeries yarat�ld�.
+ * Altsınıf MercedesAMGSeries yaratıldı.
  * 
  * CarAbstract class is extended and its methods are overrided.
  * Abstract class olan CarAbstract extend edilerek i�indeki metotlar override edildi.
  * 
  * CarAbstract class is extended and its methods are overrided.
- * Abstract class olan CarAbstract extend edilerek i�indeki metotlar override edildi.
+ * Abstract class olan CarAbstract extend edilerek içindeki metotlar override edildi.
  * 
  * The car features belonging to the AMG series were filled with getter methods.
- * AMG serisine ait olan araba �zellikleri getter metotlari ile dolduruldu.
+ * AMG serisine ait olan araba özellikleri getter metotlari ile dolduruldu.
 */
 public class MercedesAMGSeries extends CarAbstract {
 
