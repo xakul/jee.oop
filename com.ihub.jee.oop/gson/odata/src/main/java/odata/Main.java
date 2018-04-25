@@ -1,8 +1,8 @@
 /**
-  * Java GSON Tutorial for ODATA Services and responses.
-  * Release version 1.0 at 20.04.2018
-  * @author Mehmet Gurol || xmgurol on @github || mehmet.gurol@itelligence.com.tr
-  */
+ * Java GSON Tutorial for ODATA Services and responses.
+ * Release version 1.0 at 20.04.2018.
+ * @author Mehmet Gurol || xmgurol on @github || mehmet.gurol@itelligence.com.tr
+ */
 
 package odata;
 
@@ -51,7 +51,7 @@ public class Main {
 	}
 	
 	/** 
-	 * This function returns JSON Response (as a String) from the ODATA Service
+	 * This function returns JSON Response (as a String) from the ODATA Service.
 	 * Bu fonksiyon ODATA servisinden JSON geri bildirimini alip, String olarak doner.
 	 */
 	public static String getProductsFromService() throws IOException
