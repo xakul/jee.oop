@@ -16,9 +16,9 @@ public class Main {
 		 * an instance inside the Singleton class, not from the
 		 * outside (Main) with new.
 		 *
-		 * Singleton da tek bir defa instance alınmasını istediğimiz
-		 * için new ile dışarıdan(Main) değil Singleton class'ın 
-		 * içinde instance alıyoruz.
+		 * Singleton da tek bir defa instance alÄ±nmasÄ±nÄ± istediÄŸimiz
+		 * iÃ§in new ile dÄ±ÅŸarÄ±dan(Main) deÄŸil Singleton class'Ä±n 
+		 * iÃ§inde instance alÄ±yoruz.
 		 */
 		
 		Connector connector = Connector.getInstance();
@@ -26,8 +26,8 @@ public class Main {
 		/**
 		 * Get orders from Northwind.svc from only one instance.
 		 * 
-		 * Instance'i alınan Connector classının getOrders methodu
-		 * ile Northwinden Orderları alıyoruz.
+		 * Instance'i alÄ±nan Connector classÄ±nÄ±n getOrders methodu
+		 * ile Northwinden OrderlarÄ± alÄ±yoruz.
 		 */
 		
 		String orders = connector.getOrders();
@@ -37,8 +37,8 @@ public class Main {
 		 * Get products from Northwind.svc from only one instance
 		 * We can not create new instance.
 		 *
-		 * Instance'i alınan Connector classının getProducts methodu
-		 * ile Northwinden Product'ları alıyoruz. Yeni bir instance almadık.
+		 * Instance'i alÄ±nan Connector classÄ±nÄ±n getProducts methodu
+		 * ile Northwinden Product'larÄ± alÄ±yoruz. Yeni bir instance almadÄ±k.
 		 */
 		
 		String products = connector.getProducts();

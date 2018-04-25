@@ -12,8 +12,8 @@ public class Connector {
 	 * when uniqueInstance variable is created null, 
 	 * it will only fill getInstance().That's the singleton.
 	 * 
-	 * uniqueInstance değişkeni null olarak başlatıyor, 
-	 * sadece getInstance methodunda doluyor. Singletonun olay� bu.
+	 * uniqueInstance değişkeni null olarak başlatılıyor, 
+	 * sadece getInstance methodunda doluyor. Singletonun olayı bu.
 	 */
 	private static Connector uniqueInstance = null;
 	
@@ -24,7 +24,7 @@ public class Connector {
 	/*
 	 * the constructor is  defined private because it must not called from outside.
 	 * 
-	 * Constructor bilerek private yap�yoruz d��ar�dan �a�r�lmamas� i�in.
+	 * Constructor bilerek private yapıyoruz dışarıdan çağrılmaması için.
 	 */
 	private Connector () {
 		 hostURL = "http://services.odata.org";
@@ -36,8 +36,8 @@ public class Connector {
 	 * Our method to call our class from the outside.
 	 * Using synchronized keyword prevents from running the method at the same time. 
 	 * 
-	 * D��ar�dan �a�r�ld���nda Class�n instance'i sadece burada al�n�r ve sadece 
-	 * tek al�nmas� i�in synchronized keyword'� ayn� anda yarat�lmas�n� engelliyor.
+	 * Dışarıdan çağrıldığında Classın instance'i sadece burada alınır ve sadece 
+	 * tek alınması için synchronized keyword'ü aynı anda yaratılmasını engelliyor.
 	 */
 	
 	public synchronized static Connector getInstance () {
@@ -68,8 +68,8 @@ public class Connector {
 	 * This method is not related to Singleton Pattern.
 	 * We used this method in order to get data from odata.
 	 * 
-	 * Bu methodu singleton Pattern ile alakal� de�ildir.
-	 * Odata dan datay� al�p string olarak d�nen bir method
+	 * Bu methodu singleton Pattern ile alakalı değildir.
+	 * Odata dan datayı alıp string olarak dönen bir method
 	 * olarak bilmek yeterli.
 	 */
 	private String getData(URL url) throws IOException {
