@@ -1,4 +1,5 @@
 #### [English](#topic) / [Turkish](#konu)
+
 # Topic
 
 SAP Cloud Platform, Cloud For Customer(C4C) Odata service connection with java
@@ -44,47 +45,50 @@ We have seen how we can use OData read query options.
 * [OData URI Conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) - OData
 * [SAP API's](https://api.sap.com/) - SAP API's
 
-# Topic
+---
+---
+
+# Konu
 
 SAP Cloud Platform, Cloud For Customer(C4C) Odata service connection with java
 
-## Prequisites
+## Önkoşullar
 
 *   Temel Java ve Nesne-Yönelimli Programlama bilgisi.
-*   JSON formatý bilgisi.
-*   ODATA kullanýmý bilgisi.
+*   JSON formatı bilgisi.
+*   ODATA kullanımı bilgisi.
 
-## Scenario
+## Senaryo
 
-Cloud For Customer(C4C) OData API'larý içerisindeki User veri setine read operasyonlarý yapmak istiyoruz. Her bir operasyonu ayrý ayrý konsolda yazdýrarak göstermek istiyoruz.
+Cloud For Customer(C4C) OData API'ları içerisindeki User veri setine read operasyonları yapmak istiyoruz. Her bir operasyonu ayrı ayrı konsolda yazdırarak göstermek istiyoruz.
 
-## Explanation
+## Açıklama
 
-Cloud For Customer(C4C) API'larýna expand, filter, count, top, skip, select operasyonlarý yapacaðýz.
+Cloud For Customer(C4C) API'larına expand, filter, count, top, skip, select operasyonları yapacağız.
 
-OData expand sorgusu kullanýmý
+OData expand sorgusu kullanımı
 /UserCollection?$expand=xxxx
 
-OData filter sorgusu kullanýmý
+OData filter sorgusu kullanımı
 /UserCollection?$filter=UserAccountID eq 'xxxx'
 
-OData count sorgusu kullanýmý
+OData count sorgusu kullanımı
 /UserCollection/$count
 
-OData top sorgusu kullanýmý
+OData top sorgusu kullanımı
 /UserCollection?$top=5
 
-OData skip sorgusu kullanýmý
+OData skip sorgusu kullanımı
 /UserCollection?$skip=2
 
-OData select sorgusu kullanýmý
+OData select sorgusu kullanımı
 /UserCollection?$select=UserAccountID,ChangedOn
 
-## Summary
+## Özet
 
-OData okuma operasyonlarýný yapmayý öðrendik.
+OData okuma operasyonlarını yapmayı öğrendik.
 
-## Links
+## Linkler
 
 * [OData URI Conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) - OData
 * [SAP API's](https://api.sap.com/) - SAP API's
