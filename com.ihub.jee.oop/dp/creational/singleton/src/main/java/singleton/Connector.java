@@ -7,22 +7,39 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class Connector {
-	// it is created null when first class is called.
+	
+	/**
+	 * when uniqueInstance variable is created null, 
+	 * it will only fill getInstance().That's the singleton.
+	 * 
+	 * uniqueInstance deðiþkeni null olarak baþlatýlýyor, 
+	 * sadece getInstance methodunda doluyor. Singletonun olayý bu.
+	 */
 	private static Connector uniqueInstance = null;
 	
 	private final String hostURL ;
 	private final String pathURL ;
 	private final String serviceURL;
 		
-	//the constructor is  defined private because it must not called from outside.
+	/*
+	 * the constructor is  defined private because it must not called from outside.
+	 * 
+	 * Constructor bilerek private yapýyoruz dýþarýdan çaðrýlmamasý için.
+	 */
 	private Connector () {
 		 hostURL = "http://services.odata.org";
 		 pathURL = "/V2/Northwind/Northwind.svc/";
 		 serviceURL = hostURL + pathURL;
 	}
 
-	// Our method to call our class from the outside.
-	// Thanks to synchronized keyword is prevented from running the method at the same time 
+	/*
+	 * Our method to call our class from the outside.
+	 * Using synchronized keyword prevents from running the method at the same time 
+	 * 
+	 * Dýþarýdan çaðrýldýðýnda Classýn instance'i sadece burada alýnýr ve sadece 
+	 * tek alýnmasý için synchronized keyword'ü ayný anda yaratýlmasýný engelliyor.
+	 */
+	
 	public synchronized static Connector getInstance () {
 		if(uniqueInstance == null) {
 			uniqueInstance = new Connector();
@@ -34,18 +51,29 @@ public class Connector {
 	public String getProducts() throws IOException {
 		String productQuery = this.serviceURL + "Products" ;
 		URL url = new URL(productQuery);
+		String data = getData(url);
 		
-		return getData(url);
+		return data;
 	}
 	
 	public String getOrders() throws IOException {
 		String orderQuery = this.serviceURL + "Orders" ;
 		URL url = new URL(orderQuery);
+		String data = getData(url);
 		
-		return getData(url);
+		return data;
 	}
 	
+	/*
+	 * This method is not related to Singleton Pattern.
+	 * We used this method in order to get data from odata.
+	 * 
+	 * Bu methodu singleton Pattern ile alakalý deðildir.
+	 * Odata dan datayý alýp string olarak dönen bir method
+	 * olarak bilmek yeterli.
+	 */
 	private String getData(URL url) throws IOException {
+		
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 		con.setRequestMethod("GET");
 		con.setRequestProperty("accept", "application/json");

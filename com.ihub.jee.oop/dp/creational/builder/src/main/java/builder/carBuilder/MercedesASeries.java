@@ -1,12 +1,13 @@
 package builder.carBuilder;
-//Subclass MercedesASeries is created.
-//Altsinif MercedesASeries yaratildi
-
-//CarAbstract class is extended and its methods are overrided.
-//Abstract class olan CarAbstract extend edilerek icindeki metotlar override edildi.
-
-//The car features belonging to the A series were filled with getter methods.
-//A serisine ait olan araba ozellikleri getter metotlari ile dolduruldu.
+/*Subclass MercedesASeries is created.
+ * Altsinif MercedesASeries yaratildi.
+ * 
+ * CarAbstract class is extended and its methods are overrided.
+ * Abstract class olan CarAbstract extend edilerek icindeki metotlar override edildi.
+ * 
+ * The car features belonging to the A series were filled with getter methods.
+ * A serisine ait olan araba ozellikleri getter metotlari ile dolduruldu.
+ */
 
 public class MercedesASeries extends CarAbstract {
 
