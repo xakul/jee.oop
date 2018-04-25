@@ -1,7 +1,7 @@
 /**
-  * Singleton Design Pattern Scenerio with connection Odata 
+  * Singleton Design Pattern Scenario with connection Odata 
   * Release version 1.0 at 20.04.2018
-  * @author Bayram Hakan Kocatepe || xhkocatepe on @github || bayramhakankocatepe@gmail.com
+  * @author Bayram Hakan Kocatepe || @github xhkocatepe 
 */
 package singleton;
 

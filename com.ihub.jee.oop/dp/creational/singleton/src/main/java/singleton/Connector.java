@@ -28,7 +28,7 @@ public class Connector {
 	 */
 	private Connector () {
 		 hostURL = "http://services.odata.org";
-		 pathURL = "/V2/Northwind/Northwind.svc/";
+		 pathURL = "/V2/Northwind/Northwind.svc";
 		 serviceURL = hostURL + pathURL;
 	}
 
@@ -49,16 +49,16 @@ public class Connector {
 	}
 		
 	public String getProducts() throws IOException {
-		String productQuery = this.serviceURL + "Products" ;
-		URL url = new URL(productQuery);
+		String fullUrl = this.serviceURL + "/Products" ;
+		URL url = new URL(fullUrl);
 		String data = getData(url);
 		
 		return data;
 	}
 	
 	public String getOrders() throws IOException {
-		String orderQuery = this.serviceURL + "Orders" ;
-		URL url = new URL(orderQuery);
+		String fullUrl = this.serviceURL + "/Orders" ;
+		URL url = new URL(fullUrl);
 		String data = getData(url);
 		
 		return data;
