@@ -18,6 +18,7 @@ We have an ODATA service that contains User entity set in Successfactors OData A
 We will do expand, filter, count, top, skip, select operations on Successfactors APIs.
 
 *   Usage of expand system query option
+
     /User?$expand=directReports
 
 *   Usage of filter system query option
