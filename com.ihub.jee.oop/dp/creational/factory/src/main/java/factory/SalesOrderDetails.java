@@ -2,33 +2,29 @@ package factory;
 
 public class SalesOrderDetails {
 
-	private String customerName;
-	private String cutomerAddres;
-	private String unitPrice;
-	String[] sodArray = { customerName, cutomerAddres, unitPrice };
+	private String customerName = "BurgerKing";
+	private String customerAddres = "ISTANBUL / BESIKTAS";
+	private String unitPrice = "20";
+	private String[] sodArray = { customerName, customerAddres, unitPrice };
 
 	public String getCustomerName() {
 		return customerName;
 	}
 
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
+	public String getCustomerAddres() {
+		return customerAddres;
 	}
 
-	public String getCutomerAddres() {
-		return cutomerAddres;
+	public void setSodArray(String[] sodArray) {
+		this.sodArray = sodArray;
 	}
 
-	public void setCutomerAddres(String cutomerAddres) {
-		this.cutomerAddres = cutomerAddres;
+	public String[] getSodArray() {
+		return sodArray;
 	}
 
 	public String getUnitPrice() {
 		return unitPrice;
-	}
-
-	public void setUnitPrice(String unitPrice) {
-		this.unitPrice = unitPrice;
 	}
 
 }

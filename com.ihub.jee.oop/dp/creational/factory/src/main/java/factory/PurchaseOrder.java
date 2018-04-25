@@ -1,33 +1,45 @@
 package factory;
-//Create concrete classes implementing the same interface.
-// Orders interfaceni implement et.
+
+/*Create concrete classes implementing the same interface.
+ Orders interfaceni implement et.*/
 public class PurchaseOrder implements Orders {
 
 	private int id = 5;
-	private String supplierID = "jj";
+	private String supplierID = "UNO";
 	private int totalPrice = 4;
-	private PurchaseOrderDetails pod = new PurchaseOrderDetails();
-	String[] s;
-
+	String[] purchaseOrderArray;
 	public PurchaseOrder() {
 
 	}
 
+	/**
+	 * we need to create purchase order details for get
+	 * Purchase_Order_Detail_Array Purchase_Order_Detail_Array için bir
+	 * Purchase_Order_Detail_Array objesi olusturmaliyiz
+	 **/
+	private PurchaseOrderDetails purchaseOrderDetail = new PurchaseOrderDetails();
+	
+
 	public void getOrderReport() {
 
-		s = pod.getPodArray();
-		System.out.println(toString() + "  " + s[1]);
+		/**
+		 * purchaseOrderArray is a string array which is created for purchase
+		 * order details
+		 **/
+		purchaseOrderArray = purchaseOrderDetail.getPodArray();
+		System.out.println(
+				toString() + "  " + purchaseOrderArray[0] + " " + purchaseOrderArray[1] + " " + purchaseOrderArray[2]);
 
 	}
 
 	public PurchaseOrderDetails getPod() {
 
-		s = pod.getPodArray();
-		return pod;
+		purchaseOrderArray = purchaseOrderDetail.getPodArray();
+		return purchaseOrderDetail;
 	}
 
-	public void setPod(PurchaseOrderDetails pod) {
-		this.pod = pod;
+	public void setPod(PurchaseOrderDetails purchaseOrderDetails) {
+		this.purchaseOrderDetail = purchaseOrderDetails;
 	}
 
 	public int getId() {
@@ -56,7 +68,7 @@ public class PurchaseOrder implements Orders {
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+
 		return "Purchase id : " + id + " SupplierID : " + supplierID + " total Price : " + totalPrice
 				+ " Purchase Order Details : ";
 	}
