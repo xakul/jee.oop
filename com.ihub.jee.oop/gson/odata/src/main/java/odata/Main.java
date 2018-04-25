@@ -96,7 +96,7 @@ public class Main {
 	    
 	    /**
 	     * Create a Buffered Reader that collects the stream of data from the response.
-	     * Bir "BufferedReader" kullanak, sorgudan geri bildirilen tum akan veriyi toplanilir.
+	     * Bir "BufferedReader" kullanak, sorgudan geri bildirilen tum akan veri toplanilir.
 	     */
 	    BufferedReader bf = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
