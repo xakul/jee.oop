@@ -18,89 +18,89 @@ import java.util.Base64;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		// Create an URL with needed parameters and queries.
-		// Gerekli veri turlerini ve sorgulari iceren bir URL yaratilir.
+		/** Create an URL with needed parameters and queries. */
+		/** Gerekli veri turlerini ve sorgulari iceren bir URL yaratilir.*/
 		String baseURL = "https://myXXXXXX.crm.ondemand.com";
 		String pathURL = "/sap/c4c/odata/v1/c4codata/";
 		String entityURL = "UserCollection";
 		String serviceURL = baseURL + pathURL + entityURL;
 
-		// C4C username
-		// C4C Kullanici Adi
+		/** C4C username */
+		/** C4C Kullanici Adi */
 		String username = "*****";
 
-		// C4C password
-		// C4C Sifre
+		/** C4C password */
+		/** C4C Sifre */
 		String password = "***";
 
-		// Convert Username and password to Basic Auth
-		// Kullanci adi sifreyi Basic Autha ceviriyoruz
+		/** Convert Username and password to Basic Auth */
+		/** Kullanci adi sifreyi Basic Autha ceviriyoruz */
 		String basicToken = basicAuthEncode(username, password);
 
-		// Creating Full Url
-		// Full url yaratýlýyor
+		/** Creating Full Url */
+		/**  Full url yaratýlýyor */
 		String fullURL;
 
-		// Created for the return of operation method
-		// Kullanacaðýmýz operasyon methodundan dönecek olan sonucu eþitlemek için
-		// yaratýyoruz
+		/** Created for the return of operation method */
+		/** Kullanacaðýmýz operasyon methodundan dönecek olan sonucu eþitlemek için
+		 yaratýyoruz */
 		String queryURL;
 		URL url;
 
-		// Created for the response of HTTPRequest
-		// HTTPRequestten dönecek olan cevabý bir deðiþkene eþitlemek için yaratýyoruz
+		/** Created for the response of HTTPRequest */
+		/** HTTPRequestten dönecek olan cevabý bir deðiþkene eþitlemek için yaratýyoruz */
 		String response;
 
-		// OData Expand operasyonu
-		// OData Expand query
+		/** OData Expand operasyonu */
+		/** OData Expand query */
 		queryURL = getExpandEntityQuery("xxxxxx");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("EXPAND ENTITY QUERY : ", response);
 
-		// OData Filter query with String value
-		// OData String Deðeri ile Filter operasyonu
+		/** OData Filter query with String value */
+		/** OData String Deðeri ile Filter operasyonu */
 		queryURL = getFilterQueryWithStringValue("xxxx", "'xxxxx'");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("String filter : ", response);
 
-		// OData Filter query with int value
-		// OData int Deðeri ile Filter operasyonu
+		/** OData Filter query with int value */
+		/** OData int Deðeri ile Filter operasyonu */
 		queryURL = getFilterQueryWithIntValue("xxxx", 123);
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("String filter : ", response);
 
-		// OData filter query with date
-		// OData Date Deðeri ile Filter operasyonu
+		/** OData filter query with date */
+		/** OData Date Deðeri ile Filter operasyonu */
 		queryURL = getFilterQueryWithDate("xxxxx", "datetimeoffset'2018-01-01T07:03:12.0000000Z'");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("Date filter : ", response);
 
-		// OData Count query
-		// OData Count Operasyonu
+		/** OData Count query **/
+		/** OData Count Operasyonu */
 		queryURL = getEntryCountQuery();
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("Entity Count : ", response);
 
-		// OData Top query
-		// OData Top Operasyonu
+		/** OData Top query */
+		/** OData Top Operasyonu */
 		queryURL = getTopQuery("5");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
 		response = getHTTPRequestResult(url, basicToken);
 		print("Top Query : ", response);
 
-		// OData skip query
-		// OData Skip Operasyonu
+		/** OData skip query */
+		/** OData Skip Operasyonu */
 		queryURL = getSkipQuery("10");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
