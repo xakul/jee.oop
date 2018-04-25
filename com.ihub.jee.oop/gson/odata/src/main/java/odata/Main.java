@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 /** 
  * GSON library is needed.
- * GSON kutuphanesine ihtiyac var.
+ * GSON kütüphanesine ihtiyaç var. ððð
  */
 import com.google.gson.Gson;
 
