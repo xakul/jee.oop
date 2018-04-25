@@ -37,8 +37,10 @@ The factory method pattern relies on inheritance, as object creation is delegate
 
 # Konu
 Factory design
+
 ## Önkoşullar
 Temel programlama bilgisi.
+
 Başlangıç seviyesinde OOP bilgisi.
 
 ## Senaryo
