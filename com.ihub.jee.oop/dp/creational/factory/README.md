@@ -14,7 +14,8 @@ Basic OOP knowledge
 
 ## Scenario
 
-In the scenario we dealt with a creating differnt type of order reports, we have two type reports which are sales and purchase.Each of the has different attributes.
+In the scenario we dealt with a creating differnt type of order reports,
+we have two type reports which are sales and purchase.Each of the has different attributes.
 
 ## Explanation
 
@@ -51,7 +52,7 @@ Nesne-merkezli programlardaki tabi olarak en temel iş, nesne yaratmaktır. Uygu
 Client’ın,  nesnelerinin sadece arayüzlerini değil aynı zamanda nasıl yaratılacaklarını da bilmesi, Client’ın Product’lara olan bağımlılığını arttırır. Çoğu zaman bir nesneyi yaratmak, onu kullanmaktan daha karmaşıktır.
 
 ## Özet
-Factory Method i creational grubununa ait, aynı arayüzü kullanan nesnelerin üretiminden sorumlu tasarım desenidir
+Factory Method  creational grubununa ait, aynı arayüzü kullanan nesnelerin üretiminden sorumlu tasarım desenidir
 Factory pattern yinelenen tasarım sorunlarının esnek ve yeniden kullanılabilir nesne tabanlı yazılımları tasarlamak için nasıl kullanılacağını açıklar; bu, uygulanması, değiştirilmesi, test edilmesi ve yeniden kullanılması daha kolay nesnelerdir.
 
 factory Method tasarım deseni aynı abstract sınıfı veya arayüzü uygulayan sınıfların üretiminden sorumludur. Nesne üretiminden sorumlu bir class olur ve bu sınıftaki metoda gönderilen parametre ile üretilecek sınıfın türü belirlenir
