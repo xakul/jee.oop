@@ -20,9 +20,8 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		/** 
 		 * Create an URL with needed parameters and queries.
-		 */
-		/** 
-		 * Gerekli veri turlerini ve sorgulari iceren bir URL yarat�l�r.
+		 *
+		 * Gerekli veri turlerini ve sorgulari iceren bir URL yaratılır.
 		 */
 		String baseURL = "https://myXXXXXX.crm.ondemand.com";
 		String pathURL = "/sap/c4c/odata/v1/c4codata/";
@@ -31,41 +30,36 @@ public class Main {
 
 		/** 
 		 * C4C Username
-		 */
-		/** 
+		 *
 		 * C4C Kullanici Adi 
 		 */
 		String username = "*****";
 
 		/** 
 		 * C4C Password 
-		 */
-		/**
-		 *  C4C Sifre
+		 *
+		 * C4C Sifre
 		 */
 		String password = "***";
 
 		/** 
 		 * Convert Username and password to Basic Auth.
-		 */
-		/**
-		 *  Kullanci adi sifreyi Basic Autha ceviriyoruz.
+		 *
+		 *  Kullanci adı şifreyi Basic Autha çeviriyoruz.
 		 */
 		String basicToken = basicAuthEncode(username, password);
 
 		/**
 		 * Creating Full Url. 
-		 */
-		/** 
+		 *
 		 * Full url yaratılıyor 
 		 */
 		String fullURL;
 
 		/** 
 		 * Created for the return of operation method. 
-		 */
-		/** 
-		 * Kullanacağımız operasyon methodundan d�necek olan sonucu eşitlemek için
+		 * 
+		 * Kullanacağımız operasyon methodundan dönecek olan sonucu eşitlemek için
 		 * yaratıyoruz. 
 		 */
 		String queryURL;
@@ -73,8 +67,7 @@ public class Main {
 
 		/** 
 		 * Created for the response of HTTPRequest. 
-		 */
-		/**
+		 *
 		 * HTTPRequestten dönecek olan cevabı bir değişkene eşitlemek için yaratıyoruz. 
 		 */
 		String response;
@@ -155,8 +148,7 @@ public class Main {
 	/**
 	 * Expand operation for the entity and we are giving the parameter for the which
 	 * we want to expand entity.
-	 */
-	/**
+	 *
 	 * Expand Operasyonun yapıldığı method ve parametre olarak Expand etmek
 	 * istediğimiz Entity'i veriyoruz.
 	 */
@@ -168,8 +160,7 @@ public class Main {
 
 	/** 
 	 * Filter operation with String value for the fields that type of EDM.String. 
-	 */
-	/** 
+	 * 
 	 * Tipi EDM.String olan bir alana String değerle Filter operasyonu. 
 	 */
 	public static String getFilterQueryWithStringValue(String fieldName, String value) {
@@ -180,8 +171,7 @@ public class Main {
 
 	/** 
 	 * Filter operation with Integer value for the fields that type of EDM.Int32.
-	 */
-	/** 
+	 * 
 	 * Tipi EDM.Int32 olan bir alana Integer değerle Filter operasyonu.
 	 */
 	public static String getFilterQueryWithIntValue(String fieldName, Integer value) {
@@ -193,8 +183,7 @@ public class Main {
 	/**
 	 * Filter operation with Date value for the fields that type of
 	 * EDM.DateTimeOffset.
-	 */
-	/** 
+	 * 
 	 * Tipi EDM.DateTimeOffset olan bir alana Date değerle Filter operasyonu. 
 	 */
 	public static String getFilterQueryWithDate(String fieldName, String date) {
@@ -206,8 +195,7 @@ public class Main {
 
 	/** 
 	 * Counting Operation to Entity.
-	 */
-	/** 
+	 *
 	 * Entity içindeki Entryleri Count eden operasyon .
 	 */
 	public static String getEntryCountQuery() {
@@ -218,8 +206,7 @@ public class Main {
 
 	/** 
 	 * Top Operation. 
-	 */
-	/** 
+	 *
 	 * Ilk kaç kayıt geleceğini belirleyen operasyon. 
 	 */
 	public static String getTopQuery(String value) {
@@ -230,8 +217,7 @@ public class Main {
 
 	/** 
 	 * Skip Operation 
-	 */
-	/** 
+	 * 
 	 * Başlangıçtan itibaren kaç kayıt geçilceğini belirleyen operasyon.
 	 */
 	public static String getSkipQuery(String value) {
@@ -242,23 +228,20 @@ public class Main {
 
 	/** 
 	 * Select Operation which you want to see the fields 
-	 */
-	/** 
-	 * Istenilen alanları görmek için yapılan operasyon.
+	 * 
+	 * İstenilen alanları görmek için yapılan operasyon.
 	 */
 	public static String getSelectQuery(String... fieldName) {
 		/** Because the selected fields can be more than one 
 		 * the parameter given to method is in String Array type.
-		 */
-		/**
+		 *
 		 * Seçilen alanlar birden fazla olabileceği için methoda verilen parametre
 		 * String Array tipindedir.
 		 */
 		String selectedField = "?$select=";
 		/** 
 		 * If we got 1 parameter than we will get first index. 
-		 */
-		/** 
+		 *
 		 * Eğer 1 adet parametre yollanıyorsa ilk index alınıyor. 
 		 */
 		if (fieldName.length == 1) {
@@ -266,8 +249,7 @@ public class Main {
 			/** If more than 1 parameter is being sent
 			 *  a comma is inserted between each parameter.If it is last
 			 *  index than we wont insert a comma.
-			 */
-			/**
+			 *
 			 * Eğer 1 den fazla parametre yollanıyorsa her parametrenin arasına virgül
 			 * konuluyor.Son indexe gelindiğinde virgül konulmuyor.
 			 */
@@ -287,8 +269,7 @@ public class Main {
 	
 	/** 
 	 * Http connection opens with this method. 
-	 */
-	/** 
+	 * 
 	 * Http bağlantısının açıldığı yer. 
 	 */
 	private static String getHTTPRequestResult(URL url, String basicToken) throws IOException {
@@ -297,8 +278,7 @@ public class Main {
 		
 		/** 
 		 * Header information entered.
-		 */
-		/** 
+		 *
 		 * Header bilgileri veriliyor.
 		 */
 		con.setRequestMethod("GET");
@@ -307,8 +287,7 @@ public class Main {
 		
 		/** 
 		 * The response code will be equal to variable.
-		 */
-		/** 
+		 * 
 		 * Request sonrası alınan cevap bir değişkene eşitleniyor.
 		 */
 		int responseCode = con.getResponseCode();
@@ -316,8 +295,7 @@ public class Main {
 		
 		/** 
 		 * If the response code is 200 than we create a variable.
-		 */
-		/** 
+		 *
 		 * Eğer alınan cevap 200lü ise bir değişkene eşitleniyor.
 		 */
 		if (responseCode == HttpURLConnection.HTTP_OK) {
@@ -332,8 +310,7 @@ public class Main {
 		
 		/** 
 		 * If it is not equal  application will be terminated.
-		 */
-		/** 
+		 *
 		 * Eğer değilse Requestimizin çalışmadığını ekrana basıyoruz ve program sonlanıyor.
 		 */ 
 		else 
@@ -345,8 +322,8 @@ public class Main {
 	
 	/** 
 	 * This method converting the Username and password to Basic Auth. 
-	 */
-	/** Kullanıcı adı ve şifrenin Basic Auth a dönüştürüldüğü yer 
+	 *
+	 * Kullanıcı adı ve şifrenin Basic Auth a dönüştürüldüğü yer 
 	 * Parametre olarak yukarıda yarattığımız username ve password ü veriyoruz. 
 	 */
 	private static String basicAuthEncode(String username, String password) {
@@ -359,8 +336,7 @@ public class Main {
 		
 		/** 
 		 * This line converting username:password format to BasicAuth format.
-		 */
-		/** 
+		 * 
 		 * username:password formatındaki string burada BasicAuth formatına dönüşüyor. 
 		 */
 		String encodedPassword = Base64.getEncoder()
@@ -371,8 +347,8 @@ public class Main {
 	
 	/** 
 	 * Printing method.You will give Query Type and the response for this method.
-	 */
-	/** Konsola basma işlemi burada yapılıyor. 
+	 *
+	 * Konsola basma işlemi burada yapılıyor. 
 	 * Parametre olarak konsola basılmasını istediğimiz Query tipini ve cevabı veriyoruz.
 	 */
 	private static void print(String queryType, String response) {
