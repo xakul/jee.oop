@@ -1,3 +1,4 @@
+#### [English](#topic) / [Turkish](#konu)
 # Topic
 
 SAP Cloud Platform, Cloud For Customer(C4C) Odata service connection with java
@@ -49,39 +50,39 @@ SAP Cloud Platform, Cloud For Customer(C4C) Odata service connection with java
 
 ## Prequisites
 
-*   Temel Java ve Nesne-Yönelimli Programlama bilgisi.
-*   JSON formatı bilgisi.
-*   ODATA kullanımı bilgisi.
+*   Temel Java ve Nesne-YÃ¶nelimli Programlama bilgisi.
+*   JSON formatÃ½ bilgisi.
+*   ODATA kullanÃ½mÃ½ bilgisi.
 
 ## Scenario
 
-Cloud For Customer(C4C) OData API'ları içerisindeki User veri setine read operasyonları yapmak istiyoruz. Her bir operasyonu ayrı ayrı konsolda yazdırarak göstermek istiyoruz.
+Cloud For Customer(C4C) OData API'larÃ½ iÃ§erisindeki User veri setine read operasyonlarÃ½ yapmak istiyoruz. Her bir operasyonu ayrÃ½ ayrÃ½ konsolda yazdÃ½rarak gÃ¶stermek istiyoruz.
 
 ## Explanation
 
-Cloud For Customer(C4C) API'larına expand, filter, count, top, skip, select operasyonları yapacağız.
+Cloud For Customer(C4C) API'larÃ½na expand, filter, count, top, skip, select operasyonlarÃ½ yapacaÃ°Ã½z.
 
-OData expand sorgusu kullanımı
+OData expand sorgusu kullanÃ½mÃ½
 /UserCollection?$expand=xxxx
 
-OData filter sorgusu kullanımı
+OData filter sorgusu kullanÃ½mÃ½
 /UserCollection?$filter=UserAccountID eq 'xxxx'
 
-OData count sorgusu kullanımı
+OData count sorgusu kullanÃ½mÃ½
 /UserCollection/$count
 
-OData top sorgusu kullanımı
+OData top sorgusu kullanÃ½mÃ½
 /UserCollection?$top=5
 
-OData skip sorgusu kullanımı
+OData skip sorgusu kullanÃ½mÃ½
 /UserCollection?$skip=2
 
-OData select sorgusu kullanımı
+OData select sorgusu kullanÃ½mÃ½
 /UserCollection?$select=UserAccountID,ChangedOn
 
 ## Summary
 
-OData okuma operasyonlarını yapmayı öğrendik.
+OData okuma operasyonlarÃ½nÃ½ yapmayÃ½ Ã¶Ã°rendik.
 
 ## Links
 
