@@ -5,14 +5,37 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		//We can reach Singleton Connector Class thanks to getInstance() 
+		
+		/**
+		 * We want to get a singleton instance once, so we get 
+		 * an instance inside the Singleton class, not from the
+		 * outside (Main) with new.
+		 *
+		 * Singleton da tek bir defa instance alýnmasýný istediðimiz
+		 * için new ile dýþarýdan(Main) deðil Singleton class'ýn 
+		 * içinde instance alýyoruz.
+		 */
+		
 		Connector connector = Connector.getInstance();
 
-		//get orders from Northwind.svc
+		/**
+		 * Get orders from Northwind.svc from only one instance
+		 * 
+		 * Instance'i alýnan Connector classýnýn getOrders methodu
+		 * ile Northwinden Orderlarý alýyoruz.
+		 */
+		
 		String orders = connector.getOrders();
 		System.out.println(orders);
 		
-		//get products from Northwind.svc
+		/** 
+		 * Get products from Northwind.svc from only one instance
+		 * We can not create new instance.
+		 *
+		 * Instance'i alýnan Connector classýnýn getProducts methodu
+		 * ile Northwinden Product'larý alýyoruz. Yeni bir instance almadýk.
+		 */
+		
 		String products = connector.getProducts();
 		System.out.println(products);
 	}
