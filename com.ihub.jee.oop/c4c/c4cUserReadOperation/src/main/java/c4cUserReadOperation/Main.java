@@ -38,17 +38,17 @@ public class Main {
 		String basicToken = basicAuthEncode(username, password);
 
 		/** Creating Full Url */
-		/**  Full url yaratılıyor */
+		/**  Full url yaratÄ±lÄ±yor */
 		String fullURL;
 
 		/** Created for the return of operation method */
-		/** Kullanacağımız operasyon methodundan dönecek olan sonucu eşitlemek için
-		 yaratıyoruz */
+		/** KullanacaÄŸÄ±mÄ±z operasyon methodundan dÃ¶necek olan sonucu eÅŸitlemek iÃ§in
+		 yaratÄ±yoruz */
 		String queryURL;
 		URL url;
 
 		/** Created for the response of HTTPRequest */
-		/** HTTPRequestten dönecek olan cevabı bir değişkene eşitlemek için yaratıyoruz */
+		/** HTTPRequestten dÃ¶necek olan cevabÄ± bir deÄŸiÅŸkene eÅŸitlemek iÃ§in yaratÄ±yoruz */
 		String response;
 
 		/** OData Expand operasyonu */
@@ -60,7 +60,7 @@ public class Main {
 		print("EXPAND ENTITY QUERY : ", response);
 
 		/** OData Filter query with String value */
-		/** OData String Değeri ile Filter operasyonu */
+		/** OData String DeÄŸeri ile Filter operasyonu */
 		queryURL = getFilterQueryWithStringValue("xxxx", "'xxxxx'");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
@@ -68,7 +68,7 @@ public class Main {
 		print("String filter : ", response);
 
 		/** OData Filter query with int value */
-		/** OData int Değeri ile Filter operasyonu */
+		/** OData int DeÄŸeri ile Filter operasyonu */
 		queryURL = getFilterQueryWithIntValue("xxxx", 123);
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
@@ -76,7 +76,7 @@ public class Main {
 		print("String filter : ", response);
 
 		/** OData filter query with date */
-		/** OData Date Değeri ile Filter operasyonu */
+		/** OData Date DeÄŸeri ile Filter operasyonu */
 		queryURL = getFilterQueryWithDate("xxxxx", "datetimeoffset'2018-01-01T07:03:12.0000000Z'");
 		fullURL = serviceURL + queryURL;
 		url = new URL(fullURL);
@@ -121,8 +121,8 @@ public class Main {
 	 * we want to expand entity
 	 */
 	/**
-	 * Expand Operasyonun yapıldığı method ve parametre olarak Expand etmek
-	 * istediğimiz Entity'i veriyoruz
+	 * Expand Operasyonun yapÄ±ldÄ±ÄŸÄ± method ve parametre olarak Expand etmek
+	 * istediÄŸimiz Entity'i veriyoruz
 	 */
 	public static String getExpandEntityQuery(String entity) {
 
@@ -131,7 +131,7 @@ public class Main {
 	}
 
 	/** Filter operation with String value for the fields that type of EDM.String */
-	/** Tipi EDM.String olan bir alana String değerle Filter operasyonu */
+	/** Tipi EDM.String olan bir alana String deÄŸerle Filter operasyonu */
 	public static String getFilterQueryWithStringValue(String fieldName, String value) {
 
 		String filterString = "?$filter=" + fieldName + "%20eq%20'" + value + "'";
@@ -139,7 +139,7 @@ public class Main {
 	}
 
 	/** Filter operation with Integer value for the fields that type of EDM.Int32 */
-	/** Tipi EDM.Int32 olan bir alana Integer değerle Filter operasyonu */
+	/** Tipi EDM.Int32 olan bir alana Integer deÄŸerle Filter operasyonu */
 	public static String getFilterQueryWithIntValue(String fieldName, Integer value) {
 
 		String filterInt = "?$filter=" + fieldName + "%20eq%20" + value;
@@ -150,7 +150,7 @@ public class Main {
 	 * Filter operation with Date value for the fields that type of
 	 * EDM.DateTimeOffset
 	 */
-	/** Tipi EDM.DateTimeOffset olan bir alana Date değerle Filter operasyonu */
+	/** Tipi EDM.DateTimeOffset olan bir alana Date deÄŸerle Filter operasyonu */
 	public static String getFilterQueryWithDate(String fieldName, String date) {
 
 		// datetime'2018-01-01T07:03:12.0000000Z'
@@ -159,7 +159,7 @@ public class Main {
 	}
 
 	/** Counting Operation to Entity */
-	/** Entity içindeki Entryleri Count eden operasyon */
+	/** Entity iÃ§indeki Entryleri Count eden operasyon */
 	public static String getEntryCountQuery() {
 
 		String countEntry = "/$count";
@@ -167,7 +167,7 @@ public class Main {
 	}
 
 	/** Top Operation */
-	/** Ilk kaç kayıt geleceğini belirleyen operasyon */
+	/** Ilk kaÃ§ kayÄ±t geleceÄŸini belirleyen operasyon */
 	public static String getTopQuery(String value) {
 
 		String topQuery = "?$top=" + value;
@@ -175,7 +175,7 @@ public class Main {
 	}
 
 	/** Skip Operation */
-	/** Başlangıçtan itibaren kaç kayıt geçilceğini belirleyen operasyon */
+	/** BaÅŸlangÄ±Ã§tan itibaren kaÃ§ kayÄ±t geÃ§ilceÄŸini belirleyen operasyon */
 	public static String getSkipQuery(String value) {
 
 		String skipQuery = "?$skip=" + value;
@@ -183,18 +183,18 @@ public class Main {
 	}
 
 	/** Select Operation which you want to see the fields */
-	/** Istenilen alanları görmek için yapılan operasyon */
+	/** Istenilen alanlarÄ± gÃ¶rmek iÃ§in yapÄ±lan operasyon */
 	public static String getSelectQuery(String... fieldName) {
 		/** Because the selected fields can be more than one 
 		 * the parameter given to method is in String Array type.
 		 */
 		/**
-		 * Seçilen alanlar birden fazla olabileceği için methoda verilen parametre
+		 * SeÃ§ilen alanlar birden fazla olabileceÄŸi iÃ§in methoda verilen parametre
 		 * String Array tipindedir.
 		 */
 		String selectedField = "?$select=";
 		/** If we got 1 parameter than we will get first index. */
-		/** Eğer 1 adet parametre yollanıyorsa ilk index alınıyor. */
+		/** EÄŸer 1 adet parametre yollanÄ±yorsa ilk index alÄ±nÄ±yor. */
 		if (fieldName.length == 1) {
 			selectedField = selectedField + fieldName[0];
 			/** If more than 1 parameter is being sent
@@ -202,8 +202,8 @@ public class Main {
 			 *  index than we wont insert a comma.
 			 */
 			/**
-			 * Eğer 1 den fazla parametre yollanıyorsa her parametrenin arasına virgül
-			 * konuluyor.Son indexe gelindiğinde virgül konulmuyor.
+			 * EÄŸer 1 den fazla parametre yollanÄ±yorsa her parametrenin arasÄ±na virgÃ¼l
+			 * konuluyor.Son indexe gelindiÄŸinde virgÃ¼l konulmuyor.
 			 */
 		} else if (fieldName.length > 1) {
 			selectedField = selectedField + fieldName[0] + ",";
@@ -219,7 +219,7 @@ public class Main {
 		return selectedField;
 	}
 	/** Http connection opens with this method. */
-	/** Http bağlantısının açıldığı yer. */
+	/** Http baÄŸlantÄ±sÄ±nÄ±n aÃ§Ä±ldÄ±ÄŸÄ± yer. */
 	private static String getHTTPRequestResult(URL url, String basicToken) throws IOException {
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
 		StringBuffer response = new StringBuffer();
@@ -231,12 +231,12 @@ public class Main {
 		con.setRequestProperty("Authorization", "Basic " + basicToken);
 		
 		/** The response code will be equal to variable. */
-		/** Request sonrası alınan cevap bir değişkene eşitleniyor */
+		/** Request sonrasÄ± alÄ±nan cevap bir deÄŸiÅŸkene eÅŸitleniyor */
 		int responseCode = con.getResponseCode();
 		System.out.println("GET Response Code : " + responseCode);
 		
 		/** IF the response code is 200 than we create a variable. */
-		/** Eğer alınan cevap 200lü ise bir değişkene eşitleniyor */
+		/** EÄŸer alÄ±nan cevap 200lÃ¼ ise bir deÄŸiÅŸkene eÅŸitleniyor */
 		if (responseCode == HttpURLConnection.HTTP_OK) { // success
 			BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 			String inputLine;
@@ -248,7 +248,7 @@ public class Main {
 
 		} 
 		/** If it is not equal  application will be terminated.*/
-		/** Eğer değilse Requestimizin çalışmadığını ekrana basıyoruz ve program sonlanıyor. */ 
+		/** EÄŸer deÄŸilse Requestimizin Ã§alÄ±ÅŸmadÄ±ÄŸÄ±nÄ± ekrana basÄ±yoruz ve program sonlanÄ±yor. */ 
 		else 
 		{
 			return "GET request not worked";
@@ -257,8 +257,8 @@ public class Main {
 	}
 	
 	/** This method converting the Username and password to Basic Auth. */
-	/** Kullanıcı adı ve şifrenin Basic Auth a dönüştürüldüğü yer 
-	 * Parametre olarak yukarıda yarattığımız username ve password ü veriyoruz. */
+	/** KullanÄ±cÄ± adÄ± ve ÅŸifrenin Basic Auth a dÃ¶nÃ¼ÅŸtÃ¼rÃ¼ldÃ¼ÄŸÃ¼ yer 
+	 * Parametre olarak yukarÄ±da yarattÄ±ÄŸÄ±mÄ±z username ve password Ã¼ veriyoruz. */
 	private static String basicAuthEncode(String username, String password) {
 		String SEPARATOR = ":";
 		StringBuilder userPass = new StringBuilder();
@@ -268,7 +268,7 @@ public class Main {
 		userPass.append(password);
 		
 		/** This line converting username:password format to BasicAuth format */
-		/** username:password formatındaki string burada BasicAuth formatına dönüşüyor */
+		/** username:password formatÄ±ndaki string burada BasicAuth formatÄ±na dÃ¶nÃ¼ÅŸÃ¼yor */
 		String encodedPassword = Base64.getEncoder()
 				.encodeToString(userPass.toString().getBytes(StandardCharsets.UTF_8));
 
@@ -276,8 +276,8 @@ public class Main {
 	}
 	
 	/** Printing method.You will give Query Type and the response for this method. */
-	/** Konsola basma işlemi burada yapılıyor. Parametre olarak 
-	 * konsola basılmasını istediğimiz Query tipini ve cevabı veriyoruz. */
+	/** Konsola basma iÅŸlemi burada yapÄ±lÄ±yor. Parametre olarak 
+	 * konsola basÄ±lmasÄ±nÄ± istediÄŸimiz Query tipini ve cevabÄ± veriyoruz. */
 	private static void print(String queryType, String response) {
 		System.out.println(queryType);
 		System.out.println(response);
