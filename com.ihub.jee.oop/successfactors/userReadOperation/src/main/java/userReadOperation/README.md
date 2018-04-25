@@ -50,6 +50,9 @@ We have seen how we can use OData read query options.
 * [OData URI Conventions](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) - OData
 * [SAP API's](https://api.sap.com/) - SAP API's
 
+---
+---
+
 # Konu
 
 SAP Cloud Platform Successfactors Odata service connection with java
