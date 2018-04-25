@@ -6,3 +6,8 @@
 *.MF
 *.properties
 *.class
+com.ihub.jee.oop/dp/creational/builder/target/classes/META-INF/maven/com.ihub/builder/pom.properties
+com.ihub.jee.oop/dp/creational/singleton/target/classes/META-INF/maven/com.ihub/singleton/pom.properties
+com.ihub.jee.oop/dp/structural/templateMethod/target/classes/META-INF/maven/com.ihub/templateMethod/pom.properties
+com.ihub.jee.oop/gson/odata/target/classes/META-INF/maven/com.ihub/odata/pom.properties
+com.ihub.jee.oop/successfactors/userReadOperation/target/classes/META-INF/maven/com.ihub/userReadOperation/pom.properties
