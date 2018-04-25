@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 /** 
  * GSON library is needed.
- * GSON kutuphanesine ihtiyac var.
+ * GSON kutuphanesine ihtiyac var. üðiçö ÖÜÐÝÞÇ
  */
 import com.google.gson.Gson;
 
@@ -73,56 +73,56 @@ public class Main {
 		 * Bir HTTP baglantisi kurulur.
 		 */
 		URL url = new URL(fullURL);
-	    HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
-	    /**
-	     * Set the HTTP Request properties.
-	     * HTTP Cagrisinin ozelliklerini belirlenir.
-	     */
-	    
-	    /**
-	     * "GET", as a request method, corresponds to Read operation.
-	     * "GET" kelimesi, cagri metodu olarak, ODATA'da okuma operasyonuna karsilik gelir.
-	     */
-	    connection.setRequestMethod("GET");
-	    
-	    /**
-	     * "Accept" property defines the response format that will be received.
-	     * "Accept" ozelligi, ne tur bir format kabul edilecegini belirler.
-	     *
-	     * For the service to work with JSON, we use "application/json" in our function.
-	     * Servisimizin JSON ile calismasini belirtmek icin, fonksiyonumuzda "application/json"
-	     * parametresini kullaniriz.
-	     */
-	    connection.setRequestProperty("Accept", "application/json");
-	    
-	    /**
-	     * Initialize connection.
-	     * Baglantiyi kur.
-	     */
-	    connection.connect();
-	    
-	    /**
-	     * Create a Buffered Reader that collects the stream of data from the response.
-	     * Bir "BufferedReader" kullanak, sorgudan geri bildirilen tum akan veri toplanilir.
-	     */
-	    BufferedReader bf = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-
-	    /** 
-	     * Using a StringBuilder, have the JSON response as a String in the end.
-	     * "StringBuilder" kullanarak, JSON bildirimini String formatina cevrilir.
-	     */
-	    StringBuilder stringBuilder = new StringBuilder();
-        String line;
-        while ((line = bf.readLine()) != null) {
-            stringBuilder.append(line);
-        }
-	    
-        /**
-         * Return as a string.
-         * String tipinde donulur.
-         */
-	    return stringBuilder.toString();
+		HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+		
+		/**
+		 * Set the HTTP Request properties.
+		 * HTTP Cagrisinin ozelliklerini belirlenir.
+		 */
+		
+		/**
+		 * "GET", as a request method, corresponds to Read operation.
+		 * "GET" kelimesi, cagri metodu olarak, ODATA'da okuma operasyonuna karsilik gelir.
+		 */
+		connection.setRequestMethod("GET");
+		
+		/**
+		 * "Accept" property defines the response format that will be received.
+		 * "Accept" ozelligi, ne tur bir format kabul edilecegini belirler.
+		 *
+		 * For the service to work with JSON, we use "application/json" in our function.
+		 * Servisimizin JSON ile calismasini belirtmek icin, fonksiyonumuzda "application/json"
+		 * parametresini kullaniriz.
+		 */
+		connection.setRequestProperty("Accept", "application/json");
+		
+		/**
+		 * Initialize connection.
+		 * Baglantiyi kur.
+		 */
+		connection.connect();
+		
+		/**
+		 * Create a Buffered Reader that collects the stream of data from the response.
+		 * Bir "BufferedReader" kullanak, sorgudan geri bildirilen tum akan veri toplanilir.
+		 */
+		BufferedReader bf = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+		
+		/** 
+		 * Using a StringBuilder, have the JSON response as a String in the end.
+		 * "StringBuilder" kullanarak, JSON bildirimini String formatina cevrilir.
+		 */
+		StringBuilder stringBuilder = new StringBuilder();
+		String line;
+		while ((line = bf.readLine()) != null) {
+		    stringBuilder.append(line);
+		}
+		
+		/**
+		 * Return as a string.
+		 * String tipinde donulur.
+		 */
+		return stringBuilder.toString();
 	}
 	
 	public static void prettyPrint(ProductData data)

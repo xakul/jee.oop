@@ -1,6 +1,6 @@
 /**
   * SAP Cloud Platform Cloud For Customer(C4C) Odata service connection with java
-    * This code will be on reading data from C4C User entity
+  * This code will be on reading data from C4C User entity
   * Release version 1.0 at 20.04.2018
   * @author Cem Dincay || cemdincay@live.com
 */
