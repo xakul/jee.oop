@@ -1,3 +1,9 @@
+/**
+ * Java GSON Tutorial for ODATA Services and responses.
+ * Release version 1.0 at 20.04.2018.
+ * @author Mehmet Gurol || @github xmgurol
+ */
+
 package odata;
 
 import java.io.BufferedReader;
@@ -45,7 +51,7 @@ public class Main {
 	}
 	
 	/** 
-	 * This function returns JSON Response (as a String) from the ODATA Service
+	 * This function returns JSON Response (as a String) from the ODATA Service.
 	 * Bu fonksiyon ODATA servisinden JSON geri bildirimini alip, String olarak doner.
 	 */
 	public static String getProductsFromService() throws IOException
@@ -54,11 +60,13 @@ public class Main {
 		 * Create an URL with needed parameters and queries.
 		 * Gerekli veri turlerini ve sorgulari iceren bir URL yaratilir.
 		 */
-		String hostURL = "http://services.odata.org/";
-		String serviceURL = "V2/OData/OData.svc/";
-		String entitySet = "Products";
+		String hostURL = "http://services.odata.org";
+		String pathURL = "/V2/OData/OData.svc";
+		String serviceURL = hostURL + pathURL;
+		
+		String entitySet = "/Products";
 		String expandQuery = "?$expand=Category,Supplier";
-		String fullURL = hostURL + serviceURL + entitySet + expandQuery;
+		String fullURL = serviceURL + entitySet + expandQuery;
 		
 		/**
 		 * Set up a HttpURLConnection

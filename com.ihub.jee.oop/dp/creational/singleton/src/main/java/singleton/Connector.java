@@ -12,8 +12,8 @@ public class Connector {
 	 * when uniqueInstance variable is created null, 
 	 * it will only fill getInstance().That's the singleton.
 	 * 
-	 * uniqueInstance deðiþkeni null olarak baþlatýlýyor, 
-	 * sadece getInstance methodunda doluyor. Singletonun olayý bu.
+	 * uniqueInstance deÄŸiÅŸkeni null olarak baÅŸlatÄ±yor, 
+	 * sadece getInstance methodunda doluyor. Singletonun olayï¿½ bu.
 	 */
 	private static Connector uniqueInstance = null;
 	
@@ -24,20 +24,20 @@ public class Connector {
 	/*
 	 * the constructor is  defined private because it must not called from outside.
 	 * 
-	 * Constructor bilerek private yapýyoruz dýþarýdan çaðrýlmamasý için.
+	 * Constructor bilerek private yapï¿½yoruz dï¿½ï¿½arï¿½dan ï¿½aï¿½rï¿½lmamasï¿½ iï¿½in.
 	 */
 	private Connector () {
 		 hostURL = "http://services.odata.org";
-		 pathURL = "/V2/Northwind/Northwind.svc/";
+		 pathURL = "/V2/Northwind/Northwind.svc";
 		 serviceURL = hostURL + pathURL;
 	}
 
 	/*
 	 * Our method to call our class from the outside.
-	 * Using synchronized keyword prevents from running the method at the same time 
+	 * Using synchronized keyword prevents from running the method at the same time. 
 	 * 
-	 * Dýþarýdan çaðrýldýðýnda Classýn instance'i sadece burada alýnýr ve sadece 
-	 * tek alýnmasý için synchronized keyword'ü ayný anda yaratýlmasýný engelliyor.
+	 * Dï¿½ï¿½arï¿½dan ï¿½aï¿½rï¿½ldï¿½ï¿½ï¿½nda Classï¿½n instance'i sadece burada alï¿½nï¿½r ve sadece 
+	 * tek alï¿½nmasï¿½ iï¿½in synchronized keyword'ï¿½ aynï¿½ anda yaratï¿½lmasï¿½nï¿½ engelliyor.
 	 */
 	
 	public synchronized static Connector getInstance () {
@@ -49,16 +49,16 @@ public class Connector {
 	}
 		
 	public String getProducts() throws IOException {
-		String productQuery = this.serviceURL + "Products" ;
-		URL url = new URL(productQuery);
+		String fullUrl = this.serviceURL + "/Products" ;
+		URL url = new URL(fullUrl);
 		String data = getData(url);
 		
 		return data;
 	}
 	
 	public String getOrders() throws IOException {
-		String orderQuery = this.serviceURL + "Orders" ;
-		URL url = new URL(orderQuery);
+		String fullUrl = this.serviceURL + "/Orders" ;
+		URL url = new URL(fullUrl);
 		String data = getData(url);
 		
 		return data;
@@ -68,8 +68,8 @@ public class Connector {
 	 * This method is not related to Singleton Pattern.
 	 * We used this method in order to get data from odata.
 	 * 
-	 * Bu methodu singleton Pattern ile alakalý deðildir.
-	 * Odata dan datayý alýp string olarak dönen bir method
+	 * Bu methodu singleton Pattern ile alakalï¿½ deï¿½ildir.
+	 * Odata dan datayï¿½ alï¿½p string olarak dï¿½nen bir method
 	 * olarak bilmek yeterli.
 	 */
 	private String getData(URL url) throws IOException {

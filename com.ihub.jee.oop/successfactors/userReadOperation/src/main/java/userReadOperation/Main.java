@@ -1,8 +1,8 @@
 /**
   * SAP Cloud Platform Successfactors Odata service connection with java
   * This code will be on reading data from Successfactors User entity
-  * Release version 1.0 at 20.04.2017
-  * @author Gürkan Akpınar || xgakpinar on @github || gurkanakpinar.35@gmail.com
+  * Release version 1.0 at 20.04.2018
+  * @author Gurkan Akpinar || xgakpinar on @github || gurkanakpinar.35@gmail.com
   */
 
 package userReadOperation;
@@ -19,10 +19,10 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		/**
-		 * Connect to SAP iot service parameters SAP Successfactors API's servisi için
-		 * bağlantı parametreleri
+		 * Connect to SAP iot service parameters SAP Successfactors API's servisi icin
+		 * baglanti parametreleri
 		 *
-		 * Connection variables Bağlantı için değişkenler
+		 * Connection variables Bağlantı isin değişkenler
 		 */
 		String hostURL = "https://api012.successfactors.eu";
 		String pathURL = "/odata/v2/";
