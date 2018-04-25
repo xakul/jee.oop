@@ -16,6 +16,7 @@ import java.util.ArrayList;
 
 /** 
  * GSON library is needed.
+ * 
  * GSON kutuphanesine ihtiyac var. üðiçö ÖÜÐÝÞÇ
  */
 import com.google.gson.Gson;
@@ -31,6 +32,7 @@ public class Main {
 		
 		/** 
 		 * Initialize Gson Object.
+		 * 
 		 * Gson nesnesi yaratilir. 
 		 */
 		Gson gson = new Gson();
@@ -45,6 +47,7 @@ public class Main {
 		
 		/**
 		 * With this function, we can print the contents of the objects.
+		 * 
 		 * Bu fonksiyonla, nesnelerimizin degerleri bastirilir.
 		 */
 		prettyPrint(productData);
@@ -52,12 +55,14 @@ public class Main {
 	
 	/** 
 	 * This function returns JSON Response (as a String) from the ODATA Service.
+	 * 
 	 * Bu fonksiyon ODATA servisinden JSON geri bildirimini alip, String olarak doner.
 	 */
 	public static String getProductsFromService() throws IOException
 	{
 		/**
 		 * Create an URL with needed parameters and queries.
+		 * 
 		 * Gerekli veri turlerini ve sorgulari iceren bir URL yaratilir.
 		 */
 		String hostURL = "http://services.odata.org";
@@ -70,6 +75,7 @@ public class Main {
 		
 		/**
 		 * Set up a HttpURLConnection
+		 * 
 		 * Bir HTTP baglantisi kurulur.
 		 */
 		URL url = new URL(fullURL);
@@ -77,11 +83,13 @@ public class Main {
 		
 		/**
 		 * Set the HTTP Request properties.
+		 * 
 		 * HTTP Cagrisinin ozelliklerini belirlenir.
 		 */
 		
 		/**
 		 * "GET", as a request method, corresponds to Read operation.
+		 * 
 		 * "GET" kelimesi, cagri metodu olarak, ODATA'da okuma operasyonuna karsilik gelir.
 		 */
 		connection.setRequestMethod("GET");
@@ -98,18 +106,21 @@ public class Main {
 		
 		/**
 		 * Initialize connection.
+		 * 
 		 * Baglantiyi kur.
 		 */
 		connection.connect();
 		
 		/**
 		 * Create a Buffered Reader that collects the stream of data from the response.
+		 * 
 		 * Bir "BufferedReader" kullanak, sorgudan geri bildirilen tum akan veri toplanilir.
 		 */
 		BufferedReader bf = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 		
 		/** 
 		 * Using a StringBuilder, have the JSON response as a String in the end.
+		 * 
 		 * "StringBuilder" kullanarak, JSON bildirimini String formatina cevrilir.
 		 */
 		StringBuilder stringBuilder = new StringBuilder();
@@ -120,6 +131,7 @@ public class Main {
 		
 		/**
 		 * Return as a string.
+		 * 
 		 * String tipinde donulur.
 		 */
 		return stringBuilder.toString();
@@ -129,12 +141,14 @@ public class Main {
 	{
 		/**
 		 * Dataset that we obtained is assigned to an ArrayList.
+		 * 
 		 * Elde ettigimiz nesneler, bir "ArrayList"e atandi.
 		 */
 		ArrayList<Product> productList = data.d;
 		
 		/**
 		 * These objects' contents are printed.
+		 * 
 		 * Nesnelerin degerleri ekrana bastirilir.
 		 */
 		for (Product product : productList)
