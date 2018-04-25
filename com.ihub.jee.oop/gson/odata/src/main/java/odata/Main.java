@@ -60,11 +60,13 @@ public class Main {
 		 * Create an URL with needed parameters and queries.
 		 * Gerekli veri turlerini ve sorgulari iceren bir URL yaratilir.
 		 */
-		String hostURL = "http://services.odata.org/";
-		String serviceURL = "V2/OData/OData.svc/";
-		String entitySet = "Products";
+		String hostURL = "http://services.odata.org";
+		String pathURL = "/V2/OData/OData.svc";
+		String serviceURL = hostURL + pathURL;
+		
+		String entitySet = "/Products";
 		String expandQuery = "?$expand=Category,Supplier";
-		String fullURL = hostURL + serviceURL + entitySet + expandQuery;
+		String fullURL = serviceURL + entitySet + expandQuery;
 		
 		/**
 		 * Set up a HttpURLConnection
