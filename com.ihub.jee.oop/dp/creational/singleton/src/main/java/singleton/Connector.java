@@ -34,7 +34,7 @@ public class Connector {
 
 	/*
 	 * Our method to call our class from the outside.
-	 * Using synchronized keyword prevents from running the method at the same time 
+	 * Using synchronized keyword prevents from running the method at the same time. 
 	 * 
 	 * Dýþarýdan çaðrýldýðýnda Classýn instance'i sadece burada alýnýr ve sadece 
 	 * tek alýnmasý için synchronized keyword'ü ayný anda yaratýlmasýný engelliyor.
