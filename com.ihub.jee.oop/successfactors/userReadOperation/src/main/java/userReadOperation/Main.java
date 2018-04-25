@@ -2,7 +2,7 @@
   * SAP Cloud Platform Successfactors Odata service connection with java
   * This code will be on reading data from Successfactors User entity
   * Release version 1.0 at 20.04.2018
-  * @author Gurkan Akpinar || xgakpinar on @github || gurkanakpinar.35@gmail.com
+  * @author Gurkan Akpinar || @github xgakpinar 
   */
 
 package userReadOperation;
@@ -19,10 +19,9 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		/**
-		 * Connect to SAP iot service parameters SAP Successfactors API's servisi icin
-		 * baglanti parametreleri
-		 *
-		 * Connection variables Bağlantı isin değişkenler
+		 * Connection variables.
+		 * 
+		 * Successfactors servisi için bağlantı parametreleri.
 		 */
 		String hostURL = "https://api012.successfactors.eu";
 		String pathURL = "/odata/v2/";
@@ -30,18 +29,23 @@ public class Main {
 		String serviceURL = hostURL + pathURL + entityURL;
 
 		/**
-		 * Successfactors username@companyid Successfactors kullanici@sirketkodu
+		 * Successfactors username@companyid.
+		 * 
+		 * Successfactors kullanici@sirketkodu.
 		 */
 		String username = "***@***";
 
 		/**
-		 * Successfactors password Successfactors sifre
+		 * Successfactors password.
+		 * 
+		 * Successfactors sifre.
 		 */
 		String password = "***";
 
 		/**
-		 * Convert Username and password to Basic Auth Kullanci adi sifreyi Basic Autha
-		 * ceviriyoruz
+		 * Convert username and password to Basic Auth.
+		 * 
+		 * Kullanıcı adı ve şifre Basic Autha çeviriliyor.
 		 */
 		String basicToken = basicAuthEncode(username, password);
 
@@ -50,13 +54,16 @@ public class Main {
 		URL url;
 
 		/**
-		 * Created for the response of HTTPRequest HTTPRequestten donecek olan cevabi
-		 * bir degiskene esitlemek icin yaratiyoruz
+		 * Created for the response of HTTPRequest
+		 * 
+		 * HTTPRequestten dönecek olan cevabı bir degişkene eşitlemek icin yaratıyoruz
 		 */
 		String response;
 
 		/**
-		 * OData Expand operasyonu OData Expand query
+		 * OData Expand operasyonu 
+		 * 
+		 * OData Expand query
 		 */
 		queryURL = getExpandEntityQuery("***");
 		fullURL = serviceURL + queryURL;
@@ -65,8 +72,9 @@ public class Main {
 		print("Expand entity query : ", response);
 
 		/**
-		 * OData Filter query with String value OData String Deðeri ile Filter
-		 * operasyonu
+		 * OData Filter query with String value 
+		 * 
+		 * OData String Değeri ile Filter operasyonu
 		 */
 		queryURL = getFilterQueryWithStringValue("***", "'***'");
 		fullURL = serviceURL + queryURL;
@@ -75,7 +83,9 @@ public class Main {
 		print("String filter : ", response);
 
 		/**
-		 * OData filter query with date OData Date Degeri ile Filter operasyonu
+		 * OData Filter query with date 
+		 * 
+		 * OData Date Değeri ile Filter operasyonu
 		 */
 		queryURL = getFilterQueryWithDate("formLastModifiedDate", "datetime'2017-05-19T23:59:59'");
 		fullURL = serviceURL + queryURL;
@@ -84,7 +94,9 @@ public class Main {
 		print("Date filter : ", response);
 
 		/**
-		 * OData Count query OData Count operasyonu
+		 * OData Count query
+		 * 
+		 * OData Count operasyonu
 		 */
 		queryURL = getEntryCountQuery();
 		fullURL = serviceURL + queryURL;
@@ -93,7 +105,9 @@ public class Main {
 		print("Entity Count : ", response);
 
 		/**
-		 * OData Top query OData Top Operasyonu
+		 * OData Top query 
+		 * 
+		 * OData Top Operasyonu
 		 */
 		queryURL = getTopQuery("5");
 		fullURL = serviceURL + queryURL;
@@ -102,7 +116,9 @@ public class Main {
 		print("Top Query : ", response);
 
 		/**
-		 * OData Skip query OData Skip operasyonu
+		 * OData Skip query
+		 * 
+		 * OData Skip operasyonu
 		 */
 		queryURL = getSkipQuery("10");
 		fullURL = serviceURL + queryURL;
@@ -111,7 +127,9 @@ public class Main {
 		print("Skip Query : ", response);
 
 		/**
-		 * OData Select query OData Select operasyonu
+		 * OData Select query 
+		 * 
+		 * OData Select operasyonu
 		 */
 		queryURL = getSelectQuery("***");
 		fullURL = serviceURL + queryURL;
@@ -123,8 +141,7 @@ public class Main {
 	/**
 	 * Expand operation for the entity and we are giving the parameter for the which
 	 * we want to expand entity
-	 */
-	/**
+	 *
 	 * Expand Operasyonun yapıldığı method ve parametre olarak Expand etmek
 	 * istediğimiz Entity'i veriyoruz
 	 */
@@ -136,6 +153,7 @@ public class Main {
 
 	/** 
 	 * Filter operation with String value for the fields that type of EDM.String
+	 * 
 	 * Tipi EDM.String olan bir alana String değerle Filter operasyonu 
 	 */
 	public static String getFilterQueryWithStringValue(String fieldName, String value) {
@@ -146,6 +164,7 @@ public class Main {
 
 	/** 
 	 * Filter operation with Integer value for the fields that type of EDM.Int32
+	 * 
 	 * Tipi EDM.Int32 olan bir alana Integer değerle Filter operasyonu 
 	 */
 	public static String getFilterQueryWithIntValue(String fieldName, String value) {
@@ -156,6 +175,7 @@ public class Main {
 
 	/**
 	 * Filter operation with Date value for the fields that type of EDM.DateTimeOffset
+	 * 
 	 * Tipi EDM.DateTimeOffset olan bir alana Date değerle Filter operasyonu 
 	 */
 	public static String getFilterQueryWithDate(String fieldName, String date) {
@@ -166,7 +186,8 @@ public class Main {
 	}
 
 	/** 
-	 * Counting Operation to Entity
+	 * Count Operation to Entity
+	 * 
 	 * Entity içindeki Entryleri Count eden operasyon 
 	 */
 	public static String getEntryCountQuery() {
@@ -177,7 +198,8 @@ public class Main {
 
 	/** 
 	 * Top Operation 
-	 * Ilk kaç kayıt geleceğini belirleyen operasyon 
+	 * 
+	 * İlk kaç kayıt geleceğini belirleyen operasyon 
 	 */
 	public static String getTopQuery(String value) {
 
@@ -187,6 +209,7 @@ public class Main {
 
 	/**
 	 * Skip Operation 
+	 * 
 	 * Başlangıçtan itibaren kaç kayıt geçilceğini belirleyen operasyon 
 	 */
 	public static String getSkipQuery(String value) {
@@ -197,6 +220,7 @@ public class Main {
 
 	/** 
 	 * Select Operation which you want to see the fields
+	 * 
 	 * Istenilen alanları görmek için yapılan operasyon 
 	 */
 	public static String getSelectQuery(String... fieldName) {
@@ -220,6 +244,7 @@ public class Main {
 
 	/** 
 	 * Http connection opens with this method.
+	 * 
 	 * Http bağlantısının açıldığı yer. 
 	 */
 	private static String getHTTPRequestResult(URL url, String basicToken) throws IOException {
@@ -229,6 +254,7 @@ public class Main {
 		/**
 		 * Set the HTTP Request properties.
 		 * "GET", as a request method, corresponds to Read operation. 
+		 * 
 		 * HTTP Cagrisinin ozelliklerini belirlenir.
 		 * "GET" kelimesi,cagri metodu olarak, ODATA'da okuma operasyonuna karsilik gelir.
 		 */
@@ -237,6 +263,7 @@ public class Main {
 		/**
 		 * "Accept" property defines the response format that will be received. 
 		 * For the service to work with JSON, we use "application/json" in our function.
+		 * 
 		 * "Accept" ozelligi, ne tur bir format kabul edilecegini belirler.
 		 * Servisimizin JSON ile calismasini belirtmek icin, fonksiyonumuzda "application/json" parametresini kullaniriz.
 		 */
