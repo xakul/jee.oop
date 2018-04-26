@@ -10,12 +10,95 @@ Builder Pattern
 
 ## Scenario
 
-In the scenario we dealt with a factory that produces cars with different models, colors and types. We then focused on how to handle this scenario with the builder pattern.
+In this scenario we are going to  dealt with a factory that produces cars with different models, colors and types.And We learn  how to handle this scenario with the builder pattern.
 
 ## Explanation
 
-Builder Pattern allows you to create more complicated object structures than simple object structures. This design pattern is under the creational design pattern structure.
-In the scenario we dealt with, an interface (CarProperties) containing car properties common to all cars was written. The purpose of creating this interface is to implement the unimplemented methods written in the subclasses specifically for the tool to be built. We then implemented the interface in the CarAbstract class, which is an abstract class, and we used the methods there, and in this abstract class subclasses, we extended our subclasses to Mercedes ASeries and MercedesAMGSeries. In our CarBuilder class methods, a new AMG series and A series tools are produced from CarAbstract class using polymorphism which is object oriented programming concept. In the Main class, we also print with the write () method.
+Builder Pattern allows you to create more complicated object structures than simple object structures. Builder design pattern is one of the creational design pattern structure.
+
+The scenario which explained above.First of all,Created a interface which contain common car properties.The main purpose of creating this interface is that customized implementation of unimplemented methods in the subclasses.After that implemtation, we implement the interface into the abstract class.Then,we extend this abstract class into subclasses(MercedesASeries.java&MercedesAMGSeries.java) and customized the method which are defined in interface and abstract class.In our CarBuilder class methods, a new AMG series and A series tools are produced from CarAbstract class using polymorphism which is object oriented programming concept. In the Main class, we also print with the write () method.
+
+## CarAbstract.java
+public abstract class CarAbstract implements CarProperties {
+
+	private String name;
+	private String model;
+	private String color;
+	private String type;
+
+## CarProperties.java
+public interface CarProperties {
+
+	public String getName();
+
+	public String getColor();
+
+	public String getModel();
+
+	public String getType();
+
+}
+
+## MercedesAMGSeries.java
+public class MercedesAMGSeries extends CarAbstract {
+
+	@Override
+	public String getColor() {
+		return "Metallic Black";
+	}
+
+	@Override
+	public String getName() {
+		return "Mercedes AMG Series";
+	}
+
+	@Override
+	public String getModel() {
+		return "AMG-GTX";
+	}
+
+	@Override
+	public String getType() {
+		return "Sport Car";
+	}
+
+	@Override
+	public double getPrice() {
+		return 800000;
+	}
+
+}
+
+## MercedesASeries.java
+
+public class MercedesASeries extends CarAbstract {
+
+	@Override
+	public String getColor() {
+		return "Red Car";
+	}
+
+	@Override
+	public String getModel() {
+		return "A-180";
+	}
+
+	@Override
+	public String getName() {
+		return "Mercedes A Series";
+	}
+
+	@Override
+	public String getType() {
+		return "City Car";
+	}
+
+	@Override
+	public double getPrice() {
+		return 200000;
+	}
+
+}
 
 ## Summary
 
