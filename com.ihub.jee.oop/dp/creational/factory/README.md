@@ -14,7 +14,7 @@ Basic OOP knowledge
 
 ## Scenario
 
-In thiss Scenario we handle with a factory that wants to get report their sales and purchase order.We have different attributes for each report which are id , customerID , Total Price and salesOrderDetails for sales order and purchase id ,supplier id ,total price , purchaseOrderDetails for purchase order.Our scope of this project that create an interface and factory for creating two type order we define via getting value from client.
+In this Scenario we are going to handle with a factory that wants to get report their sales and purchase order.We have different attributes for each report which are salesID , customerID , totalPrice and salesOrderDetails for sales order and purchaseID ,supplierID ,totalPrice , purchaseOrderDetails for purchase order.Our scope of this project that impelement factory pattern for creating two type order which we define above via getting value from client.
 
 
 ## Explanation
@@ -94,8 +94,6 @@ public class SalesOrder implements Orders {
 ## Summary
 "Define an interface for creating an object, but let subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses."
 
-Creating an object often requires complex processes not appropriate to include within a composing object. The object's creation may lead to a significant duplication of code, may require information not accessible to the composing object, may not provide a sufficient level of abstraction, or may otherwise not be part of the composing object's concerns. The factory method design pattern handles these problems by defining a separate method for creating the objects, which subclasses can then override to specify the derived type of product that will be created.
-
 The factory method pattern relies on inheritance, as object creation is delegated to subclasses that implement the factory method to create objects
 
 ## Links
@@ -119,12 +117,9 @@ Bu senaryoda sales ve purchase raporuna ihtiyaç duyan bir fabrikayı ele aldık
 
 ## Açıklama
 
-Nesne-merkezli programlardaki  en temel iş, nesne yaratmaktır. Uygulamalarda farklı karmaşıklıkta pek çok sınıf vardır ve bu sınıfların nesneleri uygulamanın farklı yerlerinde oluşturulur. Bu kalıp, nesnelerin yaratılmalarını soyutlamakta ve bu işi “üretici” ya da “factory” metoda havale etmektedir. Factory method, nesnelerin yaratılmasından sorumlu bir metottur öyle ki bir interfacenin alt sınıfında bulunur.
+(Object-oriented)Nesne merkezli  programlardaki  en temel iş, nesne yaratmaktır. Uygulamalarda farklı pek çok sınıf vardır ve bu sınıfların nesneleri uygulamanın farklı yerlerinde oluşturulur. Bu kalıp, nesnelerin yaratılmalarını soyutlamakta ve bu işi “üretici” ya da “factory” metoda havale etmektedir. Factory method, nesnelerin yaratılmasından sorumlu bir metottur.
 
-Client’ın,  nesnelerinin sadece arayüzlerini değil aynı zamanda nasıl yaratılacaklarını da bilmesi, Client’ın Product’lara(alt classlar) olan bağımlılığını arttırır. Çoğu zaman bir nesneyi yaratmak, onu kullanmaktan daha karmaşıktır.
 
 ## Özet
-Factory Method  creational grubununa ait, aynı interface kullanan nesnelerin üretiminden sorumlu design patterndir.
-Factory pattern tekrarlanan tasarım sorunlarının esnek ve yeniden kullanılabilir nesne tabanlı yazılımları tasarlamak için nasıl kullanılacağını açıklar; bu, uygulanması, değiştirilmesi, test edilmesi ve yeniden kullanılması daha kolay nesnelerdir.
 
-Factory Method tasarım deseni aynı abstract sınıfı veya arayüzü uygulayan sınıfların üretiminden sorumludur. Nesne üretiminden sorumlu bir class olur ve bu sınıftaki metoda gönderilen parametre ile üretilecek sınıfın türü belirlenir
+Factorydesign pattern aynı abstract sınıfı veya interface uygulayan sınıfların üretiminden sorumludur. Nesne üretiminden sorumlu bir class olur ve bu sınıftaki metoda gönderilen parametre ile üretilecek sınıfın türü belirlenir
