@@ -3,6 +3,10 @@
 
 Builder Pattern
 
+
+
+https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/builder/images/builder.PNG
+
 ## Prequisites
 
 * To understand this design pattern you will need to understand 4 object oriented programming concepts (Inheritence, Polymorphism, Abstraction and Inheritence). 
