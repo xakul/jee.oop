@@ -5,7 +5,7 @@
   * @author Cem Dincay || @github xcdincay
 */
 
-package c4cUserReadOperation;
+package UserOperations;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,13 +15,13 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
-public class Main {
+public class Read {
 
 	public static void main(String[] args) throws IOException {
 		/** 
 		 * Create an URL with needed parameters and queries.
 		 *
-		 * Gerekli veri turlerini ve sorgulari iceren bir URL yaratılır.
+		 * Gerekli veri türlerini ve sorguları içeren bir URL yaratılır.
 		 */
 		String baseURL = "https://myXXXXXX.crm.ondemand.com";
 		String pathURL = "/sap/c4c/odata/v1/c4codata/";
@@ -324,7 +324,7 @@ public class Main {
 	 * This method converting the Username and password to Basic Auth. 
 	 *
 	 * Kullanıcı adı ve şifrenin Basic Auth a dönüştürüldüğü yer 
-	 * Parametre olarak yukarıda yarattığımız username ve password ü veriyoruz. 
+	 * parametre olarak yukarıda yarattığımız username ve password ü veriyoruz. 
 	 */
 	private static String basicAuthEncode(String username, String password) {
 		String SEPARATOR = ":";
@@ -349,7 +349,7 @@ public class Main {
 	 * Printing method.You will give Query Type and the response for this method.
 	 *
 	 * Konsola basma işlemi burada yapılıyor. 
-	 * Parametre olarak konsola basılmasını istediğimiz Query tipini ve cevabı veriyoruz.
+	 * parametre olarak konsola basılmasını istediğimiz Query tipini ve cevabı veriyoruz.
 	 */
 	private static void print(String queryType, String response) {
 		System.out.println(queryType);

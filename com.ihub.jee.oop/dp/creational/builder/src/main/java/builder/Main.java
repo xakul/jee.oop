@@ -1,4 +1,6 @@
 /**
+ * Builder Pattern 
+ * This project introduces the implementation of builder pattern 
  * Release version 1.0 at 18.04.2018
  * @author Gokhan Guler || @github xgguler
  */

@@ -1,30 +1,39 @@
 package factory;
 
-/*Create concrete classes implementing the same interface.
- Orders interfaceni implement et.*/
+/**
+ * Create concrete classes implementing the same interface.
+ * 
+ * Orders interfaceni implement et.
+ */
 public class PurchaseOrder implements Orders {
 
 	private int id = 5;
 	private String supplierID = "UNO";
 	private int totalPrice = 4;
 	String[] purchaseOrderArray;
+
 	public PurchaseOrder() {
 
 	}
 
 	/**
 	 * we need to create purchase order details for get
-	 * Purchase_Order_Detail_Array Purchase_Order_Detail_Array i�in bir
-	 * Purchase_Order_Detail_Array objesi olusturmaliyiz
+	 * Purchase_Order_Detail_Array
+	 * 
+	 * Purchase_Order_Detail_Array için bir Purchase_Order_Detail_Array objesi
+	 * olusturmaliyiz.
+	 *
 	 **/
 	private PurchaseOrderDetails purchaseOrderDetail = new PurchaseOrderDetails();
-	
 
 	public void getOrderReport() {
 
 		/**
 		 * purchaseOrderArray is a string array which is created for purchase
 		 * order details
+		 * 
+		 * purchaseOrderArray , purchaseOrderDetail arrayindeki değerleri almak
+		 * için olulturulan bir arraydir.
 		 **/
 		purchaseOrderArray = purchaseOrderDetail.getPodArray();
 		System.out.println(

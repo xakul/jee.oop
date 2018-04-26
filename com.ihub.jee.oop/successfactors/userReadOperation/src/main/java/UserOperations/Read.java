@@ -5,7 +5,7 @@
   * @author Gurkan Akpinar || @github xgakpinar 
   */
 
-package userReadOperation;
+package UserOperations;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
-public class Main {
+public class Read {
 
 	public static void main(String[] args) throws IOException {
 		/**
