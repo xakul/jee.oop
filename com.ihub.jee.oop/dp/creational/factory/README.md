@@ -4,6 +4,7 @@
 
 Factory Pattern
 
+![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/factory/images/factory.PNG)
 
 ## Prequisites
 
