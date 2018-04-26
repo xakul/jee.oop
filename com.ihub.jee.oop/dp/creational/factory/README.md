@@ -14,12 +14,12 @@ Basic OOP knowledge
 
 ## Scenario
 
-In these Scenario we handle with a factory that wants to get report their sales and purchase order.We have different atributes for each report which are id , customerID , Total Price and salesOrderDetails for sales order and purchase id ,supplier id ,total price , purchaseOrderDetails for purchase order.Our scope of this project that creating an interface for creating two type order we define via getting value from client.
+In these Scenario we handle with a factory that wants to get report their sales and purchase order.We have different atributes for each report which are id , customerID , Total Price and salesOrderDetails for sales order and purchase id ,supplier id ,total price , purchaseOrderDetails for purchase order.Our scope of this project that creating an interface and factory for creating two type order we define via getting value from client.
 
 
 ## Explanation
 
-In class-based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes—rather than by calling a constructor.
+In class based programming, the factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. This is done by creating objects by calling a factory method either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes rather than by calling a constructor.
 
 
 ### Orders.java
@@ -114,7 +114,7 @@ Başlangıç seviyesinde OOP bilgisi.
 
 ## Senaryo
 
-Bu senaryoda sales ve purchase raporuna ihtiyaç duyan bir fabrikayı ele aldık.Bu fabrikada sales raporunda satış id , müsteri id ,toplam fiyat ve sales detayları alanları yer almalı.Purchase raporunda ise purchase id ,tedarikci id ve Purchase order alanları yer almalı.Bu senaryodaki amacımız bir tane order interfacesi yaratıp client tarafından gelen değere göre purchase veya sales raporu yaratmaktır.
+Bu senaryoda sales ve purchase raporuna ihtiyaç duyan bir fabrikayı ele aldık.Bu fabrikada sales raporunda satış id , müsteri id ,toplam fiyat ve sales detayları alanları yer almalı.Purchase raporunda ise purchase id ,tedarikci id ve Purchase order alanları yer almalı.Bu senaryodaki amacımız bir tane order interfacesi ver orderfactory yaratıp client tarafından gelen değere göre purchase veya sales raporu yaratmaktır.
 
 
 ## Açıklama
