@@ -25,8 +25,6 @@ In class based programming, the factory method pattern is a creational pattern t
 ### Orders.java
 package factory;
 
-//Create an interface.
-//Bir interface yarat.
 public interface Orders {
 
 	/*
@@ -40,8 +38,6 @@ public interface Orders {
 
 package factory;
 
-/*Create concrete classes implementing the same interface.
- Orders interfaceni implement et.*/
 public class PurchaseOrder implements Orders {
 
 	private int id = 5;
@@ -92,9 +88,8 @@ public class SalesOrder implements Orders {
 	}
 
 ## Summary
-"Define an interface for creating an object, but let subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses."
 
-The factory method pattern relies on inheritance, as object creation is delegated to subclasses that implement the factory method to create objects
+The factory design pattern is responsible for the generation of classes that implement the same abstract class or interface. It is a class that is responsible for object generation and the parameter sent in this class specifies the type of class to be produced
 
 ## Links
 
@@ -122,4 +117,4 @@ Bu senaryoda sales ve purchase raporuna ihtiyaç duyan bir fabrikayı ele aldık
 
 ## Özet
 
-Factorydesign pattern aynı abstract sınıfı veya interface uygulayan sınıfların üretiminden sorumludur. Nesne üretiminden sorumlu bir class olur ve bu sınıftaki metoda gönderilen parametre ile üretilecek sınıfın türü belirlenir
+Factory design pattern aynı abstract sınıfı veya interface uygulayan sınıfların üretiminden sorumludur. Nesne üretiminden sorumlu bir class olur ve bu sınıftaki metoda gönderilen parametre ile üretilecek sınıfın türü belirlenir
