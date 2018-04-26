@@ -4,6 +4,8 @@
 
 Factory Pattern
 
+##UML DIAGRAM OF FACTORY PATTERN
+
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/factory/images/factory.PNG)
 
 ## Prequisites
@@ -118,4 +120,4 @@ Bu senaryoda sales ve purchase raporuna ihtiyaç duyan bir fabrikayı ele aldık
 
 ## Özet
 
-Factory design pattern aynı abstract sınıfı veya interface uygulayan sınıfların üretiminden sorumludur. Nesne üretiminden sorumlu bir class olur ve bu sınıftaki metoda gönderilen parametre ile üretilecek sınıfın türü belirlenir
+Factory design pattern aynı abstract sınıfı veya interface uygulayan sınıfların üretiminden sorumludur. Nesne üretiminden sorumlu bir class olur ve bu classtaki metoda gönderilen parametre ile üretilecek sınıfın türü belirlenir
