@@ -14,8 +14,8 @@ Basic OOP knowledge
 
 ## Scenario
 
-In the scenario we dealt with a creating differnt type of order reports,
-we have two type reports which are sales and purchase.Each of the has different attributes.
+In these Scenario we handle with a factory that wants to get report their sales and purchase order.We have different atributes for each report which are id , customerID , Total Price and salesOrderDetails for sales order and purchase id ,supplier id ,total price , purchaseOrderDetails for purchase order.Our scope of this project that creating an interface for creating two type order we define via getting value from client
+
 
 ## Explanation
 
@@ -114,7 +114,8 @@ Başlangıç seviyesinde OOP bilgisi.
 
 ## Senaryo
 
-Senaryoda farklı tiplerde sipariş raporu çıktısı almayı konu aldık. Daha sonra bu senaryoyu factory pattern ile nasıl ele alacağımıza odaklandık.
+Bu senaryoda sales ve purchase raporuna ihtiyaç duyan bir fabrikayı ele aldık.Bu fabrikada sales raporunda satış id , müsteri id ,toplam fiyat ve sales detayları alanları yer almalı.Purchase raporunda ise purchase id ,tedarikci id ve Purchase order alanları yer almalı.Bu senaryodaki amacımız bir tane order interfacesi yaratıp client tarafından gelen değere göre purchase veya sales raporu yaratmaktır.
+
 
 ## Açıklama
 
