@@ -14,7 +14,7 @@ Basic OOP knowledge
 
 ## Scenario
 
-In these Scenario we handle with a factory that wants to get report their sales and purchase order.We have different atributes for each report which are id , customerID , Total Price and salesOrderDetails for sales order and purchase id ,supplier id ,total price , purchaseOrderDetails for purchase order.Our scope of this project that creating an interface and factory for creating two type order we define via getting value from client.
+In thiss Scenario we handle with a factory that wants to get report their sales and purchase order.We have different attributes for each report which are id , customerID , Total Price and salesOrderDetails for sales order and purchase id ,supplier id ,total price , purchaseOrderDetails for purchase order.Our scope of this project that create an interface and factory for creating two type order we define via getting value from client.
 
 
 ## Explanation
