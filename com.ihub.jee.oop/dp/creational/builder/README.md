@@ -5,7 +5,7 @@ Builder Pattern
 
 
 
-https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/builder/images/builder.PNG
+![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/builder/images/builder.PNG)
 
 ## Prequisites
 
