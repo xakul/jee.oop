@@ -11,7 +11,7 @@ SAP Cloud Platform Successfactors Odata service connection with java
 
 ## Scenario
 
-We have an ODATA service that contains User entity set in Successfactors OData API's. We want to do OData read operations on User entity set and then print on console.
+A Company that have worldwide projects want to get report about how many empoloyee works on abroad and which country has most employee.In this case  We have to works on ODATA service that contains User entity set in Successfactors OData API's. We want to do OData read operations on User entity set and then print on console.
 
 ## Explanation
 
@@ -64,8 +64,7 @@ SAP Cloud Platform Successfactors Odata service connection with java
 *   ODATA kullanımı bilgisi.
 
 ## Senaryo
-
-Successfactors OData API'ları içerisindeki User veri setine read operasyonları yapmak istiyoruz. Her bir operasyonu ayrı ayrı konsolda yazdırarak göstermek istiyoruz. 
+Dünya çapında projeleri olan bir şirektin,yurt dışında kaç kişi ve hangi ülkelerde daha fazla çalışanın olduğunu gösteren bir rapor hazırlamamız gerekiyor.Bunun için, Successfactors API'ları içerisindeki user veri setine read operasyonları yapmamız gerekiyor.Bu senaryoda her bir read operasyonunu ayrı ayrı konsola yazdıracağız.
 
 ## Açıklama
 
