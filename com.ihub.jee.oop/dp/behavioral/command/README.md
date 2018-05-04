@@ -1,7 +1,7 @@
 #### [English](#topic) / [Turkish](#konu)
 # Topic
 
-The logic of the Command DP, one of the Tutorialda Behavioral Design Patterns, will explain in a Java project why and where it is used and where it is used.
+The purpose of the Command Pattern Tutorial, Behavioral Design Patterns, will explain in a Java project why and where it is used.
 
 ## Prequisites
 
@@ -10,36 +10,36 @@ The logic of the Command DP, one of the Tutorialda Behavioral Design Patterns, w
 
 ## Scenario
 
-A company may have independent processes in different processes, which may not belong to the same class because they are independent of each other, but they may need to wait in a clustered queue. As an example, the company may add or remove contracted banks that are financed by the company, or passive states. So when adding a new bank with a single command, the supplier can also be disconnected and kept in the same queue. How can we put together different processes?
+A company has independent processes in different area related , which may not belong to the same class because they are independent of each other, but they may need to wait in a clustered queue. For instance, the company may add or remove contracted banks that are financed by the company, separately Supplier customers may be active or passive states.Let's think, when adding a new bank with a single command, the supplier can also be disconnected and kept in the same queue. How can we put together different processes?
 
 ## Explanation
 
 Command Design Pattern, as described in the scenario, brings together different tasks and provides the execution of tasks with commands.
 
 ##### Command:
-At the end of the day, the process is done with the interface class.
-##### ConcreateCommand:
-It implements the methods of the Command object and uses the methods of the Receiver class.
+At the end of the day, the process which will be done is the interface class.
+##### Concreate Command:
+It implements the methods of the Command objects and It uses the methods of the Receiver class.
 ##### Receiver:
-The class to which the client will communicate.
+The class will communicate with client.
 ##### Invoker:
-The reference to the Command object is located here, and the command object is run, invoked.
+The reference to the Command object is located here, and the command object is run by invoker class.
 
 ##### When should we use Command?
 
-We know that each class is a principle of working with a single responsibility, do not we want to classify our differentiated classes with this very principle and call it collectively with a single command, and as necessary? If your answer is yes then here is Command Design Patern :)
+We know that each class is a principle of working with a single responsibility, do not we want to classify necessary our differentiated classes with this very principle and call it collectively with a single command ? If your answer is yes then here is Command Design Patern :)
 
 ## Summary
 
-We asked Command Design Pattern why and how to use it.
+We want to find answer Command Design Pattern why and how to use it.
 To summarize briefly;
-* The Command Design Pattern will be used to call our classrooms with different functions when we need to clusters them and when we need them to hold them in the queue.
-* With Command Design Pattern, we can use frequently used clustering operations with a single command throughout the day, so we can do our own browser "favorites" as a result :)
+* The Command Design Pattern will be used to call our classrooms with different classes and processes when we need to clusters them to hold them in the queue.
+* With Command Design Pattern, we can use frequently used clustering operations with a single command throughout the day, so we can do like our own browser "favorites" as a result :)
 
 ## Links
 
-* [Design Patterns and Architects Ali Kaya & Engin Bulut]
-
+* [Design Patterns and Architects Ali Kaya & Engin Bulut
+* [Enterprise Java](http://www.kurumsaljava.com/category/designpatterns/)
 
 
 # Konu
@@ -60,8 +60,8 @@ Bir şirketin farklı süreçlerde bağımsız olan işlemleri vardır, bu işle
 Command Design Pattern, seneryoda da anlatıldığı gibi farklı işleri bir araya getirerek komutlarla işlerin yürütülmesini sağlamaktadır.
 
 ##### Command : 
-Gün sonunda gerçekleşek işlem içib Interface olan classtır.
-##### ConcreateCommand : 
+Gün sonunda gerçekleşek işlem için Interface olan classtır.
+##### Concreate Command : 
 Command nesnesindeki metotları uygular ve Recevier Classındaki metotları da kullanan sınıftır.
 ##### Receiver : 
 Client tarafından iletişime geçilecek olan classtır.
@@ -82,3 +82,4 @@ Kısaca özet geçmek gerekirse;
 ## Linkler
 
 * [Tasarım Desenleri ve Mimarileri Ali Kaya & Engin Bulut]
+* [Kurumsal Java](http://www.kurumsaljava.com/category/designpatterns/)
