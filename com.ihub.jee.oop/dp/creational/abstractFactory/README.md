@@ -4,7 +4,7 @@
 
 The Abstract Factory  design pattern is one of the twenty-three well-known GoF design (The Gang of Four are the four authors of the book, "Design Patterns: Elements of Reusable Object-Oriented Software."). patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
 
-##UML DIAGRAM OF FACTORY PATTERN
+##UML DIAGRAM OF ABSTRACT FACTORY PATTERN
 
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/factory/images/AbstractfactoryUml.PNG)
 
@@ -34,7 +34,7 @@ How can families of related or dependent objects be created?
 
 ## Summary
 
-Rather than building a concrete object, it’s building a family of related or dependent objects without specifying concrete class.
+Rather than building a concrete object, itâ€™s building a family of related or dependent objects without specifying concrete class.
 Use when: system should be independent of how what it is producing is structured or represented
 
 ## Links
@@ -46,21 +46,21 @@ Use when: system should be independent of how what it is producing is structured
 # Konu
 Factory design
 
-## Önkoşullar
+## Ã–nkoÃ¾ullar
 Temel programlama bilgisi.
 
-Başlangıç seviyesinde OOP bilgisi.
+BaÃ¾langÄ±Ã§ seviyesinde OOP bilgisi.
 
 ## Senaryo
 
-Bu senaryoda farklı tiplerde endutriel palet ve boru üreten bir fabrikayı ele aldık.Bu fabrika çelik ve tahta olamk üzere iki ayrı  palet ve silikon, plastik olmak üzere iki ayrı boru tipi üretmektedir.Bu senaryodaki amacımız ,brbirleriyle ilgili ya da bağımlı nesne ailelerini, nesnelerin somut sınıflarını belirtmeden yaratmak için bir arayüz sağlamak.
+Bu senaryoda FARKLI tiplerde endutriel palet ve boru Ã¼reten bir  ele aldÄ±k.Bu fabrika Ã§elik ve tahta olamk Ã¼zere iki ayrÄ±  palet ve silikon, plastik olmak Ã¼zere iki ayrÄ± boru tipi Ã¼retmektedir.Bu senaryodaki amacÄ±mÄ±z,brbirleriyle ilgili ya da baÄŸÄ±mlÄ± nesne ailelerini, nesnelerin somut sÄ±nÄ±flarÄ±nÄ± belirtmeden yaratmak iÃ§in bir arayÃ¼z saÄŸlamak.
 
 
-## Açıklama
+## AÃ§Ã½klama
 
-Abstract factory design pattern factory design ile benzer özelliklere sahiptir.Bu iki designi ayıran en buyuk fark factory gibi tek bir interfaceden değil,her ürün için ayrı bir interface kullanılmasıdır.
+Abstract factory design pattern factory design ile benzer Ã¶zelliklere sahiptir.Bu iki designi ayÄ±ran en buyuk fark factory gibi tek bir interfaceden deÄŸil,her Ã¼rÃ¼n iÃ§in ayrÄ± bir interface kullanÄ±lmasÄ±dÄ±r.
 
 
-## Özet
+## Ã–zet
 
-Birden fazla ürün ailesi ile çalişmak durumunda kaldığımızda, kullanacağınız ürün ailesi ile client tarafını soyutlamak için abstrac factory kullanılır.Birbaşkakullanım amacı ise factory pattern kullanığımız factoryProducer sınıfının içine if else bloclarıyla hangi objenin oluşturulucağına karar veririz.
+Birden fazla Ã¼rÃ¼n ailesi ile Ã§aliÃ¾mak durumunda kaldÄ±ÄŸÄ±mÄ±z, kullanacaÄŸÄ±mÄ±z Ã¼rÃ¼n ailesi ile client tarafÄ±nÄ± soyutlamak iÃ§in abstrac factory kullanÄ±lÄ±r.BirbaÅŸka kullanÄ±m amacÄ± ise factory pattern kullandÄ±ÄŸÄ±mÄ±z factoryProducer sÄ±nÄ±fÄ±nn iÃ§ine if else bloclarÄ±yla hangi objenin oluÃ¾turulucaÄŸÄ±na karar veririz.
