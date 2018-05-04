@@ -1,101 +1,44 @@
 #### [English](#topic) / [Turkish](#konu)
 # Topic
 
-The purpose of Tutorial ;
-The Command Design Pattern, one of the Behavariol Design Patterns, will explain why and where it is used through a Java project.
+The logic of the Command DP, one of the Tutorialda Behavioral Design Patterns, will explain in a Java project why and where it is used and where it is used.
 
 ## Prequisites
 
-*   Basic java programming knowledge
-*   Basic OOP knowledge
+* Basic programming knowledge.
+* Beginner level OOP knowledge.
 
 ## Scenario
 
-There are two classes, 'Connector' and 'Main'.  
-Connector class which is Singleton.It connects 'Northwind OData V2' services and OData connections URL info, accessing service and data which getting as string from some entities.
-The other class is 'Main'.First of All, it called 'Main' of singleton class and some called methods from 'Connector' then show screen data.    
+A company may have independent processes in different processes, which may not belong to the same class because they are independent of each other, but they may need to wait in a clustered queue. As an example, the company may add or remove contracted banks that are financed by the company, or passive states. So when adding a new bank with a single command, the supplier can also be disconnected and kept in the same queue. How can we put together different processes?
 
 ## Explanation
 
-Singleton Design Pattern is used to get a single (only one ) instance of a class.The purpose here is to ensure that the instance is globally accessible to the object.At run-time it is not allowed second instance of class and it is granted to instance only one . 
+Command Design Pattern, as described in the scenario, brings together different tasks and provides the execution of tasks with commands.
 
-If you can not avoid the instance of the object, 2 different threads will make a new instance as a result of the request, but if the lock is done, it will wait for the first one to finish and the operation will be completed with a single instance.
+##### Command:
+At the end of the day, the process is done with the interface class.
+##### ConcreateCommand:
+It implements the methods of the Command object and uses the methods of the Receiver class.
+##### Receiver:
+The class to which the client will communicate.
+##### Invoker:
+The reference to the Command object is located here, and the command object is run, invoked.
 
-##### Why Singleton is used ? 
+##### When should we use Command?
 
-Some objects do not need to get a new instance for each request.For example, like db connections, there is no need to create instance for each client, if it exists, it will cause performance loss and will be diffucult to managed.Connection is clear, it is same for each client who reaching connector.Our example is also connector samples.It connects Northwind services thanks to 'Connector' singleton class.     
-
-*   ##### Singleton or Static Usage, Which Should I Prefer  ?  
-
-    *   Singleton, it is suitable for OOP, some frameworks like Spring and Hibarnate are avoid from static usage.
-	*   Static methods can not override.
-	*   The creation of the Singleton object can be delayed, it can be used as lazy loading, but the static will be loaded into memory as soon as it is called.
-    *   Increasing static usage will provide access to attributes and attributes without having to create objects and manage those objects, but that will leave you lazy and get away from OOP.
-
-##### Connector.java
-
-```
-public class Connector {
-
-    // it is created null when first class is called.
-	private static Connector uniqueInstance = null;
-	
-	private final String hostURL ;
-	private final String pathURL ;
-	private final String serviceURL;
-		
-	//the constructor is  defined private because it must not called from outside.
-	private Connector () {
-		 hostURL = "http://services.odata.org";
-		 pathURL = "/V2/Northwind/Northwind.svc/";
-		 serviceURL = hostURL + pathURL;
-	}
-
-	// Our method to call our class from the outside.
-	// Thanks to synchronized keyword is prevented from runnig the method at the same time 
-	public synchronized static Connector getInstance () {
-		if(uniqueInstance == null) {
-			uniqueInstance = new Connector();
-		}
-		
-		return uniqueInstance;		
-	}
-	...
-}
-```
-
-##### Main.java
-
-```
-public class Main {
-
-	public static void main(String[] args) throws IOException {
-		//We can reach Singleton Connector Class thanks to getInstance()
-		Connector connector = Connector.getInstance();
-
-		//get orders from Northwind.svc
-		String orders = connector.getOrders();
-		System.out.println(orders);
-		
-		...
-	}
-
-}
-```
+We know that each class is a principle of working with a single responsibility, do not we want to classify our differentiated classes with this very principle and call it collectively with a single command, and as necessary? If your answer is yes then here is Command Design Patern :)
 
 ## Summary
 
-We are developed singleton design pattern as how or why can we used ?  
-
-as a summary;
-* The Singleton Design Pattern is an OOP desing pattern we use to prevent the invocation of a new instance of more than one class, which suffices to retrieve a single instance.
-* It is similar to static use, but we must use a singleton to avoid leaving the OOP zone :)
+We asked Command Design Pattern why and how to use it.
+To summarize briefly;
+* The Command Design Pattern will be used to call our classrooms with different functions when we need to clusters them and when we need them to hold them in the queue.
+* With Command Design Pattern, we can use frequently used clustering operations with a single command throughout the day, so we can do our own browser "favorites" as a result :)
 
 ## Links
 
-* [Singleton Oracle Java](http://www.oracle.com/technetwork/articles/java/singleton-1577166.html) - Oracle Java Singleton
-* [Northwind V2 OData SVC ](http://services.odata.org/V2/Northwind/Northwind.svc/) - Northwind Odata 
-
+* [Design Patterns and Architects Ali Kaya & Engin Bulut]
 
 
 
