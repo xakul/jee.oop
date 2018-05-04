@@ -2,7 +2,7 @@
 
 # Topic
 
-Template pattern, an abstract class exposes defined way(s)/template(s) to execute its methods. Its subclasses can override the method implementation as per need but the invocation is to be in the same way as defined by an abstract class. This pattern comes under behavior pattern category.
+Template pattern, an abstract class exposes defined ways to execute its methods. Its subclasses can override the method implementation as per need but the invocation is to be in the same way as defined by an abstract class. This pattern comes under behavior pattern category.
 
 ##UML DIAGRAM OF TAMPLATE PATTERN
 
@@ -37,19 +37,19 @@ Template method pattern is a behavioral design pattern that defines the program 
 # Konu
 Tamplate design
 
-## Önkoşullar
+## Ã–nkoÃ¾ullar
 Temel programlama bilgisi.
 
-Başlangıç seviyesinde OOP bilgisi.
+BaÃ¾langÃ½Ã§ seviyesinde OOP bilgisi.
 
 ## Senaryo
 
-Bu senaryoda bir şirketin çalışanlarını ücretlendirme yapısını ele aldık.İnsan kaynakları ve danışman olarak iki farklı maaş hesaplama sistemi gerekmektedir.Bu durumu tamplate tasarım modelini kullanan bir yapı ile çözüme ulaştıracağız.
+Bu senaryoda bir ÅŸirketin Ã§alÄ±ÅŸanlarÄ±nÄ± Ã¼cretlendirme yapÄ±sÄ±nÄ± ele aldÄ±k.Ä°nsan kaynaklarÄ± ve danÄ±ÅŸman olarak iki farklÄ± maaÅŸ hesaplama sistemi gerekmektedir.Bu durumu tamplate tasarÃ½m modelini kullanan bir yapÄ± ile Ã§Ã¶zÃ¼me ulaÅŸtÄ±racaÄŸÄ±z.
 
-## Açıklama
+## AÃ§Ã½klama
 
-Template tasarım deseninde bir operasyonu gerçekleştirmek için gerekli olan adımlar ve bu adımları çalıştıracak metotlar abstract bir sınıfta tanımlanır. Bu abstract sınıfı uygulayan gerçek sınıflar gerekli adımları overwrite eder ve abstract sınıfında bu adımları kullanan metotlar çağrılarak işlem gerçekleştirilir. Böylece kod tekrarı yapılmasının önüne geçilmiş olunur.
+Template tasarÄ±m deseninde bir operasyonu gerÃ§ekleÅŸtirmek iÃ§in gerekli olan adÄ±mlar ve bu adÄ±mlarÄ± Ã§alÄ±ÅŸtÄ±racak metotlar abstract bir sÄ±nÄ±fta tanÄ±mlanÄ±r. Bu abstract sÄ±nÄ±fÄ± uygulayan gerÃ§ek sÄ±nÄ±flar gerekli adÄ±mlarÄ± overwrite eder ve abstract sÄ±nÄ±flarda bu adÄ±mlarÄ± kullanan metotlar Ã§aprÄ±larakiÅŸlem gerÃ§ekleÅŸtirebilir. BÃ¶ylece kod tekrarÄ± yapÄ±lmasÄ±nÄ±n Ã¶nÃ¼ne geÃ§ilmiÅŸ olunur.
 
-## Özet
+## Ã–zet
 
-Template tasarım deseni; behavioral grubuna ait bir algoritmanın adımlarının abstract sınıfta tanımlanarak farklı adımların concrete sınıflarında overwrite edilip çalıştırılmasını düzenler.
+Template tasarÄ±m deseni; behavioral grubuna ait bir algoritmanÄ±n adÄ±mlarÄ±nÄ±n abstract sÄ±nÄ±fta ttanÄ±mlayarak farklÄ± adÄ±mlarÄ±n concrete sÄ±nÄ±flarda overwrite edilip Ã§alÄ±ÅŸtÄ±rÄ±lmasÄ±nÄ± dÃ¼zenler.
