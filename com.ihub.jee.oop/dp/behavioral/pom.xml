@@ -17,6 +17,7 @@
 		<module>adapter</module>
 		<module>command</module>
 		<module>visitor</module>
+		<module>mediator</module>
 	</modules>
 
 </project>
