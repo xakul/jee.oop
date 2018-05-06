@@ -18,6 +18,7 @@
 		<module>command</module>
 		<module>visitor</module>
 		<module>mediator</module>
+		<module>template</module>
 	</modules>
 
 </project>
