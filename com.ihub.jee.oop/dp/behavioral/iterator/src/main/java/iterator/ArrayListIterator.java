@@ -7,28 +7,27 @@ public class ArrayListIterator implements Iterator {
 	private ArrayList<Player> team;
 	private int position;
 
-	/**
-	 * hasNext() ve next() metotlarını ArrayList tipi bir listede işlem
-	 * yapabilecek şekilde implemente etmiştir.
-	 * 
-	 * hasNext() and next() implemented as can handle a list with type arraylist.
-	 * 
-	 */
-
 	public ArrayListIterator(ArrayList<Player> team2) {
 
 		setTeam(team2);
 	}
 
+	/**
+	 * hasNext() and next() implemented as can handle a list with type
+	 * Arraylist.
+	 * 
+	 * hasNext() ve next() metotlarını ArrayList tipi bir listede işlem
+	 * yapabilecek şekilde implemente etmiştir.
+	 */
 	public boolean hasNext() {
 
 		if (position >= getTeam().size() || getTeam().get(position) == null) {
 			return false;
-
 		}
 
-		else
+		else {
 			return true;
+		}
 	}
 
 	public Object next() {

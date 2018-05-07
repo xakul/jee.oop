@@ -1,28 +1,23 @@
 package iterator;
 
-import java.util.ArrayList;
-
 public class PinarKarsiyaka implements Team {
 
 	private Player[] team;
-	
 
 	/**
-	 * Pinarkarsiyaka sınıfını incelediğimiz zaman, oyuncuların bir Array
-	 * içinde tutulduğunu görmekteyiz.
 	 * Pinarkarsiyaka class list their player with array.
+	 * 
+	 * Pinarkarsiyaka sınıfını incelediğimiz zaman, oyuncuların bir Array içinde
+	 * tutulduğunu görmekteyiz.
 	 */
-
-
 	public PinarKarsiyaka() {
-		
+
 		/**
-		 * Pınarakarşıyaka sınıfını incelediğimiz zaman, oyuncuların bir ArrayList
-		 * içinde tutulduğunu görmekteyiz.
 		 * Pınarakarsiyaka class list their player with array.
+		 *
+		 * Pınarakarsiyaka sınıfını incelediğimiz zaman, oyuncuların bir Array
+		 * içinde tutulduğunu görmekteyiz.
 		 */
-
-
 		team = new Player[5];
 		team[0] = new Player("Scott", 4);
 		team[1] = new Player("Alp", 6);
@@ -31,6 +26,7 @@ public class PinarKarsiyaka implements Team {
 		team[4] = new Player("Akif", 15);
 
 	}
+
 	public Player[] getTeam() {
 		return team;
 	}
@@ -38,7 +34,6 @@ public class PinarKarsiyaka implements Team {
 	public void setTeam(Player[] team) {
 		this.team = team;
 	}
-
 
 	public Iterator getIterator() {
 
