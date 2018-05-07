@@ -135,16 +135,12 @@ Use when: system should be independent of how what it is producing is structured
 
 Özet Fabrika tasarım deseni, uygulanması kolay, değiştirilebilen, test edilen ve yeniden kullanan nesnelerin tasarlandığı esnek ve yeniden kullanılabilir nesne tabanlı yazılımları geliştirerek, yinelenen tasarım sorunlarının nasıl çözüleceğini açıklayan yirmi üç tanınmış tasarım modelinden biridir.
 
-<<<<<<< HEAD
 
 ## Önkoşullar
 
 * Temel programlama bilgisi.
 
 * Başlangıç seviyesinde OOP bilgisi.
-=======
-Başlangıç seviyesinde OOP bilgisi.
->>>>>>> 6d3e36a852021658338bdb6bb6b02f8e37001f16
 
 ## Senaryo
 
