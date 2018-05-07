@@ -5,6 +5,14 @@ public class ArrayIterator implements Iterator {
 	private Player[] team;
 	private int position;
 
+	/**
+	 * hasNext() ve next() metotlarını Array tipi bir listede işlem yapabilecek
+	 * şekilde implemente etmiştir.
+	 * 
+	 * hasNext() and next() implemented as can handle a list with type array.
+	 * 
+	 */
+
 	public int getPosition() {
 		return position;
 	}

@@ -7,6 +7,14 @@ public class ArrayListIterator implements Iterator {
 	private ArrayList<Player> team;
 	private int position;
 
+	/**
+	 * hasNext() ve next() metotlarını ArrayList tipi bir listede işlem
+	 * yapabilecek şekilde implemente etmiştir.
+	 * 
+	 * hasNext() and next() implemented as can handle a list with type arraylist.
+	 * 
+	 */
+
 	public ArrayListIterator(ArrayList<Player> team2) {
 
 		setTeam(team2);
@@ -46,6 +54,5 @@ public class ArrayListIterator implements Iterator {
 	public void setPosition(int position) {
 		this.position = position;
 	}
-
 
 }

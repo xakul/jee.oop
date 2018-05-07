@@ -8,6 +8,12 @@ public class EfesPilsen implements Team {
 
 	public EfesPilsen() {
 
+		/**
+		 * EfesPilsen sınıfını incelediğimiz zaman, oyuncuların bir ArrayList
+		 * içinde tutulduğunu görmekteyiz.
+		 * EfesPilsen class list their player with arraylist
+		 */
+
 		team = new ArrayList<Player>();
 		team.add(new Player("Drew", 4));
 		team.add(new Player("Ender", 6));

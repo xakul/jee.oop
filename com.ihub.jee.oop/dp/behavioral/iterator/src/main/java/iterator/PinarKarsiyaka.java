@@ -5,8 +5,23 @@ import java.util.ArrayList;
 public class PinarKarsiyaka implements Team {
 
 	private Player[] team;
+	
+
+	/**
+	 * Pinarkarsiyaka sınıfını incelediğimiz zaman, oyuncuların bir Array
+	 * içinde tutulduğunu görmekteyiz.
+	 * Pinarkarsiyaka class list their player with array.
+	 */
+
 
 	public PinarKarsiyaka() {
+		
+		/**
+		 * Pınarakarşıyaka sınıfını incelediğimiz zaman, oyuncuların bir ArrayList
+		 * içinde tutulduğunu görmekteyiz.
+		 * Pınarakarsiyaka class list their player with array.
+		 */
+
 
 		team = new Player[5];
 		team[0] = new Player("Scott", 4);
