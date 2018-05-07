@@ -2,7 +2,8 @@
 # Topic
 
 Mediator Pattern
-### UML DİAGRAM OF MEDIATOR PATTERN
+
+### UML Diagram of Mediator Pattern
 
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/mediator/images/meditorUML.PNG)
 
@@ -48,7 +49,7 @@ Düşünülen senaryoda, bir EntityManager operasyonu olan persit() metodu kulla
 
 ## Açıklama
 
-Mediator Pattern, birden çok nesne veya sınıf arasındaki iletişim karmaşıklığını azaltmak için kullanılır. Bu model, normal olarak farklı sınıflar arasındaki tüm iletişimleri işleyen ve kodun gevşek bağlantıyla kolay bakımını destekleyen bir aracı sınıfı sağlar. Mediator Pattern davranış paterni kategorisine girer. Örneğimizde EntityManager olan bir Mediator sınıfını tanımladık ve bu sınıfın, parametre olarak farklı nesne türlerini alan persist() adında iki metodu var. Bu yöntem, ilgili nesnelerin veri tabanına eklenmesi için kullanılır. Bizim iki sınıfta, Customer ve Order sınıfları, insert() metodu vardır ve bu metot Entitymanager.persist(this) kullanılarak veritabanına işlem eklemek için kullanılır. Temel olarak, EntiyManager sınıfını Mediator olarak tanımlamak, Order ve Customer arasındaki iletişimi azaltır. Ekleme işlemi çağrıldığında, EntityManager bu işlemden sorumludur.
+Mediator Pattern, birden çok nesne veya sınıf arasındaki iletişim karmaşıklığını azaltmak için kullanılır. Bu model, normal olarak farklı sınıflar arasındaki tüm iletişimleri işleyen ve kodun gevşek bağlantıyla kolay bakımını destekleyen bir aracı sınıfı sağlar. Mediator Pattern davranış paterni kategorisine girer. Örneğimizde, EntityManager olan bir Mediator sınıfını tanımladık ve bu sınıfın, parametre olarak farklı nesne türlerini alan persist() adında iki metodu var. Bu yöntem, ilgili nesnelerin veri tabanına eklenmesi için kullanılır. Bizim iki sınıfta, Customer ve Order sınıfları, insert() metodu vardır ve bu metot Entitymanager.persist(this) kullanılarak veritabanına işlem eklemek için kullanılır. Temel olarak, EntiyManager sınıfını Mediator olarak tanımlamak, Order ve Customer arasındaki iletişimi azaltır. Ekleme işlemi çağrıldığında, EntityManager bu işlemden sorumludur.
 
 ## Özet
 

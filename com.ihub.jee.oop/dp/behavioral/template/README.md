@@ -4,7 +4,8 @@
 
 Template pattern, an abstract class exposes defined ways to execute its methods. Its subclasses can override the method implementation as per need but the invocation is to be in the same way as defined by an abstract class. This pattern comes under behavior pattern category.
 
-### UML DIAGRAM OF TEMPLATE METHOD PATTERN
+### UML Diagram of Template Method Pattern
+
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/template/images/Template.PNG)
 
 ## Prequisites
@@ -32,17 +33,17 @@ Template method pattern is a behavioral design pattern that defines the program 
 
 ## Links
 
-
-* [Tutorialspoint](https://www.tutorialspoint.com/design_pattern/template_pattern.htm) - Design Patterns tutorial(en)
-
+* [javaturk](http://www.javaturk.org/tasarim-kaliplari-factory-method-uretici-metot-i/) - Design Patterns tutorial(tr)
+* [Tutorialspoint](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm) - Design Patterns tutorial(en)
 
 # Konu
 Tamplate design
 
 ## Önkoşullar
-Temel programlama bilgisi.
 
-Başlangıç seviyesinde OOP bilgisi.
+* Temel programlama bilgisi.
+
+* Başlangıç seviyesinde OOP bilgisi.
 
 ## Senaryo
 

@@ -3,7 +3,7 @@
 
 Visitor Pattern
 
-### UML DIAGRAM OF VISITOR PATTERN
+### UML Diagram of Visitor Pattern
 
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/visitor/images/visitorUML.PNG)
 
@@ -49,7 +49,7 @@ Kullandığımız senaryoda, raf, palet, gateReader ve zippyReader gibi bileşen
 
 ## Açıklama
 
-Visitor Pattern davranışsal tasarım modellerinden biridir. Benzer bir nesneye benzer bir grup üzerinde bir işlem yapmamız gerektiğinde, visitor kalıbı kullanılır. Visitor pattern yardımıyla, operasyonel mantığı nesnelerden başka bir sınıfa taşıyabiliriz. Örneğin, projemizde palet, zippyReader, raf ve gateReader olmak üzere dört bileşenimiz var ve bunlardan raporlar oluşturmak istiyoruz. Bu dört bileşen, Component soyut sınıfını extend eder. Bu sınıfın, accept () adında bir metodu vardır ve bu metot, Visitor türü olarak bir parametre içerir. Tüm bileşenler bu yöntemi kendilerine göre override eder. Abstract Visitor sınıfında dört adet abstract visit() metodu vardır ve bu yöntemlerin nesne parametreleri (Palet, GateReader, ZippyReader ve Shelf) vardır. GoodsMovementReport, ShelfMovementReport ve CarrierMovementReport sınıfları, Abstract Visitor sınıfını extend eder ve visit() metodunu override eder. Bileşenlerimiz bu visit () metodunu işlemlerinde kullanır. accept() metodu bu işlemlere izin verir, çünkü bu metot kendisine gönderilen Visitor arabiriminden türetilen nesne üzerindeki visit() metoduna kendini parametre olarak döndürür. Gönderilen Visitor nesnesinde karşılık gelen visit() metodu yürütülür.
+Visitor Pattern davranışsal tasarım modellerinden biridir. Benzer bir nesneye benzer bir grup üzerinde bir işlem yapmamız gerektiğinde, visitor kalıbı kullanılır. Visitor pattern yardımıyla, operasyonel mantığı nesnelerden başka bir sınıfa taşıyabiliriz. Örneğin, projemizde palet, zippyReader, raf ve gateReader olmak üzere dört bileşenimiz var ve bunlardan raporlar oluşturmak istiyoruz. Bu dört bileşen, Component soyut sınıfını extend eder. Bu sınıfın, accept() adında bir metodu vardır ve bu metot, Visitor türü olarak bir parametre içerir. Tüm bileşenler bu yöntemi kendilerine göre override eder. Abstract Visitor sınıfında dört adet abstract visit() metodu vardır ve bu yöntemlerin nesne parametreleri (Palet, GateReader, ZippyReader ve Shelf) vardır. GoodsMovementReport, ShelfMovementReport ve CarrierMovementReport sınıfları, Abstract Visitor sınıfını extend eder ve visit() metodunu override eder. Bileşenlerimiz bu visit () metodunu işlemlerinde kullanır. accept() metodu bu işlemlere izin verir, çünkü bu metot kendisine gönderilen Visitor arabiriminden türetilen nesne üzerindeki visit() metoduna kendini parametre olarak döndürür. Gönderilen Visitor nesnesinde karşılık gelen visit() metodu yürütülür.
 
 
 ## Özet

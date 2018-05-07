@@ -1,8 +1,9 @@
 #### [English](#topic) / [Turkish](#konu)
 # Topic
 
-The purpose of the Command Pattern Tutorial, Behavioral Design Patterns, will explain in a Java project why and where it is used.
-### UML DIAGRAM OF COMMAND PATTERN
+The purpose of the Command Pattern , which is a Behavioral Design Pattern, will explain in a Java project why and where it is used.
+
+### UML Diagram of Command Pattern
 
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/command/%C4%B1mages/CommandUML.PNG)
 
@@ -74,7 +75,7 @@ Command nesnesinin referansı burada bulunur ve Command nesnesini çalıştırı
 
 ##### Ne zaman Command Kullanmalıyız ? 
 
-Her bir sınıfın tek bir sorumluluk ile çalışma prensibi olduğunu biliyoruz, peki bu prensip ile farklılaşan sınıflarımızı kümelendirip tek bir komutla toplu bir şekilde çağırıp, ve gerektiği gibi çalışmasını istemez miyiz ? Cevabınız evet ise işte size Command Design Patternn.
+Her bir sınıfın tek bir sorumluluk ile çalışma prensibi olduğunu biliyoruz, peki bu prensip ile farklılaşan sınıflarımızı kümelendirip tek bir komutla toplu bir şekilde çağırıp, ve gerektiği gibi çalışmasını istemez miyiz? Cevabınız evet ise işte size Command Design Patternn.
 
 ## Özet
 

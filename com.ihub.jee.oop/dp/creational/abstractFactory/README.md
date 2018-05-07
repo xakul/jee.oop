@@ -4,7 +4,7 @@
 
 The Abstract Factory design pattern is one of the twenty-three well-known design patterns that describe how to solve recurring design problems by improving design flexible and reusable object-oriented software, which objects that are easier to implement, change, test and reuse.
 
-### UML DIAGRAM OF ABSTRACT FACTORY PATTERN
+### UML Diagram of Abstract Method Pattern
 
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/abstractFactory/images/abstractFactorUML.PNG)
 
@@ -47,15 +47,15 @@ public abstract class AbstractFactory {
 }
 
 ## FactoryProducer.java
-/*
- * These class choose that which class going to created.
- * 
- * 
- * Bu class değerlere göre hangi classın çalışacağına karar verir.
- * 
- * */
+
 public class FactoryProducer {
 
+/**
+ * These class choose that which class going to created.
+ * 
+ * Bu class değerlere göre hangi classın çalışacağına karar verir.
+ */
+ 
 	public static AbstractFactory getFactory(String choice) {
 
 		if (choice.equalsIgnoreCase("PIPE")) {
@@ -134,7 +134,6 @@ Use when: system should be independent of how what it is producing is structured
 # Konu
 
 Özet Fabrika tasarım deseni, uygulanması kolay, değiştirilebilen, test edilen ve yeniden kullanan nesnelerin tasarlandığı esnek ve yeniden kullanılabilir nesne tabanlı yazılımları geliştirerek, yinelenen tasarım sorunlarının nasıl çözüleceğini açıklayan yirmi üç tanınmış tasarım modelinden biridir.
-
 
 ## Önkoşullar
 
