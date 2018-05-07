@@ -2,9 +2,10 @@ package abstractFactory;
 
 /**
  * Create an interface for pipes.
- * pipe Ã§eÅŸitleri iÃ§in bir interface yarat
+ *
+ * Pipe çeşitelrei için bir interface yarat.
  * 
- * */
+ */
 
 public interface PipeShape {
 

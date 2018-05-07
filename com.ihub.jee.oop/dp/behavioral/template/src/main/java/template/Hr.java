@@ -1,6 +1,9 @@
 package template;
 
 public class Hr extends SalaryCalculation {
+	
+	
+
 
 	@Override
 	void WorkingDay() {

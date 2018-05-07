@@ -1,17 +1,20 @@
 package abstractFactory;
-/**
- * Create Factory classes extending AbstractFactory to generate object of concrete class based on given information.
- * AbstracFactoryden extend edilen bir PalletFactory classÄ± oluÅŸtur.
- * 
- * */
 
+/**
+ * Create Factory classes extending AbstractFactory to generate object of
+ * concrete class based on given information.
+ * 
+ * AbstracFactoryden extend edilen bir PalletFactory classý oluþtur.
+ * 
+ */
 
 public class PalletFactory extends AbstractFactory {
 
-	
 	/**
 	 * create a new steal or wooden object via getting instance.
-	 * bir instance alarak(wooden veya steal) hangi sÄ±nÄ±fÄ±n yaratÄ±lacaÄŸÄ±na karar verir.
+	 * 
+	 * Bir instance alarak(wooden veya steal) hangi sýnýftan yaratýlacaðýna
+	 * karar verir.
 	 * 
 	 **/
 	@Override

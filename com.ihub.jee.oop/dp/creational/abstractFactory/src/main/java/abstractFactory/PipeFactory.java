@@ -1,10 +1,13 @@
 package abstractFactory;
 
 /**
- * Create Factory classes extending AbstractFactory to generate object of concrete class based on given information.
- * AbstracFactoryden extend edilen bir  class oluÅŸtur.Bu class hangi tip pipin oluÅŸturulucaÄŸÄ±na karar verir.
+ * Create Factory classes extending AbstractFactory to generate object of
+ * concrete class based on given information.
  * 
- * */
+ * AbstracFactoryden extend edilen bir class oluþtur.Bu class hangi tip pipin
+ * oluþturalcaðýna karar verir.
+ * 
+ */
 
 public class PipeFactory extends AbstractFactory {
 
