@@ -1,29 +1,28 @@
 package visitor;
 
-public class Shelf extends Components{
+public class Shelf extends Components {
 
 	private String shelfId;
 	private String shelfType;
 	private String width;
 	private String length;
 	private String height;
-	
+
 	/**
-	 * A constructor was created to create a shelf according to a
-	 * parameter.
+	 * A constructor was created to create a shelf according to a parameter.
 	 * 
 	 * Verilen parametrelere göre bir shelf oluşması için constructor
 	 * oluşturuldu.
 	 */
-	public Shelf(String shelfId,String shelfType,String width,String length,String height){
+	public Shelf(String shelfId, String shelfType, String width, String length, String height) {
 		this.shelfId = shelfId;
 		this.shelfType = shelfType;
 		this.height = height;
 		this.width = width;
 		this.length = length;
-		
+
 	}
-	
+
 	/**
 	 * overrides accept() method and has parameter in visit method which is
 	 * Shelf object.
@@ -35,7 +34,7 @@ public class Shelf extends Components{
 	public void accept(Visitor visitor) {
 		visitor.visit(this);
 	}
-	
+
 	public String getShelfId() {
 		return shelfId;
 	}

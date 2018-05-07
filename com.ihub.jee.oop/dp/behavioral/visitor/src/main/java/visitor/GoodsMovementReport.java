@@ -18,7 +18,7 @@ public class GoodsMovementReport extends Visitor {
 		System.out.println("Pallet ID: " + pallet.getTagId());
 		System.out.println("Pallet Type: " + pallet.getType());
 		System.out.println("Pallet Shape: " + pallet.getShape());
-		
+
 	}
 
 	@Override
@@ -27,7 +27,7 @@ public class GoodsMovementReport extends Visitor {
 		System.out.println("Gate Width: " + gateReader.getWidth());
 		System.out.println("Gate Length: " + gateReader.getLength());
 		System.out.println("Gate Height: " + gateReader.getHeight());
-		
+
 	}
 
 	@Override
@@ -35,7 +35,7 @@ public class GoodsMovementReport extends Visitor {
 		System.out.println("ZippyReader ID: " + zippyReader.getId());
 		System.out.println("ZippyReader Model: " + zippyReader.getModel());
 		System.out.println("ZippyReader Type: " + zippyReader.getZippyType());
-		
+
 	}
 
 	@Override
@@ -45,7 +45,7 @@ public class GoodsMovementReport extends Visitor {
 		System.out.println("Shelf Width: " + shelf.getWidth());
 		System.out.println("Shelf Length: " + shelf.getLength());
 		System.out.println("Shelf Height: " + shelf.getHeight());
-		
+
 	}
 
 }

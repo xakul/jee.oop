@@ -66,9 +66,9 @@ public class Main {
 		 * We are giving the visitor parameter by using accept() method to our
 		 * component classes than we are deriving reports thanks to Visitor.
 		 * 
-		 * Visitor parametresini, component sınıflarımıza accept ()
-		 * metodunu kullanarak veriyoruz, daha sonra Visitor sayesinde
-		 * raporları yazdırıyoruz.
+		 * Visitor parametresini, component sınıflarımıza accept () metodunu
+		 * kullanarak veriyoruz, daha sonra Visitor sayesinde raporları
+		 * yazdırıyoruz.
 		 */
 		pallet.accept(visitor);
 		shelf.accept(visitor);

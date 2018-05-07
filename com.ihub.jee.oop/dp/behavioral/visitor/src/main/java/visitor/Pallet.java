@@ -5,10 +5,9 @@ public class Pallet extends Components {
 	private String tagId;
 	private String shape;
 	private String type;
-	
+
 	/**
-	 * A constructor was created to create a pallet according to a
-	 * parameter.
+	 * A constructor was created to create a pallet according to a parameter.
 	 * 
 	 * Verilen parametrelere göre bir pallet oluşması için constructor
 	 * oluşturuldu.
@@ -17,9 +16,9 @@ public class Pallet extends Components {
 		this.shape = shape;
 		this.tagId = tagId;
 		this.type = type;
-		
+
 	}
-	
+
 	/**
 	 * overrides accept() method and has parameter in visit method which is
 	 * Pallet object.
@@ -31,7 +30,7 @@ public class Pallet extends Components {
 	public void accept(Visitor visitor) {
 		visitor.visit(this);
 	}
-	
+
 	public String getTagId() {
 		return tagId;
 	}

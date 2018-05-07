@@ -5,14 +5,14 @@ public class Order {
 	private String orderId;
 	private String customerId;
 	private String employeeId;
-	
+
 	public Order(String orderId, String customerId, String employeeId) {
 		this.orderId = orderId;
 		this.customerId = customerId;
 		this.employeeId = employeeId;
-		
+
 	}
-	
+
 	/**
 	 * insert() method is used to insert the order to database by using our
 	 * Mediator class EntityManager. persist() method implemented in
@@ -25,7 +25,7 @@ public class Order {
 	public void insert() {
 		EntityManager.persist(this);
 
-	} 
+	}
 
 	public String getOrderId() {
 		return orderId;

@@ -12,7 +12,8 @@ public class CustomerFacade {
 	/**
 	 * Giving the CustomerReport object to CustomerFacade as a parameter.
 	 * 
-	 * CustomerReport objemizi CustomerFacade sınıfına parametre olarak veriyoruz.
+	 * CustomerReport objemizi CustomerFacade sınıfına parametre olarak
+	 * veriyoruz.
 	 */
 	public CustomerFacade(CustomerReport customerReport) {
 		this.customerReport = customerReport;
@@ -58,15 +59,15 @@ public class CustomerFacade {
 	}
 
 	/**
-	 * Update() method, is used to updates the customer report in our database with
-	 * taking ClientReport parameter.
+	 * Update() method, is used to updates the customer report in our database
+	 * with taking ClientReport parameter.
 	 * 
 	 * Update() metodu, bir müşteri raporunu CustomerReport parametresi ile
 	 * veritabanımızda güncellemek için kullanılır.
 	 */
 	public void update(CustomerReport customerReport) {
 		customerReport.beginTransaction();
-		
+
 		/**
 		 * id, location and industry updated with setter() methods.
 		 * 
@@ -81,7 +82,7 @@ public class CustomerFacade {
 	}
 
 	/**
-	 * read() metot used for print customer report.
+	 * read() method used for print customer report.
 	 * 
 	 * read() metodu müşteri raporunu yazdırmak için kullanılır.
 	 */

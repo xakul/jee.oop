@@ -47,7 +47,7 @@ public class CustomerReport {
 	/**
 	 * We begin our database process with beginTransaction () method.
 	 * 
-	 * beginTransaction() metodu ile veritabanı işlemimizi başlatıyoruz. 
+	 * beginTransaction() metodu ile veritabanı işlemimizi başlatıyoruz.
 	 */
 	public void beginTransaction() {
 		System.out.println("Database connection started...");
@@ -61,5 +61,5 @@ public class CustomerReport {
 	public void commitTransaction() {
 		System.out.println("Commit process started...");
 	}
-	
+
 }

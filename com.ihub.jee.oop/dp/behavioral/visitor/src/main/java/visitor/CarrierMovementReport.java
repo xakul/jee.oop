@@ -1,7 +1,7 @@
 package visitor;
 
-public class CarrierMovementReport extends Visitor{
-	
+public class CarrierMovementReport extends Visitor {
+
 	/**
 	 * We override the vist methods found in the Visitor. We pass our classes
 	 * that derive from the Component class as parameters to this visit method.
@@ -18,7 +18,7 @@ public class CarrierMovementReport extends Visitor{
 		System.out.println("Pallet Tag ID: " + pallet.getTagId());
 		System.out.println("Pallet Shape: " + pallet.getShape());
 		System.out.println("Pallet Type: " + pallet.getType());
-		
+
 	}
 
 	@Override
@@ -27,20 +27,20 @@ public class CarrierMovementReport extends Visitor{
 		System.out.println("GateReader Width: " + gateReader.getWidth());
 		System.out.println("GateReader Length: " + gateReader.getLength());
 		System.out.println("GateReader Height: " + gateReader.getHeight());
-		
+
 	}
 
 	@Override
 	public void visit(ZippyReader zippyReader) {
 		System.out.println("ZippyReader ID: " + zippyReader.getId());
-		
+
 	}
 
 	@Override
 	public void visit(Shelf shelf) {
 		System.out.println("Shelf ID: " + shelf.getShelfId());
 		System.out.println("Shelf Type: " + shelf.getShelfType());
-		
+
 	}
-	
+
 }
