@@ -11,12 +11,14 @@ public class FactoryProducer {
 
 		if (choice.equalsIgnoreCase("PIPE")) {
 			return new PipeFactory();
+
 		} else if (choice.equalsIgnoreCase("PALLET")) {
+
 			return new PalletFactory();
 
 		}
-		return null;
 
+		return null;
 	}
 
 }

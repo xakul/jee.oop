@@ -7,7 +7,6 @@ package abstractFactory;
  * AbstracFactoryden extend edilen bir class oluştur Bu class hangi tip pipe
  * oluşturulacağına karar verir.
  */
-
 public class PipeFactory extends AbstractFactory {
 
 	@Override
