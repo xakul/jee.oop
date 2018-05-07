@@ -3,6 +3,10 @@
 
 Facade Pattern
 
+### UML DIAGRAM OF FACEDE PATTERN
+
+![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/structural/facade/images/facedeUML.PNG)
+
 ## Prequisites
 
 * To understand this design pattern you will need to understand 4 object oriented programming concepts (Inheritence, Polymorphism, Abstraction and Inheritence). 

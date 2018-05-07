@@ -3,6 +3,10 @@
 
 Visitor Pattern
 
+### UML DIAGRAM OF VISITOR PATTERN
+
+![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/visitor/images/visitorUML.PNG)
+
 ## Prequisites
 
 * To understand this design pattern you will need to understand 4 object oriented programming concepts (Inheritence, Polymorphism, Abstraction and Inheritence). 
