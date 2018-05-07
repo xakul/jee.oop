@@ -2,7 +2,7 @@
 
 # Topic
 
-The Abstract Factory  design pattern is one of the twenty-three well-known GoF design (The Gang of Four are the four authors of the book, "Design Patterns: Elements of Reusable Object-Oriented Software."). patterns that describe how to solve recurring design problems to design flexible and reusable object-oriented software, that is, objects that are easier to implement, change, test, and reuse.
+The Abstract Factory design pattern is one of the twenty-three well-known design patterns that describe how to solve recurring design problems by improving design flexible and reusable object-oriented software, which objects that are easier to implement, change, test and reuse.
 
 ### UML DIAGRAM OF ABSTRACT FACTORY PATTERN
 
@@ -10,14 +10,14 @@ The Abstract Factory  design pattern is one of the twenty-three well-known GoF d
 
 ## Prequisites
 
-Basic java programming knowledge
+* Basic java programming knowledge.
 
-Basic OOP knowledge
+* Basic OOP knowledge.
 
 
 ## Scenario
-In this Scenario we are going to handle with a factory that produce industrial pipe and pallet.this factory has two type pallet that steal and wooden,and two types of pipe which are silicone and plastic.Our scope of this project,to provide an interface for creating brane-related or dependent object families without specifying concrete classes of objects.
 
+In this scenario we have dealt with a factory that produces industrial pallets and pipes in different types. This plant produces two types of pallets in steel, wood, and silicon, two types of pipes in plastic. Our goal in this scenario is to create an interface to create interrelated or dependent object families without specifying concrete classes of objects.
 
 ## Explanation
 
@@ -44,23 +44,31 @@ Use when: system should be independent of how what it is producing is structured
 
 
 # Konu
-Abstract Factory design
 
-## Önkoþullar
-Temel programlama bilgisi.
+Özet Fabrika tasarım deseni, uygulanması kolay, değiştirilebilen, test edilen ve yeniden kullanan nesnelerin tasarlandığı esnek ve yeniden kullanılabilir nesne tabanlı yazılımları geliştirerek, yinelenen tasarım sorunlarının nasıl çözüleceğini açıklayan yirmi üç tanınmış tasarım modelinden biridir.
 
-Baþlangıç seviyesinde OOP bilgisi.
+
+## Önkoşullar
+
+* Temel programlama bilgisi.
+
+* Başlangıç seviyesinde OOP bilgisi.
 
 ## Senaryo
 
-Bu senaryoda Farklı tiplerde endutriel palet ve boru üreten bir fabrika ele aldık.Bu fabrika çelik ve tahta olamak üzere iki ayrı  palet ve silikon, plastik olmak üzere iki ayrı boru tipi üretmektedir.Bu senaryodaki amacımız,brbirleriyle ilgili ya da bağımlı nesne ailelerini, nesnelerin somut sınıflarını belirtmeden yaratmak için bir arayüz oluşturmak.
+Bu senaryoda farklı tiplerde endüstriyel palet ve boru üreten bir fabrika ele aldık. Bu fabrika çelik, tahta tiplerinde iki tane palet tipi ve silikon, plastik tiplerinde iki ayrı boru tipi üretmektedir.Bu senaryodaki amacımız, birbirleriyle ilgili ya da bağımlı nesne ailelerini, nesnelerin somut sınıflarını belirtmeden yaratmak için bir arayüz oluşturmak.
 
 
 ## Açıklama
 
-Abstract factory design pattern factory design ile benzer özelliklere sahiptir.Bu iki designi ayıran en buyuk fark factory gibi tek bir interfaceden değil,her ürün için ayrı bir interface kullanılmasıdır.
+Abstract factory design pattern, factory design ile benzer özelliklere sahiptir. Bu iki paterni ayıran en büyük fark factory gibi tek bir interface'ten değil, her ürün için ayrı bir interface kullanılmasıdır.
 
 
 ## Özet
 
-Birden fazla ürün ailesi ile çaliþmak durumunda kaldığımız, kullanacağımız ürün ailesi ile client tarafını soyutlamak için abstrac factory kullanılır.Birbaşka kullanım amacı ise factory pattern kullandığımız factoryProducer sınıfınn içine if else bloclarıyla hangi objenin oluþturulucağına karar veririz.
+Birden fazla ürün ailesi ile çalışmak durumunda kaldığımızda, kullanacağımız ürün ailesi ile client tarafını soyutlamak için abstract factory kullanılır.Bir başka kullanım amacı ise factory pattern kullandığımız factoryProducer sınıfının içine if/else yapısı ile hangi objenin oluşturulacağına karar veririz.
+
+## Linkler
+
+* [javaturk](http://www.javaturk.org/tasarim-kaliplari-factory-method-uretici-metot-i/) - Design Patterns tutorial(tr)
+* [Tutorialspoint](https://www.tutorialspoint.com/design_pattern/factory_pattern.htm) - Design Patterns tutorial(en)
