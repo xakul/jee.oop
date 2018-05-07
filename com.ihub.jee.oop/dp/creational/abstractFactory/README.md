@@ -32,6 +32,94 @@ How can a class be independent of how the objects it requires are created?
 How can families of related or dependent objects be created?
 
 
+### abstractFactory.java
+/**
+ * Create an Abstract class to get factories for Type and Shape Objects.
+ * 
+ * Pipe veya pallet üretmek için bir abstract class oluştur.
+ * 
+ */
+public abstract class AbstractFactory {
+
+	abstract PalletType getType(String type);
+
+	abstract PipeShape getShape(String shape);
+}
+
+## FactoryProducer.java
+/*
+ * These class choose that which class going to created.
+ * 
+ * 
+ * Bu class değerlere göre hangi classın çalışacağına karar verir.
+ * 
+ * */
+public class FactoryProducer {
+
+	public static AbstractFactory getFactory(String choice) {
+
+		if (choice.equalsIgnoreCase("PIPE")) {
+			return new PipeFactory();
+		} else if (choice.equalsIgnoreCase("PALLET")) {
+			return new PalletFactory();
+
+		}
+		return null;
+
+	}
+
+}
+
+### main.java
+	public static void main(String[] args) {
+
+		/**
+		 * Get pipe factory.Pipe factory oluştur.
+		 *
+		 */
+		AbstractFactory pipeFactory = FactoryProducer.getFactory("PIPE");
+
+		/**
+		 * Get an object of PipeShape silicone.
+		 * 
+		 * // * PipeShape classından silicon pipe üret.
+		 */
+
+		PipeShape pipe1 = pipeFactory.getShape("SILICONE");
+
+		/**
+		 * Call palletShape method of Shape 3D.
+		 * 
+		 * SiliconePipe classından palletType methodunu cağır.
+		 * 
+		 */
+
+		pipe1.pipeType();
+
+		/**
+		 * Get Pallet factory. Pallet factory oluştur.
+		 */
+		AbstractFactory palletFactory = FactoryProducer.getFactory("PALLET");
+
+		/**
+		 * Get an object of Pallettype Steal.
+		 * 
+		 * PalletType sınıfınfan steal objesi yarat.
+		 */
+		PalletType pallet = palletFactory.getType("steal");
+		/**
+		 * Call palletType method of type steal.
+		 * 
+		 * Steal classından palletType methodunu cağır.
+		 * 
+		 */
+
+		pallet.palletType();
+
+	}
+
+}
+
 ## Summary
 
 Rather than building a concrete object, it’s building a family of related or dependent objects without specifying concrete class.
@@ -47,12 +135,16 @@ Use when: system should be independent of how what it is producing is structured
 
 Özet Fabrika tasarım deseni, uygulanması kolay, değiştirilebilen, test edilen ve yeniden kullanan nesnelerin tasarlandığı esnek ve yeniden kullanılabilir nesne tabanlı yazılımları geliştirerek, yinelenen tasarım sorunlarının nasıl çözüleceğini açıklayan yirmi üç tanınmış tasarım modelinden biridir.
 
+<<<<<<< HEAD
 
 ## Önkoşullar
 
 * Temel programlama bilgisi.
 
 * Başlangıç seviyesinde OOP bilgisi.
+=======
+Başlangıç seviyesinde OOP bilgisi.
+>>>>>>> 6d3e36a852021658338bdb6bb6b02f8e37001f16
 
 ## Senaryo
 
