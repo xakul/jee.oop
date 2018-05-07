@@ -1,6 +1,14 @@
 package template;
 
 public class Consultant extends SalaryCalculation {
+	
+	
+	/**
+	 * SalaryCalculation extend edilip ilgili methodlar override edilir.
+	 * 
+	 * Extend the salaryCalculation class and override unimplemneted methods.
+	 * */
+
 
 	@Override
 	void workingDay() {
