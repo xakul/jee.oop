@@ -3,32 +3,30 @@ package template;
 public class Consultant extends SalaryCalculation {
 
 	@Override
-	void WorkingDay() {
+	void workingDay() {
 		System.out.println("This consultant work 24 day last month");
 
 	}
 
 	@Override
-	void Coeficient() {
-
+	void coeficient() {
 		System.out.println("Coeficient is : 2.5");
 
 	}
 
 	@Override
-	void CustomerConsulting() {
+	void customerConsulting() {
 		System.out.println("This consultant work for customer 20 day ");
 
 	}
 
 	@Override
-	void OfficeShift() {
-		
+	void officeShift() {
+
 	}
 
 	@Override
-	void Salary() {
-
+	void salary() {
 		System.out.println("Salary : 10000 $");
 	}
 

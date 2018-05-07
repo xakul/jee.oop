@@ -1,11 +1,9 @@
 package abstractFactory;
 
 /**
- * Create an interface for Types.
+ * Create an interface for types.
  * 
- * 
- * Palet tiplerin için bir interface yarat
- * 
+ * Palet tiplerin iÃ§in bir interface yarat.
  */
 public interface PalletType {
 

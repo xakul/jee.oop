@@ -3,23 +3,24 @@ package command;
 import java.util.ArrayList;
 
 /**
- * Invoker Class has Command objects and executes 
- * method of Command Objects.
+ * Invoker Class has Command objects and executes method of Command Objects.
  * 
- * Invoker Class'i command nesnelerine sahiptir 
- * ve command nesnesindeki methodu çalıştırır.
+ * Invoker Class'i command nesnelerine sahiptir ve command nesnesindeki methodu
+ * çalıştırır.
  */
 public class CommandManager {
+	
 	/**
 	 * All different receiver commands are kept with one query.
 	 * 
 	 * Bütün farklı receiver sınıflara ait commandler tek kuyrukta tutulur.
 	 */
-	public ArrayList<ICommand> CommandList ;
-	
+	public ArrayList<ICommand> CommandList;
+
 	public CommandManager() {
 		CommandList = new ArrayList<ICommand>();
 	}
+
 	/**
 	 * All Command List executes one method so command.
 	 * 
@@ -32,14 +33,15 @@ public class CommandManager {
 			i++;
 		}
 	}
+
 	/**
-	 * getter,setter
+	 * getter(),setter() methods.
 	 * 
 	 */
 	public ArrayList<ICommand> getCommandList() {
 		return CommandList;
 	}
-	
+
 	public void setCommandList(ArrayList<ICommand> commandList) {
 		CommandList = commandList;
 	}

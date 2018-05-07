@@ -1,12 +1,10 @@
 package abstractFactory;
 
-/*
+/**
  * These class choose that which class going to created.
  * 
- * 
- * Bu class de�erlere g�re hangi class�n �al��aca��na karar verir.
- * 
- * */
+ * Bu class değerlere göre hangi sınıfın çalışacağına karar verir.
+ */
 public class FactoryProducer {
 
 	public static AbstractFactory getFactory(String choice) {

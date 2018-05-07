@@ -2,15 +2,15 @@ package template;
 
 public abstract class SalaryCalculation {
 
-	abstract void WorkingDay();
+	abstract void workingDay();
 
-	abstract void Coeficient();
+	abstract void coeficient();
 
-	abstract void CustomerConsulting();
+	abstract void customerConsulting();
 
-	abstract void OfficeShift();
+	abstract void officeShift();
 
-	abstract void Salary();
+	abstract void salary();
 
 	/**
 	 * template method
@@ -18,32 +18,32 @@ public abstract class SalaryCalculation {
 	public final void SalaryForConsultant() {
 
 		/**
-		 * Calculation of Workingday.
+		 * Calculation of workingday.
 		 * 
 		 * 
-		 * Çaliþma günlerini Hesaplar.
+		 * Ã‡alÄ±ÅŸma gÃ¼nlerini hesaplar.
 		 */
-		WorkingDay();
+		workingDay();
 		/**
 		 * Set the coeffience.
 		 * 
-		 * Katsayýyý belirler..
+		 * KatsayÄ±yÄ± belirler.
 		 */
-		Coeficient();
-		/*
+		coeficient();
+		/**
 		 * Set the Consulting day.
 		 * 
-		 * Danýþmanlýk günlerini belirler.
-		 **/
-		CustomerConsulting();
-
-		Salary();
+		 * DanÄ±ÅŸmanlÄ±k gÃ¼nlerini belirler.
+		 */
+		customerConsulting();
+		salary();
 	}
 
 	public final void SalaryForHR() {
-		OfficeShift();
-		Coeficient();
-		WorkingDay();
-		Salary();
+		officeShift();
+		coeficient();
+		workingDay();
+		salary();
+		
 	}
 }

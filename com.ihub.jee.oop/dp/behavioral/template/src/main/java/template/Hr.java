@@ -1,37 +1,34 @@
 package template;
 
 public class Hr extends SalaryCalculation {
-	
-	
-
 
 	@Override
-	void WorkingDay() {
+	void workingDay() {
 		System.out.println("This Hr work 24 day last month");
 
 	}
 
 	@Override
-	void Coeficient() {
+	void coeficient() {
 		System.out.println("Coeficient : 2.0");
 
 	}
 
 	@Override
-	void CustomerConsulting() {
+	void customerConsulting() {
 
 	}
 
 	@Override
-	void OfficeShift() {
+	void officeShift() {
 		System.out.println("24 day office shift");
 
 	}
 
 	@Override
-	void Salary() {
-
+	void salary() {
 		System.out.println("Salary : 10000 $");
+		
 	}
 
 }

@@ -4,9 +4,8 @@ package abstractFactory;
  * Create Factory classes extending AbstractFactory to generate object of
  * concrete class based on given information.
  * 
- * AbstracFactoryden extend edilen bir class oluþtur.Bu class hangi tip pipin
- * oluþturalcaðýna karar verir.
- * 
+ * AbstracFactoryden extend edilen bir class oluÅŸtur Bu class hangi tip pipe
+ * oluÅŸturulacaÄŸÄ±na karar verir.
  */
 
 public class PipeFactory extends AbstractFactory {
@@ -27,7 +26,6 @@ public class PipeFactory extends AbstractFactory {
 
 	@Override
 	PalletType getType(String type) {
-
 		return null;
 	}
 
