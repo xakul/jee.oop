@@ -21,29 +21,36 @@ public abstract class SalaryCalculation {
 		 * Calculation of workingday.
 		 * 
 		 * 
-		 * Ã‡alÄ±ÅŸma gÃ¼nlerini hesaplar.
+		 * çalýþma günlerini hesaplar.
 		 */
 		workingDay();
 		/**
 		 * Set the coeffience.
 		 * 
-		 * KatsayÄ±yÄ± belirler.
+		 * Katsayýyý belirler.
 		 */
 		coeficient();
 		/**
 		 * Set the Consulting day.
 		 * 
-		 * DanÄ±ÅŸmanlÄ±k gÃ¼nlerini belirler.
+		 * Danýþmanlýk Gunlerini belirler.
 		 */
 		customerConsulting();
 		salary();
 	}
 
 	public final void SalaryForHR() {
+
+		/**
+		 * calculation of officeShift
+		 * 
+		 * ofiste çalýþýlan günler.
+		 */
 		officeShift();
+
 		coeficient();
 		workingDay();
 		salary();
-		
+
 	}
 }
