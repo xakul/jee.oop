@@ -3,7 +3,7 @@
 
 Facade Pattern
 
-### UML DIAGRAM OF FACEDE PATTERN
+### UML DIAGRAM OF FACADE PATTERN
 
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/structural/facade/images/facedeUML.PNG)
 

@@ -2,7 +2,7 @@
 # Topic
 
 Mediator Pattern
-### UML DİAGRAM OF MEDİATOR PATTERN
+### UML DİAGRAM OF MEDIATOR PATTERN
 
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/mediator/images/meditorUML.PNG)
 

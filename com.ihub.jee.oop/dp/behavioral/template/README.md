@@ -4,7 +4,7 @@
 
 Template pattern, an abstract class exposes defined ways to execute its methods. Its subclasses can override the method implementation as per need but the invocation is to be in the same way as defined by an abstract class. This pattern comes under behavior pattern category.
 
-### UML DIAGRAM OF TAMPLATE PATTERN
+### UML DIAGRAM OF TEMPLATE METHOD PATTERN
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/template/images/Template.PNG)
 
 ## Prequisites
