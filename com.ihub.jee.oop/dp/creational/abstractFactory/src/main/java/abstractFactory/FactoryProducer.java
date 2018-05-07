@@ -1,8 +1,10 @@
 package abstractFactory;
 
 /*
- * these class choose that which class going to created.
- * bu class alınan değere göre hangi classın çağırılcağına karar verir.
+ * These class choose that which class going to created.
+ * 
+ * 
+ * Bu class de�erlere g�re hangi class�n �al��aca��na karar verir.
  * 
  * */
 public class FactoryProducer {

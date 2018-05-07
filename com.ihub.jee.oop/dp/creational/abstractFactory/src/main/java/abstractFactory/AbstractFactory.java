@@ -2,9 +2,10 @@ package abstractFactory;
 
 /**
  * Create an Abstract class to get factories for Type and Shape Objects.
- * pipe veya pallet Ã¼retmek iÃ§in bir abstract class oluÅŸtur.
  * 
- * */
+ * Pipe veya pallet üretmek için bir abstract class oluþtur.
+ * 
+ */
 public abstract class AbstractFactory {
 
 	abstract PalletType getType(String type);
