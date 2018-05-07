@@ -41,7 +41,7 @@ public class CustomerFacade {
 		 * 
 		 * read() metodu veritabanımızdaki verilerin yazdırılmasını sağlar.
 		 */
-		read();
+		this.read();
 
 		/**
 		 * commitTransaction() method sends the data to database. If a
@@ -75,7 +75,7 @@ public class CustomerFacade {
 		customerReport.setId("C1000");
 		customerReport.setLocation("Istanbul");
 		customerReport.setIndustry("Chemistry");
-		read();
+		this.read();
 		customerReport.commitTransaction();
 		System.out.println("update operation finished successfully.\n");
 	}

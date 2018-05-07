@@ -6,7 +6,7 @@ The Abstract Factory  design pattern is one of the twenty-three well-known GoF d
 
 ##UML DIAGRAM OF ABSTRACT FACTORY PATTERN
 
-![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/factory/images/AbstractfactoryUml.PNG)
+![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/abstractFactory/images/abstractFactorUML.PNG)
 
 ## Prequisites
 
@@ -44,7 +44,7 @@ Use when: system should be independent of how what it is producing is structured
 
 
 # Konu
-Factory design
+Abstract Factory design
 
 ## Önkoþullar
 Temel programlama bilgisi.
@@ -53,10 +53,10 @@ Baþlangıç seviyesinde OOP bilgisi.
 
 ## Senaryo
 
-Bu senaryoda FARKLI tiplerde endutriel palet ve boru üreten bir  ele aldık.Bu fabrika çelik ve tahta olamk üzere iki ayrı  palet ve silikon, plastik olmak üzere iki ayrı boru tipi üretmektedir.Bu senaryodaki amacımız,brbirleriyle ilgili ya da bağımlı nesne ailelerini, nesnelerin somut sınıflarını belirtmeden yaratmak için bir arayüz sağlamak.
+Bu senaryoda Farklı tiplerde endutriel palet ve boru üreten bir fabrika ele aldık.Bu fabrika çelik ve tahta olamak üzere iki ayrı  palet ve silikon, plastik olmak üzere iki ayrı boru tipi üretmektedir.Bu senaryodaki amacımız,brbirleriyle ilgili ya da bağımlı nesne ailelerini, nesnelerin somut sınıflarını belirtmeden yaratmak için bir arayüz oluşturmak.
 
 
-## Açýklama
+## Açıklama
 
 Abstract factory design pattern factory design ile benzer özelliklere sahiptir.Bu iki designi ayıran en buyuk fark factory gibi tek bir interfaceden değil,her ürün için ayrı bir interface kullanılmasıdır.
 

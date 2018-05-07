@@ -3,12 +3,12 @@ package visitor;
 public class GoodsMovementReport extends Visitor {
 
 	/**
-	 * We override the vist methods found in the Visitor. We pass our classes
+	 * We override the visit methods found in the Visitor. We pass our classes
 	 * that derive from the Component class as parameters to this visit method.
 	 * Thus, we use our objects that derive from our Component class to print
 	 * our report through the Visitor.
 	 * 
-	 * Visitor içinde bulunan vist metotlarını override ediyoruz. Component
+	 * Visitor içinde bulunan visit metotlarını override ediyoruz. Component
 	 * sınıfından türeyen sınıflarımızı bu visit metoduna parametre olarak
 	 * veriyoruz. Böylece ilgili raporumuzu Component sınıfından türeyen
 	 * nesnelerimizi kullanarak Visitor üzerinden yazdırmış oluyoruz.

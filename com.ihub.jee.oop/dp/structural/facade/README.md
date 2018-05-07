@@ -3,6 +3,10 @@
 
 Facade Pattern
 
+### UML DIAGRAM OF FACEDE PATTERN
+
+![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/structural/facade/images/facedeUML.PNG)
+
 ## Prequisites
 
 * To understand this design pattern you will need to understand 4 object oriented programming concepts (Inheritence, Polymorphism, Abstraction and Inheritence). 
@@ -14,8 +18,7 @@ In the scenario that we handled, we deal with a company who want to see customer
 
 ## Explanation
 
-The Facade Pattern provides a unified interface to a set of interface in a subsystem and it defines a higher-level interface that makes the subsystem easier to use.
-In the scenario we dealt with, a class (CustomerReport) defined which contains customer properties like id, location and industry. The purpose of creating this class is to identfy getter()/setter() methods and we defined database connection methods like commitTransaction() and beginTransaction(). We then used the class in the CustomerFacade class, and we used the insert, update and read methods there. By using this class definitions, our CustomerReport class is became a sub system of CustomerFacade. Because in CustomerFacade, we are taking instance of CustomerReport to handle the report that the company wants. As a result, with using CustomerFacade our sub system class becomes easier to use.
+The Facade Pattern provides a unified interface to a set of interface in a subsystem and it defines a higher-level interface that makes the subsystem easier to use. In the scenario we dealt with, a class (CustomerReport) defined which contains customer properties like id, location and industry. The purpose of creating this class is to identfy getter()/setter() methods and we defined database connection methods like commitTransaction() and beginTransaction(). We then used the class in the CustomerFacade class, and we used the insert, update and read methods there. By using this class definitions, our CustomerReport class is became a sub system of CustomerFacade. Because in CustomerFacade, we are taking instance of CustomerReport to handle the report that the company wants. As a result, with using CustomerFacade our sub system class becomes easier to use.
 
 ## Summary
 
@@ -46,7 +49,7 @@ Facade Pattern
 ## Açıklama
 
 Facade Pattern, bir alt sistemdeki bir arabirim kümesine birleşik bir arabirim sağlar ve alt sistemde yer alan sınıflarımızı kullanmayı daha kolay hale getiren daha üst düzey bir arabirimi tanımlar.
-Ele aldığımız senaryoda, kimlik, konum ve endüstri gibi müşteri özelliklerini içeren bir sınıf (CustomerReport) tanımlanmıştır. Bu sınıfın yaratılmasının amacı, getter () / setter () yöntemlerini tanımlamak ve commitTransaction () ve beginTransaction () gibi veritabanı bağlantı yöntemlerini tanımlamaktır. Daha sonra sınıfı CustomerFacade sınıfında kullandık ve buradaki ekleme, güncelleme ve okuma yöntemlerini kullandık. Bu sınıf tanımlarını kullanarak, CustomerReport sınıfımız CustomerFacade'nin bir alt sistemi haline geldi. Çünkü CustomerFacade'de, şirketin istediği raporu yönetmek için CustomerReport örneğini alıyoruz. Sonuç olarak, CustomerFacade kullanılarak alt sistem sınıfımızın kullanımı daha kolay hale gelir.
+Ele aldığımız senaryoda, kimlik, konum ve endüstri gibi müşteri özelliklerini içeren bir sınıf (CustomerReport) tanımlanmıştır. Bu sınıfın yaratılmasının amacı, getter() / setter() yöntemlerini tanımlamak ve commitTransaction() ve beginTransaction() gibi veritabanı bağlantı yöntemlerini tanımlamaktır. Daha sonra sınıfı CustomerFacade sınıfında kullandık ve buradaki ekleme, güncelleme ve okuma yöntemlerini kullandık. Bu sınıf tanımlarını kullanarak, CustomerReport sınıfımız CustomerFacade'nin bir alt sistemi haline geldi. Çünkü CustomerFacade'de, şirketin istediği raporu yönetmek için CustomerReport örneğini alıyoruz. Sonuç olarak, CustomerFacade kullanılarak alt sistem sınıfımızın kullanımı daha kolay hale gelir.
 
 ## Özet
 

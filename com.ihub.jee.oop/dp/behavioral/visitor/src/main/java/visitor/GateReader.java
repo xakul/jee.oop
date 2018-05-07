@@ -34,6 +34,7 @@ public class GateReader extends Components {
 	@Override
 	public void accept(Visitor visitor) {
 		visitor.visit(this);
+		
 	}
 
 	public String getGateType() {
