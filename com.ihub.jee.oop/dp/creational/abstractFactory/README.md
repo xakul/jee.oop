@@ -53,7 +53,7 @@ public class FactoryProducer {
 /**
  * These class choose that which class going to created.
  * 
- * Bu class değerlere göre hangi classın çalışacağına karar verir.
+ * Bu class değerlere göre hangi sınıfın çalışacağına karar verir.
  */
  
 	public static AbstractFactory getFactory(String choice) {
