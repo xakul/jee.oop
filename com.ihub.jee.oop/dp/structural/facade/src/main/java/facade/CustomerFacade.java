@@ -3,7 +3,7 @@ package facade;
 public class CustomerFacade {
 
 	/**
-	 * taking the instance of CustomerReport.
+	 * CustomerReport instance is taken.
 	 * 
 	 * CustomerReport instance alındı.
 	 */
