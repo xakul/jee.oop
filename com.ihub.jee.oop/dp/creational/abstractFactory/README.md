@@ -32,6 +32,94 @@ How can a class be independent of how the objects it requires are created?
 How can families of related or dependent objects be created?
 
 
+### abstractFactory.java
+/**
+ * Create an Abstract class to get factories for Type and Shape Objects.
+ * 
+ * Pipe veya pallet üretmek için bir abstract class oluştur.
+ * 
+ */
+public abstract class AbstractFactory {
+
+	abstract PalletType getType(String type);
+
+	abstract PipeShape getShape(String shape);
+}
+
+## FactoryProducer.java
+/*
+ * These class choose that which class going to created.
+ * 
+ * 
+ * Bu class değerlere göre hangi classın çalışacağına karar verir.
+ * 
+ * */
+public class FactoryProducer {
+
+	public static AbstractFactory getFactory(String choice) {
+
+		if (choice.equalsIgnoreCase("PIPE")) {
+			return new PipeFactory();
+		} else if (choice.equalsIgnoreCase("PALLET")) {
+			return new PalletFactory();
+
+		}
+		return null;
+
+	}
+
+}
+
+### main.java
+	public static void main(String[] args) {
+
+		/**
+		 * Get pipe factory.Pipe factory oluştur.
+		 *
+		 */
+		AbstractFactory pipeFactory = FactoryProducer.getFactory("PIPE");
+
+		/**
+		 * Get an object of PipeShape silicone.
+		 * 
+		 * // * PipeShape classından silicon pipe üret.
+		 */
+
+		PipeShape pipe1 = pipeFactory.getShape("SILICONE");
+
+		/**
+		 * Call palletShape method of Shape 3D.
+		 * 
+		 * SiliconePipe classından palletType methodunu cağır.
+		 * 
+		 */
+
+		pipe1.pipeType();
+
+		/**
+		 * Get Pallet factory. Pallet factory oluştur.
+		 */
+		AbstractFactory palletFactory = FactoryProducer.getFactory("PALLET");
+
+		/**
+		 * Get an object of Pallettype Steal.
+		 * 
+		 * PalletType sınıfınfan steal objesi yarat.
+		 */
+		PalletType pallet = palletFactory.getType("steal");
+		/**
+		 * Call palletType method of type steal.
+		 * 
+		 * Steal classından palletType methodunu cağır.
+		 * 
+		 */
+
+		pallet.palletType();
+
+	}
+
+}
+
 ## Summary
 
 Rather than building a concrete object, it’s building a family of related or dependent objects without specifying concrete class.
@@ -49,7 +137,7 @@ Abstract Factory design
 ## Önkoþullar
 Temel programlama bilgisi.
 
-Baþlangıç seviyesinde OOP bilgisi.
+Başlangıç seviyesinde OOP bilgisi.
 
 ## Senaryo
 
