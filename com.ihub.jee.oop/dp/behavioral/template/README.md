@@ -15,7 +15,7 @@ Basic OOP knowledge
 
 ## Scenario
     
-In this scenario we have discussed the cost structure of a company's employees. Two different salary calculation systems are required as human resources and consultants. We will arrive at a solution with a structure that uses the fullplate design model.
+In this scenario we have discussed the cost structure of a company's employees. Two different salary calculation systems are required as human resources and consultants. We will arrive at a solution with a structure that uses the tamplate design model.
 
 
 ## Explanation
