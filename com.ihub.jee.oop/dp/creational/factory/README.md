@@ -4,15 +4,15 @@
 
 Factory Pattern
 
-##UML DIAGRAM OF FACTORY PATTERN
+### UML Diagram of Factory Pattern
 
 ![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/factory/images/factory.PNG)
 
 ## Prequisites
 
-Basic java programming knowledge
+* Basic java programming knowledge
 
-Basic OOP knowledge
+* Basic OOP knowledge
 
 
 ## Scenario
@@ -101,12 +101,14 @@ The factory design pattern is responsible for the generation of classes that imp
 
 
 # Konu
+
 Factory design
 
 ## Önkoşullar
-Temel programlama bilgisi.
 
-Başlangıç seviyesinde OOP bilgisi.
+* Temel programlama bilgisi.
+
+* Başlangıç seviyesinde OOP bilgisi.
 
 ## Senaryo
 
@@ -115,7 +117,7 @@ Bu senaryoda sales ve purchase raporuna ihtiyaç duyan bir fabrikayı ele aldık
 
 ## Açıklama
 
-(Object-oriented)Nesne merkezli  programlardaki  en temel iş, nesne yaratmaktır. Uygulamalarda farklı pek çok sınıf vardır ve bu sınıfların nesneleri uygulamanın farklı yerlerinde oluşturulur. Bu kalıp, nesnelerin yaratılmalarını soyutlamakta ve bu işi “üretici” ya da “factory” metoda havale etmektedir. Factory method, nesnelerin yaratılmasından sorumlu bir metottur.
+Nesne merkezli (Object-oriented) programlamada en önemli iş, nesne yaratmaktır. Uygulamalarda farklı pek çok sınıf vardır ve bu sınıfların nesneleri uygulamanın farklı yerlerinde oluşturulur. Bu kalıp, nesnelerin yaratılmalarını soyutlamakta ve bu işi “üretici” ya da “factory” metoda havale etmektedir. Factory method, nesnelerin yaratılmasından sorumlu bir metottur.
 
 
 ## Özet
