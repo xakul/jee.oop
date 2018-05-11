@@ -16,5 +16,6 @@
 	<modules>
 		<module>templateMethod</module>
 		<module>facade</module>
+		<module>flyweight</module>
 	</modules>
 </project>
