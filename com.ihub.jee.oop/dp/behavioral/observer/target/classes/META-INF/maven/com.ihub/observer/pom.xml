@@ -5,5 +5,5 @@
     <artifactId>behavioral</artifactId>
     <version>1.0.0</version>
   </parent>
-  <artifactId>command</artifactId>
+  <artifactId>observer</artifactId>
 </project>
