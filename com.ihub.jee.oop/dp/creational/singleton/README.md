@@ -1,12 +1,17 @@
 #### [English](#topic) / [Turkish](#konu)
 # Topic
 
-The purpose of Tutorial ;
-the Singleton Design Pattern, one of the Creational Design Patterns, will explain why and where it is used through a Java project.
+The purpose of Tutorial is the Singleton Design Pattern, one of the Creational Design Patterns, will explain why and where it is used through a Java project.
+
+### UML Diagram of Singleton Pattern
+
+![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/creational/singleton/images/singleton.PNG)
+
 
 ## Prequisites
 
 *   Basic java programming knowledge
+
 *   Basic OOP knowledge
 
 ## Scenario
