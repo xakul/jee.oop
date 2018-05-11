@@ -1,5 +1,4 @@
 /**
-  * Singleton Design Pattern
   * Singleton Design Pattern Scenario with connection Odata 
   * Release version 1.0 at 20.04.2018
   * @author Bayram Hakan Kocatepe || @github xhkocatepe 
@@ -11,36 +10,37 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-
+		
 		/**
-		 * We want to get a singleton instance once, so we get an instance
-		 * inside the Singleton class, not from the outside (Main) with new.
+		 * We want to get a singleton instance once, so we get 
+		 * an instance inside the Singleton class, not from the
+		 * outside (Main) with new.
 		 *
-		 * Singleton da tek bir defa instance alÄ±nmasÄ±nÄ± istediÄŸimiz iÃ§in new
-		 * ile dÄ±ÅŸarÄ±dan(Main) deÄŸil Singleton class'Ä±n iÃ§inde instance
-		 * alÄ±yoruz.
+		 * Singleton da tek bir defa instance alýnmasýný istediðimiz
+		 * için new ile dýþarýdan(Main) deðil Singleton class'ýn 
+		 * içinde instance alýyoruz.
 		 */
-
+		
 		Connector connector = Connector.getInstance();
 
 		/**
 		 * Get orders from Northwind.svc from only one instance.
 		 * 
-		 * Instance'i alÄ±nan Connector classÄ±nÄ±n getOrders methodu ile
-		 * Northwinden OrderlarÄ± alÄ±yoruz.
+		 * Instance'i alýnan Connector classýnýn getOrders methodu
+		 * ile Northwinden Orderlarý alýyoruz.
 		 */
-
+		
 		String orders = connector.getOrders();
 		System.out.println(orders);
-
-		/**
-		 * Get products from Northwind.svc from only one instance We can not
-		 * create new instance.
+		
+		/** 
+		 * Get products from Northwind.svc from only one instance
+		 * We can not create new instance.
 		 *
-		 * Instance'i alÄ±nan Connector classï¿½nï¿½n getProducts methodu ile
-		 * Northwinden Product'larï¿½ alÄ±yoruz. Yeni bir instance almadÄ±k.
+		 * Instance'i alýnan Connector classýnýn getProducts methodu
+		 * ile Northwinden Product'larý alýyoruz. Yeni bir instance almadýk.
 		 */
-
+		
 		String products = connector.getProducts();
 		System.out.println(products);
 	}

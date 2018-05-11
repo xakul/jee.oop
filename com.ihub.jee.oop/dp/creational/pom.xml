@@ -17,6 +17,5 @@
 		<module>builder</module>
 		<module>singleton</module>
 		<module>factory</module>
-		<module>abstractFactory</module>
 	</modules>
 </project>

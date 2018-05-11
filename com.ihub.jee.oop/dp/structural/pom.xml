@@ -15,6 +15,5 @@
 
 	<modules>
 		<module>templateMethod</module>
-		<module>facade</module>
 	</modules>
 </project>
