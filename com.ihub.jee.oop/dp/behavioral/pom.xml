@@ -15,6 +15,7 @@
 
 	<modules>
 		<module>adapter</module>
+		<module>strategy</module>
 	</modules>
 
 </project>
