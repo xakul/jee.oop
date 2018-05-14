@@ -19,9 +19,9 @@ public class Client {
 		 */
 		ICheck iCheck = new ProxyCheck();
 		
-		resultFromBank = iCheck.isValidCheck("admin", "86912342342");
+		resultFromBank = iCheck.isValidCheck("kocatepebayram", "86912342342");
 		System.out.println(resultFromBank);
-		resultFromBank = iCheck.isValidCheck("hakankocatepe", "86912342342");
+		resultFromBank = iCheck.isValidCheck("kocatepehakan", "86912342342");
 		System.out.println(resultFromBank);
 
 	}
