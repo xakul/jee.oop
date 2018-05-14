@@ -1,7 +1,10 @@
 package atm;
 
 public class Currency {
-	
+	 /**
+	  * 
+	  * 
+	  **/
 	private int amount;
 
 	public Currency(int amount) {

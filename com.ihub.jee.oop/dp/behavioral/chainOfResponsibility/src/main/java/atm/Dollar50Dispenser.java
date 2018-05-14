@@ -15,11 +15,11 @@ public class Dollar50Dispenser implements DispenseChain {
 
 	public void dispense(Currency currency) {
 		/*
-		 * If this chain is responsible for the job, do the job. (Hence the if
-		 * check)
+		 * If this part of chain is responsible for this job, do the job. (Hence
+		 * the if check)
 		 * 
-		 * Eğer bu işten bu zincir sorumluysa yapsın. ("If check", bunu kontrol
-		 * ediyor)
+		 * Eğer bu işten bu zincir halkası sorumluysa yapsın. ("If check", bunu
+		 * kontrol ediyor)
 		 */
 		if (currency.getAmount() >= 50) {
 			int number = currency.getAmount() / 50;
@@ -35,7 +35,9 @@ public class Dollar50Dispenser implements DispenseChain {
 				this.chain.dispense(new Currency(remainder));
 		} else {
 			/*
-			 * İşi sonraki zincire devir et. Transfer the job to the next chain
+			 * İşi sonraki halkaya devir et. 
+			 * 
+			 * Transfer the job to the next part.
 			 */
 			this.chain.dispense(currency);
 		}
