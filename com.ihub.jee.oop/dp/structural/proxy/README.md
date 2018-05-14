@@ -3,7 +3,7 @@
 The purpose of the Proxy Pattern Tutorial, Structural Design Patterns, will explain in a Java project why and where it is used.
 ### UML Diagram of Command Pattern
 
-![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/command/%C4%B1mages/CommandUML.PNG)
+![|Solid](https://github.com/incubationhub/jee.oop/blob/master/com.ihub.jee.oop/dp/structural/proxy/Images/proxyUML.png)
 ## Prequisites
 * Basic programming knowledge.
 * Beginner level OOP knowledge.
