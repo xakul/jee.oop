@@ -24,5 +24,7 @@
 		<module>observer</module>
 		<module>strategy</module>
 		<module>cor</module>
+		<module>memento</module>
+		<module>composite</module>
 	</modules>
 </project>
