@@ -23,7 +23,7 @@
 		<module>visitor</module>
 		<module>observer</module>
 		<module>strategy</module>
-		<module>cor</module>
+		<module>chainOfResponsibility</module>
 		<module>memento</module>
 		<module>composite</module>
 		<module>interpreter</module>
