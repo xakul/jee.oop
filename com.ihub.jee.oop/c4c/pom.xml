@@ -11,7 +11,6 @@
   <packaging>pom</packaging>
   
   <modules>
-  	<module>c4cUserReadOperationc4c</module>
   	<module>c4cUserReadOperation</module>
   </modules>
 </project>

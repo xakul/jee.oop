@@ -14,7 +14,6 @@
 	<name>Structural Patterns</name>
 
 	<modules>
-		<module>templateMethod</module>
 		<module>facade</module>
 		<module>flyweight</module>
 	</modules>
