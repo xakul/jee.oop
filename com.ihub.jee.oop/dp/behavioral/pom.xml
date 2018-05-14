@@ -26,5 +26,6 @@
 		<module>cor</module>
 		<module>memento</module>
 		<module>composite</module>
+		<module>interpreter</module>
 	</modules>
 </project>

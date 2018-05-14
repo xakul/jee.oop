@@ -16,5 +16,6 @@
 	<modules>
 		<module>facade</module>
 		<module>flyweight</module>
+		<module>proxy</module>
 	</modules>
 </project>
