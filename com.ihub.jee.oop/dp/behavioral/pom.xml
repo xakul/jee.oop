@@ -24,5 +24,6 @@
 		<module>observer</module>
 		<module>strategy</module>
 		<module>cor</module>
+		<module>interpreter</module>
 	</modules>
 </project>
