@@ -23,10 +23,10 @@ public class Read {
 		 * 
 		 * Successfactors kullanici@sirketkodu.
 		 */
-		String username = "backup@ronesanshoP";
+		String username = "****@******";
 
 	
-		String password = "Sf12345*";
+		String password = "*********";
 
 	
 		String basicToken = basicAuthEncode(username, password);
