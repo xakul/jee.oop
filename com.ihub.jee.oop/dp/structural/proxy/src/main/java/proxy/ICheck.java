@@ -21,5 +21,4 @@ public interface  ICheck  {
 	 */
 	public String isValidCheck(String username , String checkNumber);
 	
-	
 }
