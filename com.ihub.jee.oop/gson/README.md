@@ -1,6 +1,7 @@
 #### [English](#topic) / [Turkish](#konu)
 # Topic
 
+GSON is a Java library that can be used to convert Java Objects into their JSON representation.
 The purpose of this tutorial is to explain how GSON can be used to generate objects in Java from existing JSON files.
 Similarly, we can generate JSON files from existing instances of objects.
 
