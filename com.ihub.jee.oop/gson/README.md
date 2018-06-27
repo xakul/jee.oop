@@ -112,7 +112,7 @@ We have seen how we can integrate Java and ODATA services that provide JSON resp
 Bu alıştırmanın amacı, GSON kütüphanesinin, JSON formatındaki dosyalardan nasıl Java objeleri yarattığını açıklamaktır.
 Benzer şekilde, bu objelerden de bir JSON dosyası yaratmak, bu kütüphane ile mümkündür.
 
-Bu alıştırma, GSON ve ODATA, bir işletme senaryosunda nasıl bir araya geldiğini açıklayacak.
+Bu alıştırma, aynı zamanda, GSON ve ODATA'nın bir işletme senaryosunda nasıl bir araya geldiğini açıklayacak.
 
 ## Önkoşullar
 
