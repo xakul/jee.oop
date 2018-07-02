@@ -10,7 +10,9 @@ Each hoop of the chain contains logic that defines the types of command objects 
 
 ## Prerequisites
 
-*   Basic Java/OOP knowledge.
+* Basic programming knowledge.
+* Beginner level OOP(Object-Oriented Programming) knowledge.
+* Basic UML(Unified Modeling Language) reading.
 
 ## Scenario
 
@@ -118,7 +120,9 @@ Zincirin her halkası, belirli bir mantıkta yazılmış bir kod bloğu içerir.
 
 ## Önkoşullar
 
-*   Temel Java ve Nesne-Yönelimli Programlama bilgisi.
+*   Temel programlama bilgisi.
+*   Başlangıç seviyesinde OOP(Object-Oriented Programming) bilgisi.
+*   Temel UML(Unified Modeling Language) okuma.
 
 ## Senaryo
 
