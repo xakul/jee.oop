@@ -2,9 +2,12 @@ package org.bridge;
 
 public class Square extends FormBolt {
 
+	/**
+	 * Square extend from FormBolt . Giving the Room object to RadiusBolt as a parameter
+	 * 
+	 */
 	public Square(RadiusBolt r) {
 		super(r);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

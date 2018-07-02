@@ -3,11 +3,11 @@ package interpreter;
 public abstract class DatabaseOperation {
 
 	/**
-	 * Abstract operation() method created to create different operations with
-	 * using same method.
+	 * Abstract operation() method created to create different operations with using
+	 * same method.
 	 *
-	 * AynÄ± metodu kullanarak birden fazla operation yaratmak iÃ§in abstract
-	 * operation() metodu oluÅŸturuldu.
+	 * Aynı metodu kullanarak birden fazla operation yaratmak için abstract
+	 * operation() metodu oluşturuldu.
 	 */
 	public abstract void operation(Context context);
 }

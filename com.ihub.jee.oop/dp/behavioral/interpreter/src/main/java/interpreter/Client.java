@@ -14,15 +14,14 @@ public class Client {
 		context.setContext(sc.nextLine());
 
 		/**
-		 * Here we provide character-based interpretation of the types of
-		 * operations the user has entered, thus ensuring that the desired
-		 * output is obtained. The polymorphism method that we use calls the
-		 * operation method belonging to the data type entered.
+		 * Here we provide character-based interpretation of the types of operations the
+		 * user has entered, thus ensuring that the desired output is obtained. The
+		 * polymorphism method that we use calls the operation method belonging to the
+		 * data type entered.
 		 * 
-		 * Burada kullanÄ±cÄ±nÄ±n girdiÄŸi Operasyon tiplerini karakter bazÄ±nda
-		 * yorumlayarak istenilen Ã§Ä±ktÄ±nÄ±n alÄ±nmasÄ±nÄ± saÄŸlÄ±yoruz. KullandÄ±ÄŸÄ±mÄ±z
-		 * polymorphizm yÃ¶ntemi ile girilen veri tipine ait olan operasyon
-		 * metodu Ã§aÄŸrÄ±lÄ±yor.
+		 * Burada kullanıcının girdiği Operasyon tiplerini karakter bazında yorumlayarak
+		 * istenilen çıktının alınmasını sağlıyoruz. Kullandığımız polymorphizm yöntemi
+		 * ile girilen veri tipine ait olan operasyon metodu çağrılıyor.
 		 */
 		if (context.getContext().equals("C")) {
 			databaseOperation = new CreateOperation();

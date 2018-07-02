@@ -1,6 +1,7 @@
 package command;
 /**
  * Command Design Pattern
+
  * Scenario with Company commands . 
  * Release version 1.0 at 14.05.2018
  * @author Bayram Hakan Kocatepe || @github xhkocatepe 

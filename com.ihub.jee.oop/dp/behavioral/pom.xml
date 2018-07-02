@@ -25,5 +25,6 @@
 		<module>memento</module>
 		<module>composite</module>
 		<module>interpreter</module>
-  </modules>
+		<module>state</module>
+	</modules>
 </project>

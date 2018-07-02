@@ -5,7 +5,7 @@ public class UpdateOperation extends DatabaseOperation {
 	/**
 	 * operation() method is implemented and specified which contains Context as parameter.
 	 * 
-	 * Context tipinde parametre iÃ§eren operation() metodunu kullanÄ±ldÄ± ve Ã¶zelleÅŸtirildi.
+	 * Context tipinde parametre içeren operation() metodunu kullanıldı ve özelleştirildi.
 	 */
 	@Override
 	public void operation(Context context) {

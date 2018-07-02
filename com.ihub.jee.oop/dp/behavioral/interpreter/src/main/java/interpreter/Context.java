@@ -3,9 +3,11 @@ package interpreter;
 public class Context {
 
 	/**
-	 * The Context class is created for the operation types which are C,R,U,D.
+	 * operation() method is implemented and specified which contains Context as
+	 * parameter.
 	 * 
-	 * Context sÄ±nÄ±fÄ± operation tipleri olan C,R,U,D iÃ§in oluÅŸturuldu.
+	 * Context tipinde parametre içeren operation() metodunu kullanıldı ve
+	 * özelleştirildi.
 	 */
 	private String context;
 
