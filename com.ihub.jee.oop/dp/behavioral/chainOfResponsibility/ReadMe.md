@@ -6,7 +6,7 @@ Each hoop of the chain contains logic that defines the types of command objects 
 
 ### UML Diagram of Builder Pattern
 
-![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/com.ihub.jee.oop/dp/behavioral/chainOfResponsibility/images/corUML.PNG)
+![|Solid](https://raw.githubusercontent.com/incubationhub/jee.oop/master/com.ihub.jee.oop/dp/behavioral/chainOfResponsibility/images/corUML.PNG)
 
 ## Prerequisites
 
